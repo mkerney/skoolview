@@ -49,7 +49,7 @@
                     position : absolute;
                     font-size: 20px
                 }
-            }
+            }  
         }
         .recepient-wrapper{
             p{
@@ -83,6 +83,9 @@
                                         display         : block;
                                         border-color    : $light-gray;
                                         background-color: $white;
+                                        overflow        : hidden;
+                                        white-space     : nowrap;
+                                        text-overflow   : ellipsis;
                                         @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
                                     }
                                 }
@@ -100,7 +103,7 @@
                 padding      : 6px 10px;
                 font-size    : 14px;
                 text-align   : center;
-                line-height  : 18px;
+                line-height  : 16px;  
                 font-weight  : bold;
                 border-radius: 0px;
                 @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
@@ -112,7 +115,7 @@
                     margin-right: 16px;
                 }
             }
-            button[type="reset"]{
+            button[type="reset"]{  
                 color           : $black;
                 border          : 1px solid $cancel-border-color;
                 background-color: transparent;
@@ -132,9 +135,16 @@
 }
 
 @media(max-width: 991px) and (min-width: 768px){
-
+    .new-announcement-wrapper{
+        form{
+            max-width: 100%;
+            .control-label{
+                padding-right: 0;
+            }
+        }
+    }
     /* custom student selection check box */
-    .custom-check-student{
+    .custom-check-student{       
         label{
             &.checkbox-inline{
                 input[type="checkbox"]{
@@ -191,4 +201,50 @@
         }
     }
 
+}
+
+@media(min-width: 300px) and (max-width:767px){
+    .new-announcement-wrapper{
+        h3 {
+            margin       : 15px 0; 
+            overflow     : hidden;
+            line-height  : 80px;
+            white-space  : nowrap;
+            text-overflow: ellipsis;
+        }
+        form{
+            max-width: 100%;
+            .custom-date-time{
+                .pick-date{
+                    margin: 0 0 15px;
+                }
+            }
+            .announcement-submit-wrapper{
+                button{
+                    margin: 0 15px 15px 0;
+                }
+            }
+        }        
+    }
+    .content-wrapper{
+        .search-something-wrapper{
+            margin: 0 0 15px;
+        }
+        .table-wrapper{
+            padding: 0;
+        }
+    } 
+}
+@media(min-width: 300px) and (max-width:767px){
+    .new-announcement-wrapper{
+        form{
+            .announcement-submit-wrapper{
+                button {
+                    margin   : 0 5px 15px 0 !important;
+                    width    : 95px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }

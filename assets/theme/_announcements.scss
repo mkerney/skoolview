@@ -37,8 +37,9 @@
                     th{
                         padding      : 30px 12px; 
                         overflow     : hidden;
-                        font-size    : 18px;
+                        font-size    : 16px;
                         white-space  : nowrap;
+                        font-weight  : normal;
                         border-bottom: 3px solid $black;
                         text-overflow: ellipses;
                         &:first-child{
@@ -52,7 +53,7 @@
                     td{
                         padding      : 28px 12px;  
                         overflow     : hidden;
-                        font-size    : 15px;
+                        font-size    : 14px;
                         white-space  : nowrap;
                         text-overflow: ellipsis;
                         border-bottom: 2px solid $border-green;
@@ -73,6 +74,7 @@
 }
 @media(max-width: 767px) and (min-width: 480px){
     .content-wrapper{
+
         .search-something-wrapper{
             input{
                 display      : block;
@@ -83,6 +85,44 @@
                 float  : none;
                 width  : 100%;
                 display: block;
+            }
+        }
+    }
+}
+
+@media (min-width:300px) and (max-width:767px){
+    .content-wrapper{
+        padding: 40px 15px 15px 15px;
+        .search-something-wrapper{
+            input{
+                width: 100%;
+                margin: 0 0 15px;
+            }
+            a{
+                display: block;
+                width: 100%;
+                float: none;
+            }
+        }
+
+        .table-wrapper{
+            table{
+                thead{
+                    tr{
+                        th{
+                            font-size: 13px;
+                            padding: 12px 10px;
+                        }
+                    }
+                }
+                tbody{  
+                    tr{
+                        td{
+                            font-size: 13;
+                            padding: 12px 10px;
+                        }
+                    }
+                }
             }
         }
     }
