@@ -1,0 +1,351 @@
+*,*:focus{
+    outline: none !important;
+}
+/*--  LATO Text Regular  --*/
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato/lato.eot'); 
+    src: url('../fonts/lato/lato.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lato/lato.otf') format('otf'),
+        url('../fonts/lato/lato.woff') format('woff'),
+        url('../fonts/lato/lato.ttf')  format('truetype'),
+        url('../fonts/lato/lato.svg#svgFontName') format('svg'); 
+}
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('../fonts/roboto-regular/roboto-regular.eot'); 
+    src: url('../fonts/roboto-regular/roboto-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-regular/roboto-regular.otf') format('otf'),
+        url('../fonts/roboto-regular/roboto-regular.woff') format('woff'),
+        url('../fonts/roboto-regular/roboto-regular.ttf')  format('truetype'),
+        url('../fonts/roboto-regular/roboto-regular.svg#svgFontName') format('svg'); 
+}
+body {
+    font-family     : $roboto;
+    color           : $accent-black;
+    justify-content : center;
+    /*display         : flex;*/
+    /*background-color: $main-bg-color;*/
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.hidden{
+    display:none;
+}
+/*--  Custom Checkbox Styles  --*/
+.custom-check{
+    /*margin-bottom: 5px;*/
+    label{
+        &.checkbox-inline{
+            input[type="checkbox"]{
+                display:none;
+                &:checked {
+                    +  span{
+                        background-color: $white;
+                        border          : 2px solid $black-6;
+                        padding         : 3px;
+                        @include border-radius(2px);
+                        @include transition(all 0.3s ease-in-out);
+                        i{
+                            opacity: 1;
+                        }
+                    }
+                }
+                + span{
+                    background-color: $white;
+                    border          : 2px solid $black-6;
+                    cursor          : pointer;
+                    display         : inline-block;
+                    height          : 18px;
+                    line-height     : 14px;
+                    margin          : -1px 10px 0 0;
+                    padding         : 3px;
+                    position        : relative;
+                    text-align      : center;
+                    vertical-align  : middle;
+                    width           : 18px;
+                    margin-right    : 10px;
+                    @include border-radius(2px);
+                    @include transition(all 0.3s ease-in-out);
+                    i{
+                        color      : $black-6;
+                        display    : block;
+                        font-size  : 13px;
+                        font-weight: 400;
+                        left       : -3px;
+                        margin     : -4px auto;
+                        opacity    : 0;
+                        overflow   : visible;
+                        position   : relative;
+                        top        : 2px;
+                        width      : 10px;
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                }
+            }
+        }
+    }
+    .checkbox-inline{
+        padding-left: 0;
+    }
+} 
+/*--  Custom Radio Styles  --*/
+.custom-radio{
+    margin-bottom: 5px;
+    label{
+        &.radio-inline{
+            input[type="radio"]{
+                display:none;
+                &:checked {
+                    +  span{
+                        background-color: $white;
+                        border          : 1px solid $black;
+                        padding         : 3px;
+                        @include border-radius(0);
+                        @include transition(all 0.3s ease-in-out);
+                        i{
+                            opacity: 1;
+                        }
+                    }
+                }
+                + span{
+                    background-color: $white;
+                    border          : 1px solid $custom-check-border;
+                    cursor          : pointer;
+                    display         : inline-block;
+                    height          : 18px;
+                    line-height     : 14px;
+                    margin          : -1px 10px 0 0;
+                    padding         : 3px;  
+                    position        : relative;
+                    text-align      : center;
+                    vertical-align  : middle;
+                    width           : 18px;
+                    margin-right    : 10px;
+                    @include border-radius(0);
+                    @include transition(all 0.3s ease-in-out);
+                    i{
+                        color      : $black;
+                        display    : block;
+                        font-size  : 10px;
+                        font-weight: 400;
+                        left       : -1px;
+                        margin     : -4px auto;
+                        opacity    : 0;
+                        overflow   : visible;
+                        position   : relative;
+                        top        : 2px;
+                        width      : 10px;
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                }
+            }
+        }
+    }
+    .radio-inline{
+        padding-left: 0;
+    }
+} 
+/*--*/
+
+
+
+
+.btn-black{
+    color           : $white;
+    font-size       : 14px;
+    text-align      : center;
+    text-decoration : none; 
+    line-height     : 16px;
+    letter-spacing  : 1px;
+    border          : 1px solid $white;
+    padding         : 15px 30px;
+    min-width       : 200px;
+    text-transform  : uppercase;
+    background-color: $black;
+    @include border-radius(0);
+    &:hover{
+        color           : $white;
+        text-decoration : none; 
+        border-color    : $white;
+        background-color: $black;
+    }
+    &:focus{
+        color           : $white;
+        border-color    : $white;
+        background-color: $black;
+        &:active{
+            color           : $white;
+            border-color    : $white;
+            background-color: $black;
+        }
+    }
+    &[disabled], &.btn-default[disabled]{
+        pointer-events  : none;
+        background-color: $gray;
+        &:hover, &:active, &:focus{
+            pointer-events  : none;
+            background-color: $gray;
+        }
+    }
+}
+
+/* skoolview web */
+.skoolview-wrapper{
+    background-color: $white;
+    .main-content-wrapper{
+        position  : relative;
+        border-top: 4px solid transparent;
+        .dashboard-wrapper{
+            padding-left: 248px; 
+        }
+    }
+}
+/* custom student selection check box */
+.custom-check-student{
+    /*margin-bottom: 5px;*/
+    label{
+        &.checkbox-inline{
+            input[type="checkbox"]{
+                display:none;
+                &:checked {
+                    +  span{
+                        color           : $white;
+                        padding         : 3px;
+                        background-color: $custom-check-color;
+                        @include border-radius(50%);
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                }
+                + span{
+                    color           : $white;
+                    width           : 30px;
+                    cursor          : pointer;
+                    height          : 30px;
+                    margin          : -1px 10px 0 0;
+                    padding         : 3px;
+                    display         : inline-block;
+                    position        : relative;
+                    font-size       : 14px;
+                    text-align      : center;
+                    line-height     : 24px;
+                    margin-right    : 10px;
+                    vertical-align  : middle;
+                    background-color: $custom-uncheck-color;
+                    @include border-radius(50%);
+                    @include transition(all 0.3s ease-in-out);
+                }
+            }
+        }
+    }
+    .checkbox-inline{
+        padding-left: 0;
+    }
+} 
+
+
+/* custom staff selection check box */
+.custom-check-staff{
+    /*margin-bottom: 5px;*/
+    label{
+        &.checkbox-inline{
+            input[type="checkbox"]{
+                display:none;
+                &:checked {
+                    +  span{
+                        background-color: $white;
+                        padding         : 3px;
+                        @include transition(all 0.3s ease-in-out);
+                        i{
+                            opacity: 1;
+                        }
+                    }
+                }
+                + span{
+                    background-color: $white;
+                    cursor          : pointer;
+                    display         : inline-block;
+                    height          : 18px;
+                    line-height     : 14px;
+                    margin          : -1px 10px 0 0;
+                    padding         : 3px;
+                    position        : relative;
+                    text-align      : center;
+                    vertical-align  : middle;
+                    width           : 18px;
+                    margin-right    : 30px;
+                    @include transition(all 0.3s ease-in-out);
+                    i{
+                        color      : $custom-check-color;
+                        display    : block;
+                        font-size  : 21px;
+                        font-weight: 400;
+                        left       : -3px;
+                        margin     : -4px auto;
+                        opacity    : 0;
+                        overflow   : visible;
+                        position   : relative;
+                        top        : -1px;
+                        width      : 10px;
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                }
+            }
+        }
+    }
+    .checkbox-inline{
+        padding-left: 0;
+    }
+} 
+
+/* announcement revert modal */
+#myModal{
+    .modal-body{
+        p{
+            margin     : 0;
+            line-height: 80px;
+        }
+    }
+    .modal-footer{
+        padding   : 8px;
+        text-align: center;
+        a{
+            color    : $modal-submit-color;
+            font-size: 18px; 
+            display  : block;
+            &:hover {
+                color          : $black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* time-picker styles */
+.bootstrap-timepicker-widget{
+    input{
+        border: 1px solid $light-gray;
+    }
+}
+
+
+
+/* skoolview mobile */
+.skoolview-mobile-wrapper{
+    background-color: $mobile-bg;
+}
+
+.custom-dropdown-header{
+    top      : 58px;
+    left     : -18px;
+    right    : -18px;
+    min-width: 100%;
+}
+
+.content-wrapper-mobile{
+    margin-top: 70px;
+}

@@ -1,0 +1,99 @@
+/*--  Main Navbar  --*/
+.navbar-wrapper{
+    height          : 100px;
+    margin          : 0;
+    border          : 0;
+    background-color: $theme-color;
+    @include border-radius(0);
+    .navbar-brand{
+        color      : $white;
+        float      : none;
+        height     : 100px;
+        margin     : 0 !important;
+        padding    : 0 0 0 100px;
+        display    : inline-block;
+        position   : relative;
+        font-size  : 26px;
+        line-height: 100px;
+        img{
+            left    : 0;
+            top     : 10px;
+            width   : 80px;
+            position: absolute;
+        }
+    }
+    .navbar-nav{
+        margin: 25px 0;
+        li{
+            &.active{
+                a{ 
+                    color     : $white;
+                    background: transparent;
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        color        : $white;
+                        background   : transparent;
+                    }
+                }
+            }
+            a{
+                color         : $white;
+                padding       : 15px 20px;
+                font-size     : 20px;
+                text-shadow   : none;
+                font-family   : $roboto;
+                &:hover,
+                &:focus,
+                &:active{
+                    color        : $white;
+                    background   : transparent;  
+                }
+                i{
+                    font-size  : 20px;
+                    line-height: 15px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*--  Media Styles  --*/
+/*@media(min-width: 768px) and (max-width: 991px){ 
+    .navbar-wrapper{
+        .container{
+            width: 100%;
+            .navbar-brand{
+                font-size  : 18px;
+                margin-left: -35px;
+            }
+        }
+        .navbar-collapse{
+            padding: 0;
+        }
+        .navbar-nav{
+            li{
+                a{
+                    font-size: 10px;
+                    padding  : 15px 8px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 320px) and (max-width: 767px){ 
+    .navbar-wrapper{
+        .navbar-header{
+            .navbar-toggle{
+                border-color    : $white;
+                background-color: transparent;
+                @include border-radius(2);
+                &:focus, &:active{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}*/

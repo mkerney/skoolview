@@ -1,0 +1,194 @@
+.new-announcement-wrapper{
+    background-color: $light-gray-2;
+    h3{
+        margin     : 0;
+        line-height: 80px;
+    }
+    form{
+        max-width: 85%;
+        margin   : 0 auto; 
+        .form-group{
+            label{
+                text-align: left;
+            }
+            input{
+                height: 40px;
+                &:focus{
+                    border-color: $light-gray-4;
+                }
+            }
+            textarea{
+                height: 100px;
+                resize: none;
+                &:focus{
+                    border-color: $light-gray-4;
+                }
+            }
+        }
+        .custom-date-time{
+            .pick-date{
+                position: relative;
+                input{
+                    padding-right: 35px;
+                }
+                span{
+                    top      : 10px; 
+                    right    : 28px;
+                    position : absolute;
+                    font-size: 20px
+                }
+            }
+            .pick-time{
+                input{
+                    padding-right: 35px;
+                }
+                position: relative;
+                span{
+                    top      : 10px; 
+                    right    : 10px;
+                    position : absolute;
+                    font-size: 20px
+                }
+            }
+        }
+        .recepient-wrapper{
+            p{
+                text-decoration: underline;
+            }
+            .recepients{
+                border : 1px dashed $light-gray-4;
+                padding: 10px;
+                img{
+                    width: 30px;
+                }
+                .selection{
+                    padding-top: 12px;
+                    ul{
+                        &:last-child{ 
+                            margin-bottom: 0;  
+                        }
+                    }
+                }
+                &.staff{
+                    .selection{
+                        ul{
+                            li{
+                                display: block;
+                                &:not(:last-child){
+                                    margin-bottom: 6px;
+                                }
+                                .custom-check-staff{
+                                    label{
+                                        padding         : 6px 10px;
+                                        display         : block;
+                                        border-color    : $light-gray;
+                                        background-color: $white;
+                                        @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .announcement-submit-wrapper{
+            padding: 36px 0 10px 0;
+            button{
+                width        : 120px;
+                height       : 30px;
+                padding      : 6px 10px;
+                font-size    : 14px;
+                text-align   : center;
+                line-height  : 18px;
+                font-weight  : bold;
+                border-radius: 0px;
+                @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
+                &:focus,&:active,&:hover{
+                    border-color: $light-gray;
+                    @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
+                }
+                &:not(:last-child){
+                    margin-right: 16px;
+                }
+            }
+            button[type="reset"]{
+                color           : $black;
+                border          : 1px solid $cancel-border-color;
+                background-color: transparent;
+            }
+            button[type="button"]{
+                color           : $white;
+                border-color    : $save-bg-color;
+                background-color: $save-bg-color;
+            }
+            /*            button[type="submit"]{
+                            color           : $white;
+                            border-color    : $save-bg-color;
+                            background-color: $save-bg-color;
+                        }*/
+        }
+    }
+}
+
+@media(max-width: 991px) and (min-width: 768px){
+
+    /* custom student selection check box */
+    .custom-check-student{
+        label{
+            &.checkbox-inline{
+                input[type="checkbox"]{
+                    &:checked {
+                        +  span{
+                            color           : $white;
+                            padding         : 3px;
+                            background-color: $custom-check-color;
+                            @include border-radius(50%);
+                            @include transition(all 0.3s ease-in-out);
+                        }
+                    }
+                    + span{
+                        width      : 20px;
+                        height     : 20px;
+                        margin     : -1px 0px 0 0;
+                        font-size  : 14px;
+                        line-height: 14px;
+                    }
+                }
+            }
+        }
+    } 
+
+
+    /* custom staff selection check box */
+    .custom-check-staff{
+        label{
+            overflow     : hidden;
+            white-space  : nowrap;
+            text-overflow: ellipsis;
+            &.checkbox-inline{
+                input[type="checkbox"]{
+                    &:checked {
+                        +  span{
+                            background-color: $white;
+                        }
+                    }
+                    + span{
+                        margin-right : 6px;
+                    }
+                }
+            }
+        }
+    } 
+
+    .announcement-submit-wrapper{
+        button{
+            width  : 100px;
+            padding: 6px 5px;
+            &:not(:last-child){
+                margin-right: 0px;
+            }
+        }
+    }
+
+}

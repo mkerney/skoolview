@@ -1,0 +1,45 @@
+.aside-wrapper{
+    top             : 0;
+    left            : 0;
+    color           : $white;
+    right           : 0;
+    width           : 248px;
+    min-height      : 100%; 
+    /*bottom          : 0;*/
+    position        : absolute;
+    border-right    : 8px solid $white;
+    background-color: $theme-color;
+    .side-navigation-wrapper{
+        .admin-profile-wrapper{
+            padding      : 30px 0;
+            text-align   : center;
+            border-bottom: 1px solid $black-9;
+            img{
+                width: 100px;
+            }
+            h4{
+                margin   : 18px 0 8px;
+                font-size: 20px;
+            }
+            p{
+                margin     : 0;
+                font-size  : 12px;
+                margin-left: 15px;
+            }
+        }
+        .admin-task-wrapper{
+            li{
+                a{
+                    color        : $white;
+                    padding      : 18px 0 18px 55px;
+                    display      : block;
+                    border-bottom: 1px solid $black-9;
+                    &:hover,&:focus,&:active,&.active{
+                        color          : $hover-green;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

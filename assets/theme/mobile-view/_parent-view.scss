@@ -1,0 +1,44 @@
+.parent-view-wrapper{
+    .content-wrapper-pills{
+        height: 40px;
+        > li{
+            width     : 1%;
+            display   : table-cell;
+            padding   : 15px 15px 10px;
+            text-align: center;
+            &.active{
+                a{
+                    background-color: transparent;
+                    &:after{
+                        background-color: $save-bg-color; 
+                    }
+                }
+            }
+            a{
+                padding         : 0;
+                margin          : 0;
+                color           : $black;
+                position        : relative;
+                display         : inline-block;
+                line-height     : 10px;
+                &:hover,&:active,&:focus{
+                    color           : $black;
+                    background-color: transparent;
+                }
+                &:after{
+                    width           : 100%;
+                    height          : 4px;
+                    content         : "";
+                    display         : inline-block;
+                    background-color: transparent;
+                    @include transition(background-color 0.3s ease-in-out); 
+                    @include border-radius(4px);
+                }
+            }
+        }
+    }
+    .content-wrapper-tabs{
+        padding: 5px;
+        
+    }
+}

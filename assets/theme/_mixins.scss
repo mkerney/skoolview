@@ -1,0 +1,70 @@
+/*--  Transition  --*/
+@mixin transition($transition) {
+  transition        : $transition;
+  -ms-transition    : $transition;
+  -o-transition     : $transition;
+  -moz-transition   : $transition;
+  -webkit-transition: $transition;
+}
+/*--  Border Radius  --*/
+@mixin border-radius($radius) {
+  border-radius        : $radius;
+  -o-border-radius     : $radius;
+  -ms-border-radius    : $radius;
+  -moz-border-radius   : $radius;
+  -webkit-border-radius: $radius;
+} 
+/*--  Translate  --*/
+@mixin translate($translateX, $translateY) {
+  transform        : translate($translateX, $translateY);
+  -o-transform     : translate($translateX, $translateY);
+  -ms-transform    : translate($translateX, $translateY);
+  -moz-transform   : translate($translateX, $translateY);
+  -webkit-transform: translate($translateX, $translateY);
+} 
+/*--  Placeholder Color  --*/
+@mixin placeholder-color($color){
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color;
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+/*--  Background Size  --*/
+@mixin background-size($size){
+  background-size        : $size;
+  -o-background-size     : $size;
+  -moz-background-size   : $size;
+  -webkit-background-size: $size;
+}
+
+/*--  Circle --*/
+@mixin circle($size){
+  width : $size;
+  height: $size;
+  @include border-radius($size);
+}
+
+/*--  Box Shadow  --*/
+@mixin box-shadow($shadow){
+  box-shadow        : $shadow;
+  -moz-box-shadow   : $shadow;
+  -webkit-box-shadow: $shadow;
+}
+
+/*--  User Select  --*/
+@mixin user-select($select-option){
+  user-select        : $select-option;
+  -ms-user-select    : $select-option;
+  -moz-user-select   : $select-option;
+  -webkit-user-select: $select-option;
+}
