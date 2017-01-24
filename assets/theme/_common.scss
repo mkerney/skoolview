@@ -27,6 +27,7 @@ body {
     /*display         : flex;*/
     /*background-color: $main-bg-color;*/
 }
+
 .mb-0{
     margin-bottom: 0;
 }
@@ -36,6 +37,10 @@ body {
 .hidden{
     display:none;
 }
+
+
+
+
 /*--  Custom Checkbox Styles  --*/
 .custom-check{
     /*margin-bottom: 5px;*/
@@ -201,7 +206,11 @@ body {
         position  : relative;
         border-top: 4px solid transparent;
         .dashboard-wrapper{
-            padding-left: 248px; 
+            @include transition(all 0.3s ease-in-out 0s);  
+            margin: 0 0 0 248px;
+            &.dashboard-wrapper-open-wrapper{
+                margin: 0;                
+            }
         }
     }
 }
@@ -349,3 +358,5 @@ body {
 .content-wrapper-mobile{
     margin-top: 70px;
 }
+
+

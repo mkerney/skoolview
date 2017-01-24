@@ -27,18 +27,18 @@
             <nav class="navbar navbar-wrapper">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<!--                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </button>
+                        </button>-->
                         <a class="navbar-brand" href="#">
                             <img src="assets/images/school.png" alt=""/>
                             Skoolview
                         </a>
                     </div>
-                    <div id="navbar" class="collapse navbar-collapse">
+                    <div id="navbar" class="">
                         <ul class="nav navbar-nav navbar-right">
                             <li ><a href="javascript:void(0)">SIGN OUT <i class="fa fa-sign-out"></i></a></li>
                         </ul>
@@ -47,6 +47,7 @@
             </nav>
             <section class="main-content-wrapper">
                 <aside class="aside-wrapper">
+                    <a href="javascript:void(0);" class="toggle-aside"><i class="fa fa-bars"></i></a>
                     <div class="side-navigation-wrapper">
                         <div class="admin-profile-wrapper">
                             <img class="center-block img-responsive img-circle" src="assets/images/dp.jpg" alt=""/>
@@ -99,24 +100,24 @@
                         <div class="container-fluid">
                             <form class="form-horizontal">
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="announcementHeadline">Headline</label>
-                                    <div class="col-sm-7">
+                                    <label class="control-label col-md-2 col-sm-2" for="announcementHeadline">Headline</label>
+                                    <div class="col-md-7 col-sm-10">
                                         <input type="email" class="form-control" id="announcementHeadline" placeholder="Enter a headline">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-2" for="announcementMessage">Message</label>
-                                    <div class="col-sm-7"> 
+                                    <label class="control-label col-md-2 col-sm-2" for="announcementMessage">Message</label>
+                                    <div class="col-md-7 col-sm-10"> 
                                         <textarea class="form-control" id="announcementMessage" placeholder="Enter a message"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group custom-date-time">
-                                    <label class="control-label col-sm-2" for="announcementDate">Send On</label>
-                                    <div class="col-sm-3 pick-date"> 
+                                    <label class="control-label col-md-2 col-sm-2" for="announcementDate">Send On</label>
+                                    <div class="col-md-3 col-sm-5 pick-date"> 
                                         <input type="text" class="form-control datepicker" value="21-01-2017">
                                         <span class="glyphicon glyphicon-calendar"></span>
                                     </div>
-                                    <div class="col-sm-3"> 
+                                    <div class="col-md-3 col-sm-5"> 
                                         <div class="bootstrap-timepicker timepicker pick-time">
                                             <input id="timepicker1" type="text" class="form-control input-small">
                                             <span class="glyphicon glyphicon-time"></span>

@@ -13,7 +13,7 @@
   -ms-border-radius    : $radius;
   -moz-border-radius   : $radius;
   -webkit-border-radius: $radius;
-} 
+}   
 /*--  Translate  --*/
 @mixin translate($translateX, $translateY) {
   transform        : translate($translateX, $translateY);

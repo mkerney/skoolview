@@ -30,8 +30,8 @@
                     color     : $white;
                     background: transparent;
                     &:hover,
-                    &:focus,
-                    &:active{
+                        &:focus,
+                        &:active{
                         color        : $white;
                         background   : transparent;
                     }
@@ -44,8 +44,8 @@
                 text-shadow   : none;
                 font-family   : $roboto;
                 &:hover,
-                &:focus,
-                &:active{
+                    &:focus,
+                    &:active{
                     color        : $white;
                     background   : transparent;  
                 }
@@ -97,3 +97,51 @@
         }
     }
 }*/
+
+@media(min-width: 300px) and (max-width: 767px){ 
+    .navbar-wrapper{
+        .navbar-header{
+            float: left;  
+            .navbar-brand{
+                font-size: 21px;
+                margin: 0 0 0 15px !important;
+            }
+        }
+        .navbar-nav {
+            margin: 25px 0;
+            float: right;
+            li{
+                a{
+                    font-size: 14px;
+                }        
+            }  
+        }
+    }
+}
+
+@media (min-width:300px) and (max-width: 480px){
+    .navbar-wrapper{
+        .navbar-header{  
+            margin: 0;
+            float: left;  
+            .navbar-brand{
+                font-size: 18px;
+                padding: 0 0 0 70px;
+                margin: 0 !important;
+                img{
+                    top: 18px;
+                    width: 60px;
+                }
+            }
+        }
+        .navbar-nav {
+            li{
+                a{
+                    font-size: 13px;
+                    padding: 15px 0;
+                    width: auto;
+                }        
+            }   
+        }
+    }
+}
