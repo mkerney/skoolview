@@ -6776,8 +6776,9 @@ body {
 .parent-view-wrapper .content-wrapper-tabs {
   padding: 5px; }
   .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default {
-    padding: 6px 10px;
+    padding: 10px 10px;
     border: 0;
+    margin-bottom: 8px;
     border-radius: 3px;
     -o-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -6797,7 +6798,7 @@ body {
           display: block;
           position: relative;
           overflow: hidden;
-          padding: 18px 0;
+          padding: 15px 0;
           white-space: nowrap;
           padding-left: 40px;
           margin-right: 30px;
@@ -6814,8 +6815,8 @@ body {
             -moz-border-radius: 30px;
             -webkit-border-radius: 30px; }
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a .img-placeholder {
-            top: 14px;
-            left: 0;
+            top: 10px;
+            left: 0px;
             position: absolute; }
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a .panel-name {
             color: #000000;
@@ -6833,7 +6834,7 @@ body {
           position: absolute;
           font-size: 21px;
           right: 0;
-          top: 18px; }
+          top: 16px; }
         .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar {
           display: inline-block;
           position: absolute;
@@ -6890,10 +6891,10 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a {
-    padding: 12px 0 12px 40px;
-    font-size: 13px; }
+    padding: 15px 0 15px 40px;
+    font-size: 14px; }
     .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a img {
-      top: 6px; } }
+      top: 9px; } }
 html {
   position: relative;
   min-height: 100%; }
