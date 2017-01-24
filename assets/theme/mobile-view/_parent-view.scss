@@ -42,7 +42,7 @@
         .panel-list{
             .panel{
                 &.panel-default{
-                    padding      : 10px 10px;
+                    padding      : 5px 10px;
                     border       : 0;
                     margin-bottom: 8px;
                     @include border-radius(3px);
@@ -57,18 +57,20 @@
                             overflow: hidden;
                             > a{
                                 display      : block;
-                                position     : relative;
-                                overflow     : hidden;
                                 padding      : 15px 0;
+                                overflow     : hidden;
+                                position     : relative;
+                                font-size    : 14px;
                                 white-space  : nowrap;
                                 padding-left : 40px;
-                                margin-right: 30px;
+                                margin-right : 30px;
                                 text-overflow: ellipsis;
                                 img{
-                                    position: absolute;
+                                    top     : 10px;
                                     left    : 0;
-                                    top     : 14px;
-                                    @include circle(30px);
+                                    width   : 30px;
+                                    height  : 30px;
+                                    position: absolute;
                                 }
                                 .img-placeholder{
                                     top     : 10px;
@@ -80,8 +82,8 @@
                                     font-weight: bold;
                                 }
                                 &:active,&:focus,&:hover{
-                                    text-decoration: none;
                                     color          : $black;
+                                    text-decoration: none;
                                 }
                             }
                             .panel-date{
@@ -102,7 +104,7 @@
                                 position        : absolute;
                                 background-color: $white;
                                 margin-right: -300px;
-                                top: 0px;
+                                top: -4px;
                                 right: -16px;
                                 padding: 10px;
                                 @include box-shadow(-40px 0px 32px 0px rgba(255,255,255,0.9));
@@ -111,21 +113,7 @@
                                     margin: 0;
                                     > li{
                                         .sidebar-click{
-                                            display         : inline-block; 
-                                            text-align      : center;
-                                            background-color: $theme-color;
-                                            @include circle(40px);
-                                            > i{
-                                                color      : $save-bg-color;
-                                                font-size  : 25px;
-                                                line-height: 40px;
-                                            }
-                                            &.back-pin{
-                                                background-color: transparent;
-                                                i{
-                                                    color: $black;
-                                                }
-                                            }
+                                            display: block;
                                         }
                                     }
                                 }
@@ -142,9 +130,12 @@
                                 font-size: 12px;
                             }
                             .spare-task-pins{
-                                margin: 0;
-                                float : right;
+                                float        : right;
+                                margin-bottom: 5px; 
                                 > li{
+                                    &:not(:last-child){
+                                        padding-right: 15px;
+                                    }
                                     > a{
                                         text-align: center;
                                         display: block;
@@ -176,7 +167,7 @@
                                     padding: 15px 0 15px 40px;
                                     font-size:14px;
                                     img{
-                                        top: 9px;
+                                        top: 10px;
                                     }
                                 }
                             }

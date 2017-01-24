@@ -8154,21 +8154,9 @@ button.close {
 *, *:focus {
   outline: none !important; }
 
-/*--  LATO Text Regular  --*/
-@font-face {
-  font-family: 'lato';
-  src: url("../fonts/lato/lato.eot");
-  src: url("../fonts/lato/lato.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato.otf") format("otf"), url("../fonts/lato/lato.woff") format("woff"), url("../fonts/lato/lato.ttf") format("truetype"), url("../fonts/lato/lato.svg#svgFontName") format("svg"); }
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("../fonts/roboto-regular/roboto-regular.eot");
-  src: url("../fonts/roboto-regular/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular/roboto-regular.otf") format("otf"), url("../fonts/roboto-regular/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular/roboto-regular.svg#svgFontName") format("svg"); }
 body {
-  font-family: "roboto-regular";
-  color: #35342f;
-  /*justify-content : center;*/
-  /*display         : flex;*/
-  /*background-color: $main-bg-color;*/ }
+  font-family: "arial";
+  color: #35342f; }
 
 .mb-0 {
   margin-bottom: 0; }
@@ -9096,7 +9084,7 @@ body {
 .parent-view-wrapper .content-wrapper-tabs {
   padding: 5px; }
   .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default {
-    padding: 10px 10px;
+    padding: 5px 10px;
     border: 0;
     margin-bottom: 8px;
     border-radius: 3px;
@@ -9116,24 +9104,20 @@ body {
         overflow: hidden; }
         .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a {
           display: block;
-          position: relative;
-          overflow: hidden;
           padding: 15px 0;
+          overflow: hidden;
+          position: relative;
+          font-size: 14px;
           white-space: nowrap;
           padding-left: 40px;
           margin-right: 30px;
           text-overflow: ellipsis; }
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a img {
-            position: absolute;
+            top: 10px;
             left: 0;
-            top: 14px;
             width: 30px;
             height: 30px;
-            border-radius: 30px;
-            -o-border-radius: 30px;
-            -ms-border-radius: 30px;
-            -moz-border-radius: 30px;
-            -webkit-border-radius: 30px; }
+            position: absolute; }
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a .img-placeholder {
             top: 10px;
             left: 0px;
@@ -9142,8 +9126,8 @@ body {
             color: #000000;
             font-weight: bold; }
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a:active, .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a:focus, .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a:hover {
-            text-decoration: none;
-            color: #000000; }
+            color: #000000;
+            text-decoration: none; }
         .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-date {
           top: 0px;
           right: 0px;
@@ -9160,7 +9144,7 @@ body {
           position: absolute;
           background-color: #ffffff;
           margin-right: -300px;
-          top: 0px;
+          top: -4px;
           right: -16px;
           padding: 10px;
           box-shadow: -40px 0px 32px 0px rgba(255, 255, 255, 0.9);
@@ -9174,24 +9158,7 @@ body {
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline {
             margin: 0; }
             .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click {
-              display: inline-block;
-              text-align: center;
-              background-color: #2B3A42;
-              width: 40px;
-              height: 40px;
-              border-radius: 40px;
-              -o-border-radius: 40px;
-              -ms-border-radius: 40px;
-              -moz-border-radius: 40px;
-              -webkit-border-radius: 40px; }
-              .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click > i {
-                color: #29d9c2;
-                font-size: 25px;
-                line-height: 40px; }
-              .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click.back-pin {
-                background-color: transparent; }
-                .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click.back-pin i {
-                  color: #000000; }
+              display: block; }
     .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body {
       border: 0;
       padding: 0px;
@@ -9200,8 +9167,10 @@ body {
         margin: 0;
         font-size: 12px; }
       .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins {
-        margin: 0;
-        float: right; }
+        float: right;
+        margin-bottom: 5px; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins > li:not(:last-child) {
+          padding-right: 15px; }
         .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins > li > a {
           text-align: center;
           display: block; }
@@ -9214,7 +9183,7 @@ body {
     padding: 15px 0 15px 40px;
     font-size: 14px; }
     .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a img {
-      top: 9px; } }
+      top: 10px; } }
 html {
   position: relative;
   min-height: 100%; }
