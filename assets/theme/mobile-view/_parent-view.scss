@@ -104,7 +104,7 @@
                                 position        : absolute;
                                 background-color: $white;
                                 margin-right: -300px;
-                                top: 0px;
+                                top: -4px;
                                 right: -16px;
                                 padding: 10px;
                                 @include box-shadow(-40px 0px 32px 0px rgba(255,255,255,0.9));
@@ -113,21 +113,7 @@
                                     margin: 0;
                                     > li{
                                         .sidebar-click{
-                                            display         : inline-block; 
-                                            text-align      : center;
-                                            background-color: $theme-color;
-                                            @include circle(40px);
-                                            > i{
-                                                color      : $save-bg-color;
-                                                font-size  : 25px;
-                                                line-height: 40px;
-                                            }
-                                            &.back-pin{
-                                                background-color: transparent;
-                                                i{
-                                                    color: $black;
-                                                }
-                                            }
+                                            display: block;
                                         }
                                     }
                                 }
@@ -144,9 +130,12 @@
                                 font-size: 12px;
                             }
                             .spare-task-pins{
-                                margin: 0;
-                                float : right;
+                                float        : right;
+                                margin-bottom: 5px; 
                                 > li{
+                                    &:not(:last-child){
+                                        padding-right: 15px;
+                                    }
                                     > a{
                                         text-align: center;
                                         display: block;

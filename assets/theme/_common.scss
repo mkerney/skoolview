@@ -1,31 +1,9 @@
 *,*:focus{
     outline: none !important;
 }
-/*--  LATO Text Regular  --*/
-@font-face {
-    font-family: 'lato';
-    src: url('../fonts/lato/lato.eot'); 
-    src: url('../fonts/lato/lato.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/lato/lato.otf') format('otf'),
-        url('../fonts/lato/lato.woff') format('woff'),
-        url('../fonts/lato/lato.ttf')  format('truetype'),
-        url('../fonts/lato/lato.svg#svgFontName') format('svg'); 
-}
-@font-face {
-    font-family: 'roboto-regular';
-    src: url('../fonts/roboto-regular/roboto-regular.eot'); 
-    src: url('../fonts/roboto-regular/roboto-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/roboto-regular/roboto-regular.otf') format('otf'),
-        url('../fonts/roboto-regular/roboto-regular.woff') format('woff'),
-        url('../fonts/roboto-regular/roboto-regular.ttf')  format('truetype'),
-        url('../fonts/roboto-regular/roboto-regular.svg#svgFontName') format('svg'); 
-}
 body {
-    font-family     : $roboto;
-    color           : $accent-black;
-    /*justify-content : center;*/
-    /*display         : flex;*/
-    /*background-color: $main-bg-color;*/
+    font-family: "arial";
+    color : $accent-black;
 }
 
 .mb-0{
@@ -37,9 +15,6 @@ body {
 .hidden{
     display:none;
 }
-
-
-
 
 /*--  Custom Checkbox Styles  --*/
 .custom-check{
