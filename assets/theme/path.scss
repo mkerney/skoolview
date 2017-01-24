@@ -5,13 +5,18 @@ and open the template in the editor.
 */
 /* 
     Created on : 28 Jun, 2016, 12:19:52 PM
-    Author     : Ahex
+    Author     : Ahex  
 */
 
 @import "bootstrap-scss/_bootstrap.scss";
+<<<<<<< HEAD
 @import "fontawesome/font-awesome.scss";
 @import "../plugins/datepicker/css/bootstrap-datepicker.css";
 @import "../plugins/bootstrap-timepicker/css/bootstrap-timepicker.css";
+=======
+@import "../plugins/datepicker/css/bootstrap-datepicker.min.css";
+@import "../plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css";
+>>>>>>> fc496fd5b822cdd811fa0adb087491d821605aca
 @import "_mixins.scss";
 @import "_variable.scss";
 @import "_common.scss";
