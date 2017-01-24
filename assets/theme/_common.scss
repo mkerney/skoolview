@@ -232,6 +232,7 @@ body {
 } 
 
 
+
 /* custom staff selection check box */
 .custom-check-staff{
     /*margin-bottom: 5px;*/
@@ -278,6 +279,27 @@ body {
                         @include transition(all 0.3s ease-in-out);
                     }
                 }
+            }
+        }
+    }
+    .checkbox-inline{
+        padding-left: 0;
+    }
+} 
+
+/* custom staff selection check box */
+.custom-file-upload{
+    input[type="file"]{
+        display:none;
+    }
+    label{
+        &.file-inline{
+            i{
+                color      : $white;
+                display    : block;
+                font-size  : 26px;
+                font-weight: 400;
+                @include transition(all 0.3s ease-in-out);
             }
         }
     }
