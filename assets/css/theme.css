@@ -10,8 +10,8 @@ and open the template in the editor.
 */
 @import url(../fonts/font-awesome/css/font-awesome.css);
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1101,7 +1101,6 @@ a {
     color: #23527c;
     text-decoration: underline; }
   a:focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
 
@@ -2440,7 +2439,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -2903,7 +2901,6 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-    outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
@@ -5846,7 +5843,7 @@ button.close {
 body {
   font-family: "roboto-regular";
   color: #35342f;
-  justify-content: center;
+  /*justify-content : center;*/
   /*display         : flex;*/
   /*background-color: $main-bg-color;*/ }
 
@@ -6414,13 +6411,13 @@ body {
       white-space: nowrap;
       font-weight: normal;
       border-bottom: 3px solid #000000;
-      text-overflow: ellipses; }
+      text-overflow: ellipsis; }
       .content-wrapper .table-wrapper table thead tr th:first-child {
         width: 100px; }
     .content-wrapper .table-wrapper table tbody tr td {
+      font-size: 14px;
       padding: 28px 12px;
       overflow: hidden;
-      font-size: 14px;
       white-space: nowrap;
       text-overflow: ellipsis;
       border-bottom: 2px solid #99e394; }
@@ -6451,7 +6448,7 @@ body {
       font-size: 13px;
       padding: 12px 10px; }
     .content-wrapper .table-wrapper table tbody tr td {
-      font-size: 13;
+      font-size: 13px;
       padding: 12px 10px; } }
 .new-announcement-wrapper {
   background-color: #e8e8e8; }

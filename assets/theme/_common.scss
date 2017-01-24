@@ -23,7 +23,7 @@
 body {
     font-family     : $roboto;
     color           : $accent-black;
-    justify-content : center;
+    /*justify-content : center;*/
     /*display         : flex;*/
     /*background-color: $main-bg-color;*/
 }
@@ -58,7 +58,7 @@ body {
                         i{
                             opacity: 1;
                         }
-                    }
+                    }  
                 }
                 + span{
                     background-color: $white;

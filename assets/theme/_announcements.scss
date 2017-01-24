@@ -41,7 +41,7 @@
                         white-space  : nowrap;
                         font-weight  : normal;
                         border-bottom: 3px solid $black;
-                        text-overflow: ellipses;
+                        text-overflow: ellipsis;
                         &:first-child{
                             width: 100px;
                         }
@@ -51,9 +51,9 @@
             tbody{
                 tr{
                     td{
+                        font-size: $font-size-base;
                         padding      : 28px 12px;  
-                        overflow     : hidden;
-                        font-size    : 14px;
+                        overflow     : hidden;                        
                         white-space  : nowrap;
                         text-overflow: ellipsis;
                         border-bottom: 2px solid $border-green;
@@ -108,7 +108,7 @@
         .table-wrapper{
             table{
                 thead{
-                    tr{
+                    tr{  
                         th{
                             font-size: 13px;
                             padding: 12px 10px;
@@ -117,8 +117,8 @@
                 }
                 tbody{  
                     tr{
-                        td{
-                            font-size: 13;
+                        td{  
+                            font-size: 13px;
                             padding: 12px 10px;
                         }
                     }
