@@ -6,7 +6,7 @@ and open the template in the editor.
 */
 /* 
     Created on : 28 Jun, 2016, 12:19:52 PM
-    Author     : Ahex
+    Author     : Ahex  
 */
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -14,8 +14,8 @@ and open the template in the editor.
  */
 /* FONT PATH
  * -------------------------- */
-@import url(../plugins/datepicker/css/bootstrap-datepicker.css);
-@import url(../plugins/bootstrap-timepicker/css/bootstrap-timepicker.css);
+@import url(../plugins/datepicker/css/bootstrap-datepicker.min.css);
+@import url(../plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css);
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
