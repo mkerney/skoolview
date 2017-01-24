@@ -34,15 +34,19 @@
             margin      : 0;
             display     : inline-block;
             font-size   : 17px;
-            line-height : 50px;
+            line-height : 45px;
             padding-left: 60px;
             &:hover,&:active,&:focus{
                 color          : $white;
                 text-decoration: none;
             }
+            span{
+                display: inline-block;
+            }
             i{
                 font-size  : 26px;
                 margin-left: 15px;
+                vertical-align: middle;
             }
         }
         .custom-dropdown-header{

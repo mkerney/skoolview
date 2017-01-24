@@ -17,15 +17,17 @@ body {
     background-color: $theme-color;
     .footer-pills{
         > li{
-            width  : 1%;
-            display: table-cell;
+            width     : 1%;
+            display   : table-cell;
+            text-align: center;
             .footer-tabs{
                 color           : $white;
                 border          : 0;
                 margin          : 0;
+                display         : inline-block;
                 padding         : 10px 10px 7px;
+                font-size       : 12px;
                 background-color: transparent;
-                font-size: 12px;
                 &:hover,&:active,&:focus{
                     color           : $save-bg-color;
                     border          : 0;
@@ -69,9 +71,9 @@ body {
                 .dropup-list{
                     display      : block;
                     border-bottom: 1px solid $dropup-border-bottom; 
-/*                    &:not(:last-of-type){
-                        border-bottom: transparent;
-                    }*/
+                    /*                    &:not(:last-of-type){
+                                            border-bottom: transparent;
+                                        }*/
                     a{
                         width       : 100%;
                         padding     : 15px;
@@ -95,6 +97,22 @@ body {
                             margin: 0; 
                         }
                     } 
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 480px){
+    .footer-wrapper-mobile{
+        .footer-pills{
+            > li{
+                .footer-tabs{
+                    .footer-tab-icon{
+                        i{
+                            font-size: 21px;
+                        }
+                    }
                 }
             }
         }

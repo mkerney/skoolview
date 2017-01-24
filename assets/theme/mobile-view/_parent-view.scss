@@ -69,6 +69,11 @@
                                     top     : 14px;
                                     @include circle(30px);
                                 }
+                                .img-placeholder{
+                                    top     : 14px;
+                                    left    : 0;
+                                    position: absolute;
+                                }
                                 .panel-name{
                                     color      : $black;
                                     font-weight: bold;
@@ -146,6 +151,31 @@
                                             font-size: 24px;
                                             color    : $save-bg-color;
                                         }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width:480px){
+    .parent-view-wrapper{
+        .content-wrapper-tabs{
+            .panel-list{
+                .panel{
+                    &.panel-default{
+                        .panel-heading{
+                            .panel-title{
+                                > a{
+                                    padding: 12px 0 12px 40px;
+                                    font-size:13px;
+                                    img{
+                                        top: 6px;
                                     }
                                 }
                             }

@@ -360,3 +360,12 @@ body {
 }
 
 
+.img-placeholder{
+    @include square(30px);
+    @include border-radius(50%);
+    color: $white;
+    line-height:30px;
+    text-align: center;
+    display: inline-block;
+    background-color: $save-bg-color;
+}
