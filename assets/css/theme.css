@@ -6758,6 +6758,114 @@ body {
         -webkit-border-radius: 4px; }
 .parent-view-wrapper .content-wrapper-tabs {
   padding: 5px; }
+  .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default {
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); }
+    .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading {
+      border: 0;
+      padding: 0;
+      background-color: #ffffff; }
+      .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title {
+        position: relative;
+        overflow: hidden; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a {
+          display: block;
+          position: relative;
+          overflow: hidden;
+          padding: 18px 0;
+          white-space: nowrap;
+          padding-left: 40px;
+          margin-right: 30px;
+          text-overflow: ellipsis; }
+          .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a img {
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            -o-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px; }
+          .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a .panel-name {
+            color: #000000;
+            font-weight: bold; }
+          .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a:active, .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a:focus, .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a:hover {
+            text-decoration: none;
+            color: #000000; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-date {
+          top: 0px;
+          right: 0px;
+          color: #dddddd;
+          position: absolute;
+          font-size: 10px; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .sidebar-toggle {
+          position: absolute;
+          font-size: 21px;
+          right: 0;
+          top: 18px; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar {
+          display: inline-block;
+          position: absolute;
+          background-color: #ffffff;
+          margin-right: -300px;
+          top: 0px;
+          right: -16px;
+          padding: 10px;
+          box-shadow: -40px 0px 32px 0px rgba(255, 255, 255, 0.9);
+          -moz-box-shadow: -40px 0px 32px 0px rgba(255, 255, 255, 0.9);
+          -webkit-box-shadow: -40px 0px 32px 0px rgba(255, 255, 255, 0.9);
+          transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out; }
+          .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline {
+            margin: 0; }
+            .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click {
+              display: inline-block;
+              text-align: center;
+              background-color: #2B3A42;
+              width: 40px;
+              height: 40px;
+              border-radius: 40px;
+              -o-border-radius: 40px;
+              -ms-border-radius: 40px;
+              -moz-border-radius: 40px;
+              -webkit-border-radius: 40px; }
+              .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click > i {
+                color: #29d9c2;
+                font-size: 25px;
+                line-height: 40px; }
+              .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click.back-pin {
+                background-color: transparent; }
+                .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title .panel-sidebar .list-inline > li .sidebar-click.back-pin i {
+                  color: #000000; }
+    .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body {
+      border: 0;
+      padding: 0px;
+      text-align: justify; }
+      .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body p {
+        margin: 0;
+        font-size: 12px; }
+      .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins {
+        margin: 0;
+        float: right; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins > li > a {
+          text-align: center;
+          display: block; }
+          .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins > li > a i {
+            font-size: 24px;
+            color: #29d9c2; }
 
 html {
   position: relative;
