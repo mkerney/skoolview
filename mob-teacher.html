@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="assets/images/favicon.png">
 
-        <title>Skoolview | Parents</title>
+        <title>Skoolview | Teachers</title>
 
         <!-- Custom styles for this template -->
         <link href="assets/css/theme.css" rel="stylesheet" type="text/css"/>
@@ -21,29 +21,965 @@
         <![endif]-->
     </head>
 
-    <body>
+    <body class="footer-margin">
         <div class="skoolview-mobile-wrapper">
 
-            <nav class="navbar navbar-wrapper">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">
-                            <img src="assets/images/school.png" alt=""/>
-                            Skoolview
-                        </a>
+            <nav class="navbar navbar-fixed-top navbar-wrapper-mobile">
+                <div class="profile-information-wrapper">
+                    <div class="profile-picture">
+                        <img class="img-circle img-responsive" src="assets/images/parent.png" alt="culcheth"/>
+                        <a class="text-center sr-only" href="javascript:void(0);"><span>P</span></a>
                     </div>
-                    <div id="navbar" class="">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li ><a href="javascript:void(0)">SIGN OUT  <i class="fa fa-sign-out"></i></a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+                    <a href="javascript:void(0);" data-toggle="dropdown" class="profile-name dropdown-toggle">
+                        <span>Harry Emmut</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-header">
+                        <li>
+                            <a class="student-list" href="javascript:void(0);">
+                                <span class="list-profile-pic">
+                                    <small class="text-center">
+                                        <strong>2</strong>
+                                        <img src="assets/images/child-1.png" alt="culcheth"/>
+                                    </small>
+                                </span>
+                                <p class="list-name">
+                                    Kane Emmut 
+                                    <small class="list-designation">3A, Stanford High School</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="student-list" href="javascript:void(0);">
+                                <span class="list-profile-pic">
+                                    <small class="text-center">
+                                        <strong>3</strong>
+                                        <img src="assets/images/child-2.png" alt="culcheth"/>
+                                    </small>
+                                </span>
+                                <p class="list-name">
+                                    Emma Watson
+                                    <small class="list-designation">2A, Harvard High School</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="student-list" href="javascript:void(0);">
+                                <span class="list-profile-pic">
+                                    <small class="text-center">
+                                        <strong>3</strong>
+                                        <img src="assets/images/child-3.png" alt="culcheth"/>
+                                    </small>
+                                </span>
+                                <p class="list-name">
+                                    William Emmut
+                                    <small class="list-designation">4B, Harvard High School</small>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="student-list" href="javascript:void(0);">
+                                <span class="list-profile-pic">
+                                    <small class="text-center">
+                                        <img src="assets/images/teacher.png" alt="culcheth"/>
+                                    </small>
+                                </span>
+                                <p class="list-name">
+                                    <strong>Teachers View</strong>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0)"><img class="school-logo pull-right" src="assets/images/school.png" alt="culcheth"/></a>
                 </div>
             </nav>
-            <section class="">
-                
+
+            <section class="content-wrapper-mobile">
+                <div class="parent-view-wrapper">
+                    <ul class="nav nav-pills nav-justified content-wrapper-pills">
+                        <li class="active">
+                            <a class="footer-tabs" href="#all" data-toggle="pill">
+                                All
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-tabs" data-toggle="pill" href="#pinned">
+                                Pinned
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-tabs" data-toggle="pill" href="#archive">
+                                Archive
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content content-wrapper-tabs">
+                        <div id="all" class="tab-pane fade in active">
+                            <div class="panel-list">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-01">
+                                                    <img src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    <span class="panel-name">
+                                                        Road works starting from 15-Apr-2016
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-01" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-02">
+                                                    <img src="assets/images/birthday-card.png" alt="birthday-card"/>
+                                                    <span class="panel-name">
+                                                        Welcome Back Spring Term
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-02" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-03">
+                                                    <img src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    <span class="panel-name">
+                                                        JK Rowling visit, National Story Telling day 05-March-2016
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-03" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-04">
+                                                    <img src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    <span class="panel-name">
+                                                        Christmas Nativity play from children of year 2
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-04" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-05">
+                                                    <img src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    <span class="panel-name">
+                                                        Graffalo's child play in Rose theater.Buy 1 Get 1 Free 
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-05" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-06">
+                                                    <img src="assets/images/birthday-card.png" alt="birthday-card"/>
+                                                    <span class="panel-name">
+                                                       Harry Potter movie all day screening on 1-Jan-2016
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-06" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pinned" class="tab-pane fade">
+                            <div class="panel-list">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-11">
+                                                   <span class="img-placeholder">3</span>
+                                                    <span class="panel-name">
+                                                        JK Rowling visit, National Story Telling day 05-March-2016
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-11" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-12">
+                                                    <span class="img-placeholder">2A</span>
+                                                    <span class="panel-name">
+                                                        Welcome back to Spring Term
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-12" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-13">
+                                                    <span class="img-placeholder">2</span>
+                                                    <span class="panel-name">
+                                                       Christmas Nativity play from children of year 2
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-13" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="archive" class="tab-pane fade">
+                            <div class="panel-list">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-21">
+                                                    <img src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    <span class="panel-name">
+                                                        Road works starting from 15-Apr-2016
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-21" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-22">
+                                                    <img src="assets/images/birthday-card.png" alt="birthday-card"/>
+                                                    <span class="panel-name">
+                                                       Rock Climbing at Excel Arena Walton
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-22" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-23">
+                                                    <img src="assets/images/birthday-card.png" alt="birthday-card"/>
+                                                    <span class="panel-name">
+                                                        Gap Kids Wear Clearance Sale
+                                                    </span>
+                                                </a>
+                                                <small class="panel-date">10-Apr-2016</small>
+                                                <i class="fa fa-ellipsis-v sidebar-toggle"></i>
+                                                <div class="panel-sidebar">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-thumb-tack"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-clock-o"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click">
+                                                                <i class="fa fa-check"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="sidebar-click back-pin">
+                                                                <i class="fa fa-share"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse-23" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <p>
+                                                    Planned road works starting from 15-Apr-2016 near Clarence Street.
+                                                    Expect Traffic Congestion near school premises.
+                                                </p>
+                                                <ul class="list-inline spare-task-pins">
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-thumb-tack"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-clock-o"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="sidebar-click">
+                                                            <i class="fa fa-check"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <footer>
-                
+
+            <footer class="footer-wrapper-mobile">
+                <ul class="nav nav-pills nav-justified footer-pills">
+                    <li>
+                        <a class="footer-tabs" href="javascript:void(0);">
+                            <div class="footer-tab-icon">
+                                <i class="fa fa-bell"></i>
+                                <strong>3</strong>
+                            </div>
+                            <p>Announcements</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-tabs" href="javascript:void(0);">
+                            <div class="footer-tab-icon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <p>Timetable</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-tabs" href="javascript:void(0);">
+                            <div class="footer-tab-icon">
+                                <i class="fa fa-comment"></i>
+                                <strong>3</strong>
+                            </div>
+                            <p>Messages</p>
+                        </a>
+                    </li>
+                    <li class="dropup">
+                        <a class="dropdown-toggle footer-tabs" href="javascript:void(0);"  data-toggle="dropdown">
+                            <div class="footer-tab-icon">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                            <p>More</p>
+                        </a>
+                        <ul class="dropdown-menu custom-dropup-footer">
+                            <li class="dropup-list">
+                                <a class="student-list" href="javascript:void(0);">
+                                    <span>
+                                        <img src="assets/images/school-bus.png" alt="culcheth"/>
+                                    </span>
+                                    <p>Track School Bus</p>
+                                </a>
+                            </li>
+                            <li class="dropup-list">
+                                <a class="student-list" href="javascript:void(0);">
+                                    <span>
+                                        <img src="assets/images/breakfast.png" alt="culcheth"/>
+                                    </span>
+                                    <p>Breakfast Club</p>
+                                </a>
+                            </li>
+                            <li class="dropup-list">
+                                <a class="student-list" href="javascript:void(0);">
+                                    <span>
+                                        <img src="assets/images/school-club.png" alt="culcheth"/>
+                                    </span>
+                                    <p>After School Club</p>
+                                </a>
+                            </li>
+                            <li class="dropup-list">
+                                <a class="student-list" href="javascript:void(0);">
+                                    <span>
+                                        <img src="assets/images/school-sports.png" alt="culcheth"/>
+                                    </span>
+                                    <p>Sports Club</p>
+                                </a>
+                            </li>
+                            <li class="dropup-list">
+                                <a class="student-list" href="javascript:void(0);">
+                                    <span>
+                                        <i class="fa fa-cog"></i>
+                                    </span>
+                                    <p>Settings</p>
+                                </a>
+                            </li>
+                            <li class="dropup-list">
+                                <a class="student-list" href="javascript:void(0);">
+                                    <span>
+                                        <i class="fa fa-info-circle"></i>
+                                    </span>
+                                    <p>About Skool View & Help</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </footer>
         </div>
 
