@@ -26,6 +26,9 @@
                     color          : $white;
                     text-decoration: none;
                 }
+                &.img-placeholder{
+                    background-color: transparent;
+                }
             }
         }
         .profile-name{
@@ -40,6 +43,10 @@
                 color          : $white;
                 text-decoration: none;
             }
+            &.teacher-chat{ 
+                line-height: 22px;
+                padding-top: 6px;
+            }
             span{
                 display: inline-block;
             }
@@ -47,6 +54,16 @@
                 font-size  : 26px;
                 margin-left: 15px;
                 vertical-align: middle;
+            }
+            small{
+                display  : block;
+                font-size: 12px;
+                &.teacher-profile{
+                    color: $custom-uncheck-color;
+                    i{
+                        margin-left: 6px;
+                    }
+                }
             }
         }
         .custom-dropdown-header{

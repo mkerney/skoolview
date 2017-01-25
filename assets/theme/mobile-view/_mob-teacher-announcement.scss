@@ -1,0 +1,83 @@
+.main-view-wrapper{
+    .announcement-content{
+        padding: 5px;
+        .announcement-wrapper-mob{
+            margin-bottom: 10px;
+            .announcement-date{
+                color           : $black;
+                width           : 100px;
+                height          : 40px;
+                margin          : 0 auto;
+                padding         : 6px 10px;
+                font-size       : 14px;
+                text-align      : center;
+                border-radius   : 50px;
+                margin-bottom   : 7px;
+                background-color: $save-bg-color;
+                @include box-shadow(0px 1px 2px rgba(0, 0, 0, 0.4));
+                > span{
+                    line-height: 30px;
+                }
+            }
+            .announcement-text{
+                color           : $black;
+                height          : 60px;
+                padding         : 6px 35px 6px 10px;
+                position        : relative;
+                font-size       : 11px;
+                text-align      : left;
+                border-radius   : 3px;
+                background-color: rgb(255, 255, 255);
+                @include box-shadow(0px 1px 2px rgba(0, 0, 0, 0.4));
+                > small{
+                    position: absolute;
+                    top     : 4px;
+                    right   : 6px;
+                    color   : $gray;
+                }
+            }
+        }
+    }
+}
+
+.announcement-footer-wrapper{
+    .footer-wrapper-mobile{
+        height: 62px;
+        form{
+            position: relative;
+            padding : 0 30px 0 35px;
+            .announcement-input-wrapper{
+                display: inline-block;
+                padding: 16px 10px;
+                position: absolute;
+                left: 0;
+                top: 0px;
+            }
+            .submit-wrapper{
+                padding: 9px;
+                display: block;
+                width  : 100%;
+                input{
+                    height: 44px;
+                    display: block;
+                    width: 100%;
+                    margin-right: 40px;
+                    @include border-radius(10px);
+                }
+            }
+            button{
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                border: 0;
+                padding: 13px 10px;
+                background-color: transparent;
+                display: inline-block;
+                i{
+                    color: $white;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
