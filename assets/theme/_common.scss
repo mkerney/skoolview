@@ -189,6 +189,50 @@ body {
         }
     }
 }
+
+
+/* custom school selection check box */
+.custom-check-school{
+    /*margin-bottom: 5px;*/
+    label{
+        &.checkbox-inline{
+            input[type="checkbox"]{
+                display:none;
+                &:checked {
+                    +  span{
+                        opacity: 1;
+                        @include border-radius(50%);
+                        @include transition(all 0.3s ease-in-out);
+                    }
+                }
+                + span{
+                    color           : $white;
+                    width           : 30px;
+                    cursor          : pointer;
+                    height          : 30px;
+                    margin          : -1px 10px 0 0;
+                    display         : inline-block;
+                    opacity         : 0.6;
+                    position        : relative;
+                    font-size       : 14px;
+                    text-align      : center;
+                    line-height     : 24px;
+                    margin-right    : 10px;
+                    vertical-align  : middle;
+                    @include border-radius(50%);
+                    @include transition(all 0.3s ease-in-out);
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .checkbox-inline{
+        padding-left: 0;
+    }
+} 
+
 /* custom student selection check box */
 .custom-check-student{
     /*margin-bottom: 5px;*/
@@ -284,20 +328,25 @@ body {
     }
     .checkbox-inline{
         padding-left: 0;
+        padding-top : 0; 
     }
 } 
 
-/* custom staff selection check box */
+/* custom File Upload */
 .custom-file-upload{
+    cursor: pointer;
     input[type="file"]{
         display:none;
     }
     label{
+        cursor: pointer;
         &.file-inline{
+            margin-bottom: 0;
             i{
                 color      : $white;
                 display    : block;
                 font-size  : 26px;
+                line-height: 30px;
                 font-weight: 400;
                 @include transition(all 0.3s ease-in-out);
             }

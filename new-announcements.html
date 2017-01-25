@@ -27,12 +27,12 @@
             <nav class="navbar navbar-wrapper">
                 <div class="container-fluid">
                     <div class="navbar-header">
-<!--                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>-->
+                        <!--                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>-->
                         <a class="navbar-brand" href="#">
                             <img src="assets/images/school.png" alt="school"/>
                             Skoolview
@@ -113,11 +113,11 @@
                                 </div>
                                 <div class="form-group custom-date-time">
                                     <label class="control-label col-md-2 col-sm-2">Send On</label>
-                                    <div class="col-md-3 col-sm-5 pick-date"> 
+                                    <div class="col-md-3 col-sm-5 glyphicon-trigger pick-date"> 
                                         <input type="text" class="form-control datepicker" value="21-01-2017">
-                                        <span class="glyphicon glyphicon-calendar"></span>
+                                        <span class="glyphicon glyphicon-calendar "></span>
                                     </div>
-                                    <div class="col-md-3 col-sm-5"> 
+                                    <div class="col-md-3 col-sm-5 glyphicon-trigger"> 
                                         <div class="bootstrap-timepicker timepicker pick-time">
                                             <input id="timepicker1" type="text" class="form-control input-small">
                                             <span class="glyphicon glyphicon-time"></span>
@@ -129,13 +129,20 @@
                                     <div class="col-sm-5"> 
                                         <p class="text-left">Students</p>
                                         <div class="recepients students">
-                                            <img class="img-responsive" src="assets/images/culcheth.png" alt="culcheth"/>
+                                            <div class="custom-check-school">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" id="checkbox-student" name="checkbox-class" value=""/>
+                                                    <span>
+                                                        <img class="img-responsive" src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <div class="selection">
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-1" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class" name="checkbox-1" value=""/>
                                                                 <span>
                                                                     1
                                                                 </span>
@@ -145,7 +152,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox" checked="true"  name="checkbox-1a" value=""/>
+                                                                <input type="checkbox"  class="checkbox-classes checkbox-section"  name="checkbox-1a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -155,7 +162,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-1b" value=""/>
+                                                                <input type="checkbox"  class="checkbox-classes checkbox-section" name="checkbox-1b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -165,7 +172,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-1c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -173,11 +180,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-2" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-2" value=""/>
                                                                 <span>
                                                                     2
                                                                 </span>
@@ -187,7 +194,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-2a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -197,7 +204,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox" checked="true" name="checkbox-2b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -207,7 +214,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-2c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -215,11 +222,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-3" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-3" value=""/>
                                                                 <span>
                                                                     3
                                                                 </span>
@@ -229,7 +236,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox" checked="true" name="checkbox-3a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -239,7 +246,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-3b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -249,7 +256,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox" checked="true" name="checkbox-3c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -257,11 +264,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-4" value=""/>
+                                                                <input type="checkbox"  class="checkbox-classes checbox-class" name="checkbox-4" value=""/>
                                                                 <span>
                                                                     4
                                                                 </span>
@@ -271,7 +278,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-4a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -281,7 +288,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-4b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -291,7 +298,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-4c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -299,11 +306,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-5" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-5" value=""/>
                                                                 <span>
                                                                     5
                                                                 </span>
@@ -313,7 +320,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-5a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-5a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -323,7 +330,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-5b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-5b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -333,7 +340,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-5c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-5c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -341,11 +348,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-6" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-6" value=""/>
                                                                 <span>
                                                                     6
                                                                 </span>
@@ -355,7 +362,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-6a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-6a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -365,7 +372,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-6b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-6b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -375,7 +382,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-6c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-6c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -383,11 +390,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-7" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-7" value=""/>
                                                                 <span>
                                                                     7
                                                                 </span>
@@ -397,7 +404,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-7a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-7a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -407,7 +414,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-7b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-7b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -417,7 +424,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-7c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-7c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -425,11 +432,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-8" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-8" value=""/>
                                                                 <span>
                                                                     8
                                                                 </span>
@@ -439,7 +446,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-8a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-8a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -449,7 +456,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-8b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-8b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -459,7 +466,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-8c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-8c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -467,11 +474,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-9" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-9" value=""/>
                                                                 <span>
                                                                     9
                                                                 </span>
@@ -481,7 +488,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-9a" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-9a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -491,7 +498,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox9b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox9b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -501,7 +508,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-9c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-9c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -509,11 +516,11 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                                <ul class="list-inline">
+                                                <ul class="list-inline class-section">
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox1-10" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox1-10" value=""/>
                                                                 <span>
                                                                     10
                                                                 </span>
@@ -523,7 +530,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-10a" value=""/>
+                                                                <input type="checkbox"  class="checkbox-classes checkbox-section" name="checkbox-10a" value=""/>
                                                                 <span>
                                                                     A
                                                                 </span>
@@ -533,7 +540,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-10b" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-10b" value=""/>
                                                                 <span>
                                                                     B
                                                                 </span>
@@ -543,7 +550,7 @@
                                                     <li>
                                                         <div class="custom-check-student">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-10c" value=""/>
+                                                                <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-10c" value=""/>
                                                                 <span>
                                                                     C
                                                                 </span>
@@ -557,13 +564,20 @@
                                     <div class="col-sm-5"> 
                                         <p class="text-left">Staff</p>
                                         <div class="recepients staff">
-                                            <img class="img-responsive" src="assets/images/culcheth.png" alt="culcheth"/>
+                                            <div class="custom-check-school">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" id="checkbox-staff" name="checkbox-staff" value=""/>
+                                                    <span>
+                                                        <img class="img-responsive" src="assets/images/culcheth.png" alt="culcheth"/>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <div class="selection">
                                                 <ul class="list-inline">
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s01" value=""/>
+                                                                <input type="checkbox" class="staff-member" name="checkbox-s01" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -574,7 +588,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s-02" value=""/>
+                                                                <input type="checkbox"  class="staff-member" name="checkbox-s-02" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -585,7 +599,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s03" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s03" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -596,7 +610,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s04" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s04" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -607,7 +621,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s05" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s05" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -618,7 +632,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s06" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s06" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -629,7 +643,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s07" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s07" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -640,7 +654,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s08" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s08" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -651,7 +665,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s09" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s09" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -662,7 +676,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkboxs-10" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkboxs-10" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -673,7 +687,7 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s11" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s11" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
@@ -684,11 +698,44 @@
                                                     <li>
                                                         <div class="custom-check-staff">
                                                             <label class="checkbox-inline">
-                                                                <input type="checkbox"  name="checkbox-s12" value=""/>
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s12" value=""/>
                                                                 <span>
                                                                     <i class="fa fa-check"></i>
                                                                 </span>
                                                                 Nancy Drew
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-check-staff">
+                                                            <label class="checkbox-inline">
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s13" value=""/>
+                                                                <span>
+                                                                    <i class="fa fa-check"></i>
+                                                                </span>
+                                                                Matthew Hayden
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-check-staff">
+                                                            <label class="checkbox-inline">
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s14" value=""/>
+                                                                <span>
+                                                                    <i class="fa fa-check"></i>
+                                                                </span>
+                                                                Laura Chris
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="custom-check-staff">
+                                                            <label class="checkbox-inline">
+                                                                <input type="checkbox" class="staff-member"  name="checkbox-s15" value=""/>
+                                                                <span>
+                                                                    <i class="fa fa-check"></i>
+                                                                </span>
+                                                                James Harden
                                                             </label>
                                                         </div>
                                                     </li>
@@ -740,5 +787,13 @@
         <script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
         <!-- Custom JavaScript -->
         <script src="assets/js/custom.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            //Date Picker
+            $('.datepicker').datepicker();
+
+            //Time Picker
+            $('#timepicker1').timepicker();
+            
+        </script>
     </body>
 </html>

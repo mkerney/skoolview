@@ -6,6 +6,11 @@
             display   : table-cell;
             padding   : 15px 15px 10px;
             text-align: center;
+            &:first-child{
+                a{
+                    margin: 0 10px;
+                }
+            }
             &.active{
                 a{
                     background-color: transparent;
@@ -52,6 +57,13 @@
                         border          : 0;
                         padding         : 0;
                         background-color: $white;
+                        &.panel-heading-open{
+                            .panel-title{
+                                .panel-sidebar{
+                                    margin: 0;
+                                }
+                            }
+                        }
                         .panel-title{
                             position: relative;
                             overflow: hidden;
@@ -89,15 +101,16 @@
                             .panel-date{
                                 top      : 0px;
                                 right    : 0px;
-                                color    : $light-gray;
+                                color    : $gray;
                                 position : absolute;
                                 font-size: 10px;
                             }
-                            .sidebar-toggle{
+                            .event-controls{
                                 position : absolute;
                                 font-size: 21px;
                                 right    : 0;
                                 top      : 16px;
+                                @include transition(all 0.3s ease-in-out);
                             }
                             .panel-sidebar{
                                 display         : inline-block;
@@ -112,7 +125,7 @@
                                 .list-inline{
                                     margin: 0;
                                     > li{
-                                        .sidebar-click{
+                                        .event-click{
                                             display: block;
                                         }
                                     }
