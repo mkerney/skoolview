@@ -8595,20 +8595,28 @@ body {
     .navbar-wrapper .navbar-nav li a {
       font-size: 14px; } }
 @media (min-width: 300px) and (max-width: 480px) {
-  .navbar-wrapper .navbar-header {
-    margin: 0;
-    float: left; }
-    .navbar-wrapper .navbar-header .navbar-brand {
-      font-size: 18px;
-      padding: 0 0 0 70px;
-      margin: 0 !important; }
-      .navbar-wrapper .navbar-header .navbar-brand img {
-        top: 18px;
-        width: 60px; }
-  .navbar-wrapper .navbar-nav li a {
-    font-size: 13px;
-    padding: 15px 0;
-    width: auto; } }
+  .navbar-wrapper {
+    height: auto; }
+    .navbar-wrapper .navbar-header {
+      margin: 0;
+      float: left; }
+      .navbar-wrapper .navbar-header .navbar-brand {
+        display: inline-block;
+        font-size: 18px;
+        height: auto;
+        line-height: 62px;
+        margin: 0 !important;
+        padding: 0 0 0 50px;
+        vertical-align: middle; }
+        .navbar-wrapper .navbar-header .navbar-brand img {
+          top: 12px;
+          width: 35px; }
+    .navbar-wrapper .navbar-nav {
+      margin: 8px 0; }
+      .navbar-wrapper .navbar-nav li a {
+        font-size: 13px;
+        padding: 15px 0;
+        width: auto; } }
 .aside-wrapper {
   transition: all 0.3s ease-in-out 0s;
   -ms-transition: all 0.3s ease-in-out 0s;
@@ -8629,7 +8637,7 @@ body {
   .aside-wrapper.aside-open-wrapper {
     left: -248px; }
     .aside-wrapper.aside-open-wrapper .toggle-aside {
-      right: -45px; }
+      left: 0; }
   .aside-wrapper .toggle-aside {
     transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
@@ -8641,13 +8649,14 @@ body {
     -ms-border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
     -webkit-border-radius: 0 4px 4px 0;
-    top: 0;
-    right: -34px;
+    top: 104px;
+    left: 240px;
     color: #fff;
     border: 1px solid #2b3a42;
     padding: 5px 10px;
-    position: absolute;
-    background-color: #2b3a42; }
+    position: fixed;
+    background-color: #2b3a42;
+    z-index: 9999; }
   .aside-wrapper .side-navigation-wrapper .admin-profile-wrapper {
     padding: 30px 0;
     text-align: center;
@@ -8683,6 +8692,9 @@ body {
     width: 200px; }
     .aside-wrapper.aside-open-wrapper {
       left: -200px; }
+    .aside-wrapper .toggle-aside {
+      top: 71px;
+      left: 192px; }
 
   .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
     margin: 0 0 0 200px; } }
@@ -8903,18 +8915,28 @@ body {
     .announcement-submit-wrapper button:not(:last-child) {
       margin-right: 0px; } }
 @media (min-width: 300px) and (max-width: 767px) {
-  .new-announcement-wrapper h3 {
-    margin: 15px 0;
-    overflow: hidden;
-    line-height: 80px;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
-  .new-announcement-wrapper form {
-    max-width: 100%; }
-    .new-announcement-wrapper form .custom-date-time .pick-date {
-      margin: 0 0 15px; }
-    .new-announcement-wrapper form .announcement-submit-wrapper button {
-      margin: 0 15px 15px 0; }
+  .new-announcement-wrapper {
+    padding: 15px 0; }
+    .new-announcement-wrapper h3 {
+      line-height: 21px;
+      margin: 0 0 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .new-announcement-wrapper form {
+      max-width: 100%; }
+      .new-announcement-wrapper form .custom-date-time .pick-date {
+        margin: 0 0 15px; }
+      .new-announcement-wrapper form .announcement-submit-wrapper {
+        margin: 0;
+        padding: 0; }
+        .new-announcement-wrapper form .announcement-submit-wrapper .pull-right {
+          float: none !important;
+          width: 100%;
+          text-align: center; }
+        .new-announcement-wrapper form .announcement-submit-wrapper button {
+          margin: 0 15px 15px 0; }
+      .new-announcement-wrapper form .recepient-wrapper p {
+        margin: 10px 0; }
 
   .content-wrapper .search-something-wrapper {
     margin: 0 0 15px; }

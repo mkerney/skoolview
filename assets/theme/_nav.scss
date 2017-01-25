@@ -121,20 +121,26 @@
 
 @media (min-width:300px) and (max-width: 480px){
     .navbar-wrapper{
+        height:auto;
         .navbar-header{  
             margin: 0;
             float: left;  
             .navbar-brand{
+                display: inline-block;
                 font-size: 18px;
-                padding: 0 0 0 70px;
+                height: auto;
+                line-height: 62px;
                 margin: 0 !important;
+                padding: 0 0 0 50px;
+                vertical-align: middle;
                 img{
-                    top: 18px;
-                    width: 60px;
+                    top: 12px;
+                    width: 35px;
                 }
             }
         }
         .navbar-nav {
+            margin: 8px 0;
             li{
                 a{
                     font-size: 13px;

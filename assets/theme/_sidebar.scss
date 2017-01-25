@@ -14,19 +14,20 @@
     &.aside-open-wrapper{
         left: -248px; 
         .toggle-aside{
-            right: -45px;
+            left: 0;
         }
     }
     .toggle-aside{
         @include transition(all 0.3s ease-in-out 0s);  
         @include border-radius(0 4px 4px 0);
-        top             : 0;
-        right           : -34px;
+        top: 104px;
+        left: 240px;
         color           : #fff;
         border          : 1px solid #2b3a42;
         padding         : 5px 10px;
-        position        : absolute;
+        position        : fixed;
         background-color: #2b3a42;
+        z-index: 9999;
     }
     .side-navigation-wrapper{
         .admin-profile-wrapper{
@@ -82,6 +83,11 @@
         width: 200px;
         &.aside-open-wrapper{
             left: -200px;
+
+        }
+        .toggle-aside{
+            top: 71px;
+            left: 192px;
         }
     }
     .skoolview-wrapper{

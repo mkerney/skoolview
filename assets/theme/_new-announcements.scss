@@ -203,12 +203,12 @@
 
 }
 
-@media(min-width: 300px) and (max-width:767px){
+@media(min-width: 300px) and (max-width:767px){   
     .new-announcement-wrapper{
+        padding: 15px 0;
         h3 {
-            margin       : 15px 0; 
-            overflow     : hidden;
-            line-height  : 80px;
+            line-height: 21px;
+            margin: 0 0 10px;
             white-space  : nowrap;
             text-overflow: ellipsis;
         }
@@ -220,8 +220,20 @@
                 }
             }
             .announcement-submit-wrapper{
+                margin: 0;
+                padding: 0;
+                .pull-right{
+                    float: none !important;
+                    width: 100%;
+                    text-align: center;
+                }
                 button{
                     margin: 0 15px 15px 0;
+                }
+            }
+            .recepient-wrapper{
+                p{
+                    margin: 10px 0;
                 }
             }
         }        
