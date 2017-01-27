@@ -1,16 +1,16 @@
 $(document).ready(function () {
-    //Window Height
-//    function setHeight() {
-//        var wHeight = $(window).height();
-//        var headerHeight = $(".navbar-wrapper").height();
-//        var actualHeight = wHeight - headerHeight - 5;
-//        $(".media-height").css('min-height', actualHeight);
-//    }
-    //Window Height on resize
-//    setHeight();
-//    $(window).resize(function () {
-//        setHeight();
-//    });
+//    Window Height
+    function setHeight() {
+        var wHeight = $(window).height();
+        var headerHeight = $(".navbar-wrapper").height();
+        var actualHeight = wHeight - headerHeight - 5;
+        $(".media-height").css('min-height', actualHeight);
+    }
+//    Window Height on resize
+    setHeight();
+    $(window).resize(function () {
+        setHeight();
+    });
 
     /*-- On Click Toggle Aside Wrapper --*/
     function setToggleAside() {
@@ -31,30 +31,30 @@ $(document).ready(function () {
     }
     setToggleAside();
     $(window).resize(function () {
-        setToggleAside();
+//        setToggleAside();
     });
-});
 
-$('.panel-heading > .panel-title > i.fa.fa-ellipsis-v').on("click", function () {
-    $(".panel-heading").removeClass("panel-heading-open");
-    $(this).closest(".panel-heading").addClass("panel-heading-open");
-});
-$('.panel-sidebar > ul > li > a.back-pin').on("click", function () {
-    $(this).closest(".panel-heading").removeClass("panel-heading-open");
-});
-$(document).on('click', '.collapse-click', function () {
-    $(".panel-heading").find('.event-controls').css("opacity", "1").css("pointer-events", "visible");
-    if ($(this).hasClass('collapsed')) {
-        $(this).parent().find('.event-controls').css("opacity", "1").css("pointer-events", "visible");
-    } else {
-        $(this).parent().find('.event-controls').css("opacity", "0").css("pointer-events", "none");
-    }
-});
+
+    $('.panel-heading > .panel-title > i.fa.fa-ellipsis-v').on("click", function () {
+        $(".panel-heading").removeClass("panel-heading-open");
+        $(this).closest(".panel-heading").addClass("panel-heading-open");
+    });
+    $('.panel-sidebar > ul > li > a.back-pin').on("click", function () {
+        $(this).closest(".panel-heading").removeClass("panel-heading-open");
+    });
+    $(document).on('click', '.collapse-click', function () {
+        $(".panel-heading").find('.event-controls').css("opacity", "1").css("pointer-events", "visible");
+        if ($(this).hasClass('collapsed')) {
+            $(this).parent().find('.event-controls').css("opacity", "1").css("pointer-events", "visible");
+        } else {
+            $(this).parent().find('.event-controls').css("opacity", "0").css("pointer-events", "none");
+        }
+    });
 
 
 
 //$(function () {
-    //Class Multiple check
+//Class Multiple check
     $("#checkbox-student").change(function () {
         var status = this.checked;
         $('.checkbox-classes').each(function () {
@@ -71,7 +71,7 @@ $(document).on('click', '.collapse-click', function () {
         }
     });
 
-    //Section Multiple check
+//Section Multiple check
     $(".class-section .checbox-class").change(function () {
         var status = this.checked;
         $(this).parents('.class-section').find(".checkbox-section")[0].checked = status;
@@ -88,7 +88,7 @@ $(document).on('click', '.collapse-click', function () {
         }
     });
 
-    //Staff Multiple check
+//Staff Multiple check
     $("#checkbox-staff").change(function () {
         var status = this.checked;
         $('.staff-member').each(function () {
@@ -108,7 +108,7 @@ $(document).on('click', '.collapse-click', function () {
         }
     });
 
-    //Announcement Multiple check
+//Announcement Multiple check
     $("#announcementCheckbox").change(function () {
         var status = this.checked;
         $('.announcementCheck').each(function () {
@@ -126,13 +126,8 @@ $(document).on('click', '.collapse-click', function () {
             $("#announcementCheckbox")[0].checked = true;
         }
     });
-
-
-
-
-
-
     $('.glyphicon-trigger span').on('click', function () {
         $(this).siblings('.form-control').focus();
     });
-//});
+
+});

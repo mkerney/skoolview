@@ -3,6 +3,7 @@
     h3{
         margin     : 0;
         line-height: 80px;
+        overflow   : hidden;
     }
     form{
         max-width: 85%;
@@ -251,8 +252,12 @@
         }
     } 
 }
-@media(min-width: 300px) and (max-width:767px){
+@media(min-width: 200px) and (max-width:767px){
     .new-announcement-wrapper{
+        h3{
+            font-size: 15px;
+            margin: 20px 0 5px;
+        }
         form{
             .announcement-submit-wrapper{
                 button {
@@ -261,6 +266,32 @@
                     font-size: 12px;
                 }
             }
+            .recepient-wrapper{
+                .recepients{
+                    &.staff{
+                        .selection{
+                            max-height: 450px;
+                            overflow: auto;
+                            ul{
+                                width: 100%;
+                                min-width: 200px;
+                                overflow: hidden;
+                                height: 570px;
+                                max-height: 570px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }  
+}
+@media(min-width: 200px) and (max-width:480px){
+    .new-announcement-wrapper{
+        h3{
+            font-size: 15px;
+            margin: 20px 0 5px;
         }
     }
 }

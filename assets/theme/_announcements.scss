@@ -12,7 +12,7 @@
             white-space  : nowrap;
             text-overflow: ellipsis;
             &:focus{
-                border-color: $light-gray-4;
+                border-color: $light-gray-4;  
             }
         }
         a{

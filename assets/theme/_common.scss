@@ -180,7 +180,6 @@ body {
     .main-content-wrapper{
         position  : relative;
         border-top: 4px solid transparent;
-        overflow: hidden;
         .dashboard-wrapper{
             @include transition(all 0.3s ease-in-out 0s);  
             margin: 0 0 0 248px;
