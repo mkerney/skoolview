@@ -8340,7 +8340,8 @@ body {
   background-color: #ffffff; }
   .skoolview-wrapper .main-content-wrapper {
     position: relative;
-    border-top: 4px solid transparent; }
+    border-top: 4px solid transparent;
+    overflow: hidden; }
     .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
       transition: all 0.3s ease-in-out 0s;
       -ms-transition: all 0.3s ease-in-out 0s;
