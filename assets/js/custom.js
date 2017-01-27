@@ -15,18 +15,19 @@ $(function () {
 
     /*-- On Click Toggle Aside Wrapper --*/
     function setToggleAside() {
-        if ($(window).width() < 767) {
+        if ($(window).width() < 1025) {
             $(".toggle-aside").show();
             $(".aside-wrapper").addClass("aside-open-wrapper");
             $(".dashboard-wrapper").addClass("dashboard-wrapper-open-wrapper");
-            $(document).on("click", ".toggle-aside", function () {
+            $(document).on("click", ".toggle-aside", function (e) {
+                e.stopImmediatePropagation();
                 $(".aside-wrapper").toggleClass("aside-open-wrapper");
                 $(".dashboard-wrapper").toggleClass("dashboard-wrapper-open-wrapper");
             });
         } else {
             $(".toggle-aside").hide();
-            $(".aside-wrapper").removeClass("aside-open-wrapper");
-            $(".dashboard-wrapper").removeClass("dashboard-wrapper-open-wrapper");
+          /*  $(".aside-wrapper").removeClass("aside-open-wrapper");
+            $(".dashboard-wrapper").removeClass("dashboard-wrapper-open-wrapper");*/
         }
     }
     setToggleAside();

@@ -8767,7 +8767,7 @@ body {
       left: 192px; }
 
   .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
-    margin: 0 0 0 200px; } }
+    margin: 0 -200px 0 200px; } }
 .content-wrapper {
   padding: 30px 15px 15px 50px; }
   .content-wrapper .search-something-wrapper {
