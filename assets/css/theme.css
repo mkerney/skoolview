@@ -8744,9 +8744,10 @@ body {
   .aside-wrapper .back {
     left: 10px;
     position: absolute;
-    top: 36px; }
+    top: 36px;
+    display: none; }
   .aside-wrapper.aside-open-wrapper {
-    left: -248px; }
+    left: 0; }
     .aside-wrapper.aside-open-wrapper .toggle-aside {
       left: 0; }
   .aside-wrapper .side-navigation-wrapper .admin-profile-wrapper {
@@ -8779,6 +8780,8 @@ body {
 @media (min-width: 768px) and (max-width: 1025px) {
   .skoolview-wrapper .main-content-wrapper {
     position: static; }
+    .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
+      margin: 0; }
 
   .toggle-aside {
     top: 0;
@@ -8787,8 +8790,15 @@ body {
 
   .aside-wrapper {
     border: 0;
-    left: -248px; } }
+    left: -248px; }
+    .aside-wrapper.aside-open-wrapper {
+      left: 0; }
+    .aside-wrapper .back {
+      display: inline-block; } }
 @media (min-width: 300px) and (max-width: 767px) {
+  .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
+    margin: 0; }
+
   .toggle-aside {
     display: inline-block; }
 
@@ -8796,15 +8806,19 @@ body {
     position: static; }
 
   .aside-wrapper {
-    border: 0; }
+    border: 0;
+    left: -248px; }
+    .aside-wrapper.aside-open-wrapper {
+      left: 0; }
     .aside-wrapper .back {
       left: 15px;
-      top: 15px; }
+      top: 15px;
+      display: inline-block; }
     .aside-wrapper .side-navigation-wrapper .admin-task-wrapper li a {
       font-size: 14px; } }
 @media (min-width: 200px) and (max-width: 480px) {
   .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
-    margin: 0 0 0 150px; } }
+    margin: 0; } }
 .content-wrapper {
   padding: 30px 15px 15px 50px; }
   .content-wrapper .search-something-wrapper {

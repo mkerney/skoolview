@@ -37,10 +37,11 @@
         left: 10px;
         position: absolute;
         top: 36px;
+        display: none;
     }
     /*--  Aside Open Wrapper Styles  --*/
     &.aside-open-wrapper{
-        left: -248px; 
+        left: 0; 
         .toggle-aside{
             left: 0;
         }
@@ -84,7 +85,10 @@
     .skoolview-wrapper{
         .main-content-wrapper{
             position: static;
-        }
+            .dashboard-wrapper{
+                margin: 0;
+            }
+        }      
     }
     .toggle-aside{
         top:0;
@@ -94,9 +98,18 @@
     .aside-wrapper{
         border:0;
         left: -248px;
+        &.aside-open-wrapper{
+            left: 0;
+        }
+        .back{
+            display: inline-block;
+        }
     }
 }
 @media(min-width:300px) and (max-width:767px){
+    .skoolview-wrapper .main-content-wrapper .dashboard-wrapper{
+        margin: 0;
+    }
     .toggle-aside{
         display: inline-block;
     }
@@ -107,9 +120,14 @@
     }
     .aside-wrapper{
         border:0;
+        left: -248px;
+        &.aside-open-wrapper{
+            left: 0;
+        }
         .back{
             left: 15px;
             top: 15px;
+            display: inline-block;
         }
         .side-navigation-wrapper{
             .admin-task-wrapper{
@@ -126,7 +144,7 @@
     .skoolview-wrapper{
         .main-content-wrapper{
             .dashboard-wrapper{
-                margin: 0 0 0 150px;
+                margin: 0;
             }
         }
     }

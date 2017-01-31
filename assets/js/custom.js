@@ -15,30 +15,19 @@ $(document).ready(function () {
     /*-- On Click Toggle Aside Wrapper --*/
     function setToggleAside() {
         if ($(window).width() < 1025) {
-//            $(".toggle-aside").show();
-            $(".back").show();
-            $(".aside-wrapper").addClass("aside-open-wrapper");
-            $(".dashboard-wrapper").addClass("dashboard-wrapper-open-wrapper");
             $(document).on("click", ".toggle-aside", function (e) {
                 e.stopImmediatePropagation();
-                $(".aside-wrapper").removeClass("aside-open-wrapper");
-//                $(".dashboard-wrapper").removeClass("dashboard-wrapper-open-wrapper");
+                $(".aside-wrapper").addClass("aside-open-wrapper");
             });
             $(document).on("click", ".back", function (e) {
                 e.stopImmediatePropagation();
-                $(".aside-wrapper").addClass("aside-open-wrapper");
-//                $(".dashboard-wrapper").addClass("dashboard-wrapper-open-wrapper");
+                $(".aside-wrapper").removeClass("aside-open-wrapper");
             });
-        } else {
-//            $(".toggle-aside").hide();
-//            $(".back").hide();
-            /*  $(".aside-wrapper").removeClass("aside-open-wrapper");
-             $(".dashboard-wrapper").removeClass("dashboard-wrapper-open-wrapper");*/
-        }
+        } 
     }
     setToggleAside();
     $(window).resize(function () {
-//        setToggleAside();
+        setToggleAside();
     });
 
 
