@@ -235,7 +235,6 @@
                 }
                 button{
                     margin   : 0 5px 15px 0 !important;
-                    width    : 95px;
                     font-size: 12px;
                 }
             }
@@ -260,7 +259,7 @@
                 }
             }
         }        
-    }
+    } 
     .content-wrapper{
         .search-something-wrapper{
             margin: 0 0 15px;
@@ -275,6 +274,15 @@
     .new-announcement-wrapper{
         h3{
             font-size: 15px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width:1025px){
+    .skoolview-wrapper{
+        .main-content-wrapper{
+            .dashboard-wrapper{
+                margin: 0;
+            }
         }
     }
 }

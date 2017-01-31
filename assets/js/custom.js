@@ -15,7 +15,7 @@ $(document).ready(function () {
     /*-- On Click Toggle Aside Wrapper --*/
     function setToggleAside() {
         if ($(window).width() < 1025) {
-            $(".toggle-aside").show();
+//            $(".toggle-aside").show();
             $(".back").show();
             $(".aside-wrapper").addClass("aside-open-wrapper");
             $(".dashboard-wrapper").addClass("dashboard-wrapper-open-wrapper");
@@ -30,8 +30,8 @@ $(document).ready(function () {
 //                $(".dashboard-wrapper").addClass("dashboard-wrapper-open-wrapper");
             });
         } else {
-            $(".toggle-aside").hide();
-            $(".back").hide();
+//            $(".toggle-aside").hide();
+//            $(".back").hide();
             /*  $(".aside-wrapper").removeClass("aside-open-wrapper");
              $(".dashboard-wrapper").removeClass("dashboard-wrapper-open-wrapper");*/
         }

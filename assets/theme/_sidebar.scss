@@ -7,12 +7,12 @@
     font-size: ($font-size-base * 1.5);
     color           : #fff;
     /*border          : 1px solid #2b3a42;*/
-    margin          : 0 15px 0 0;
+    margin          : 0 10px 0 0;
     padding         : 0;
     position        : relative;
     /*background-color: #2b3a42;*/
     z-index: 2;
-    display: inline-block;
+    display: none;
     i{
         vertical-align: middle;
     }
@@ -89,12 +89,17 @@
     .toggle-aside{
         top:0;
         font-size: 30px;
+        display: inline-block;
     }
     .aside-wrapper{
         border:0;
+        left: -248px;
     }
 }
 @media(min-width:300px) and (max-width:767px){
+    .toggle-aside{
+        display: inline-block;
+    }
     .skoolview-wrapper{
         .main-content-wrapper{
             position: static;

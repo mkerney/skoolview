@@ -8712,12 +8712,12 @@ body {
   font-size: 21px;
   color: #fff;
   /*border          : 1px solid #2b3a42;*/
-  margin: 0 15px 0 0;
+  margin: 0 10px 0 0;
   padding: 0;
   position: relative;
   /*background-color: #2b3a42;*/
   z-index: 2;
-  display: inline-block; }
+  display: none; }
   .toggle-aside i {
     vertical-align: middle; }
   .toggle-aside:hover, .toggle-aside:focus {
@@ -8782,11 +8782,16 @@ body {
 
   .toggle-aside {
     top: 0;
-    font-size: 30px; }
+    font-size: 30px;
+    display: inline-block; }
 
   .aside-wrapper {
-    border: 0; } }
+    border: 0;
+    left: -248px; } }
 @media (min-width: 300px) and (max-width: 767px) {
+  .toggle-aside {
+    display: inline-block; }
+
   .skoolview-wrapper .main-content-wrapper {
     position: static; }
 
@@ -9047,7 +9052,6 @@ body {
           text-align: center; }
         .new-announcement-wrapper form .announcement-submit-wrapper button {
           margin: 0 5px 15px 0 !important;
-          width: 95px;
           font-size: 12px; }
       .new-announcement-wrapper form .recepient-wrapper p {
         margin: 10px 0; }
@@ -9068,6 +9072,9 @@ body {
 @media (min-width: 200px) and (max-width: 480px) {
   .new-announcement-wrapper h3 {
     font-size: 15px; } }
+@media (min-width: 768px) and (max-width: 1025px) {
+  .skoolview-wrapper .main-content-wrapper .dashboard-wrapper {
+    margin: 0; } }
 .navbar-wrapper-mobile {
   color: #ffffff;
   height: 70px;
