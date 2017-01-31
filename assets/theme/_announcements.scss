@@ -83,7 +83,6 @@
             input{
                 display      : block;
                 width        : 100%;
-                margin-bottom: 15px;
             }
             a{
                 float  : none;
@@ -100,12 +99,21 @@
         .search-something-wrapper{
             input{
                 width: 100%;
-                margin: 0 0 15px;
             }
             a{
                 display: block;
                 width: 100%;
                 float: none;
+            }
+            .custom-new-announcement{
+                right   : 10px;
+                bottom  : 40px;
+                position: fixed;
+                @include circle(50px);
+                i{
+                    font-size  : 26px;
+                    line-height: 40px;
+                }
             }
         }
 

@@ -8875,8 +8875,7 @@ body {
 @media (max-width: 767px) and (min-width: 480px) {
   .content-wrapper .search-something-wrapper input {
     display: block;
-    width: 100%;
-    margin-bottom: 15px; }
+    width: 100%; }
   .content-wrapper .search-something-wrapper a {
     float: none;
     width: 100%;
@@ -8885,12 +8884,25 @@ body {
   .content-wrapper {
     padding: 15px; }
     .content-wrapper .search-something-wrapper input {
-      width: 100%;
-      margin: 0 0 15px; }
+      width: 100%; }
     .content-wrapper .search-something-wrapper a {
       display: block;
       width: 100%;
       float: none; }
+    .content-wrapper .search-something-wrapper .custom-new-announcement {
+      right: 10px;
+      bottom: 40px;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      -o-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px; }
+      .content-wrapper .search-something-wrapper .custom-new-announcement i {
+        font-size: 26px;
+        line-height: 40px; }
     .content-wrapper .table-wrapper table thead tr th {
       font-size: 13px;
       padding: 12px 10px; }
