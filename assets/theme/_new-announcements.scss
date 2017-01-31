@@ -67,6 +67,7 @@
                 .selection{
                     padding-top: 12px;
                     ul{
+                        padding: 12px 0;
                         max-height : 450px;
                         overflow-y : auto;
                         &:last-child{ 

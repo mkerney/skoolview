@@ -8898,6 +8898,7 @@ body {
       .new-announcement-wrapper form .recepient-wrapper .recepients .selection {
         padding-top: 12px; }
         .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul {
+          padding: 12px 0;
           max-height: 450px;
           overflow-y: auto; }
           .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul:last-child {
