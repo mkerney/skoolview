@@ -27,12 +27,7 @@
             <nav class="navbar navbar-wrapper">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <!--                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                                    <span class="sr-only">Toggle navigation</span>
-                                                    <span class="icon-bar"></span>
-                                                    <span class="icon-bar"></span>
-                                                    <span class="icon-bar"></span>
-                                                </button>-->
+                        <a href="javascript:void(0);" class="toggle-aside"><i class="fa fa-bars"></i></a>
                         <a class="navbar-brand" href="#">
                             <img src="assets/images/school.png" alt="school"/>
                             Skoolview
@@ -40,14 +35,21 @@
                     </div>
                     <div id="navbar" class="">
                         <ul class="nav navbar-nav navbar-right">
-                            <li ><a href="javascript:void(0)">SIGN OUT <i class="fa fa-sign-out"></i></a></li>
+                            <li >
+                                <a href="javascript:void(0)">
+                                    <span class="hidden-xs">SIGN OUT</span>
+                                    <i class="fa fa-sign-out"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </nav>
             <div class="main-content-wrapper">
                 <aside class="aside-wrapper">
-                    <a href="javascript:void(0);" class="toggle-aside"><i class="fa fa-bars"></i></a>
+                    <a href="javascript:void(0);" class="back">
+                        <img class="img-responsive" src="assets/images/header-back.png" alt="back"/>                        
+                    </a>
                     <div class="side-navigation-wrapper">
                         <div class="admin-profile-wrapper">
                             <img class="center-block img-responsive img-circle" src="assets/images/dp.jpg" alt="dp"/>
@@ -88,6 +90,11 @@
                             <li>
                                 <a href="javascript:void(0);" class="admin-tasks active">
                                     Announcements
+                                </a>
+                            </li>
+                            <li class="visible-xs">
+                                <a href="javascript:void(0);" class="admin-tasks">
+                                    SIGN OUT
                                 </a>
                             </li>
                         </ul>
@@ -793,7 +800,7 @@
 
             //Time Picker
             $('#timepicker1').timepicker();
-            
+
         </script>
     </body>
 </html>

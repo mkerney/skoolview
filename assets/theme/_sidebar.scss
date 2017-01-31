@@ -1,33 +1,49 @@
-.aside-wrapper{
+.toggle-aside{
+    /*@include size(35px,30px);*/
+    @include transition(all 0.3s ease-in-out 0s);  
+    @include border-radius(0 4px 4px 0);
+    top: 0;
+    left: 0;
+    font-size: ($font-size-base * 1.5);
+    color           : #fff;
+    /*border          : 1px solid #2b3a42;*/
+    margin          : 0 15px 0 0;
+    padding         : 0;
+    position        : relative;
+    /*background-color: #2b3a42;*/
+    z-index: 2;
+    display: inline-block;
+    i{
+        vertical-align: middle;
+    }
+    &:hover,&:focus{
+        color: $white;
+    }
+}
+.aside-wrapper{    
     @include transition(all 0.3s ease-in-out 0s);  
     top             : 0;
     left            : 0;
     color           : $white;
     right           : 0;
     width           : 248px;
+    z-index         : 3;
     min-height      : 100%; 
     /*bottom          : 0;*/
     position        : absolute;
     border-right    : 8px solid $white;
     background-color: $theme-color;
+    .back{
+        left: 10px;
+        position: absolute;
+        top: 36px;
+    }
     /*--  Aside Open Wrapper Styles  --*/
     &.aside-open-wrapper{
         left: -248px; 
         .toggle-aside{
             left: 0;
         }
-    }
-    .toggle-aside{
-        @include transition(all 0.3s ease-in-out 0s);  
-        @include border-radius(0 4px 4px 0);
-        top: 104px;
-        left: 240px;
-        color           : #fff;
-        border          : 1px solid #2b3a42;
-        padding         : 5px 10px;
-        position        : fixed;
-        background-color: #2b3a42;
-        z-index: 9999;
     }
     .side-navigation-wrapper{
         .admin-profile-wrapper{
@@ -64,36 +80,48 @@
         }
     }
 }
-
-@media(min-width:300px) and (max-width:767px){
+@media (min-width: 768px) and (max-width:1025px){
+    .skoolview-wrapper{
+        .main-content-wrapper{
+            position: static;
+        }
+    }
+    .toggle-aside{
+        top:0;
+        font-size: 30px;
+    }
     .aside-wrapper{
+        border:0;
+    }
+}
+@media(min-width:300px) and (max-width:767px){
+    .skoolview-wrapper{
+        .main-content-wrapper{
+            position: static;
+        }
+    }
+    .aside-wrapper{
+        border:0;
+        .back{
+            left: 15px;
+            top: 15px;
+        }
         .side-navigation-wrapper{
             .admin-task-wrapper{
                 li{
                     a{
-                        font-size: 12px;
+                        font-size: 14px;
                     }
                 }
             }  
         }
     }  
 }
-@media(min-width:300px) and (max-width:480px){
-    .aside-wrapper{
-        width: 200px;
-        &.aside-open-wrapper{
-            left: -200px;
-
-        }
-        .toggle-aside{
-            top: 71px;
-            left: 192px;
-        }
-    }
+@media(min-width:200px) and (max-width:480px){ 
     .skoolview-wrapper{
         .main-content-wrapper{
             .dashboard-wrapper{
-                margin: 0 0 0 200px;
+                margin: 0 0 0 150px;
             }
         }
     }
