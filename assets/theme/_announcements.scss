@@ -64,7 +64,11 @@
     }
 }
 
-
+@media (min-width: 768px) and (max-width:1025px){
+    .content-wrapper{
+        padding: 15px;
+    }
+}
 @media(max-width: 991px) and (min-width: 768px){
     .search-something-wrapper{
         input{
@@ -72,6 +76,7 @@
         }
     }
 }
+
 @media(max-width: 767px) and (min-width: 480px){
     .content-wrapper{
 
@@ -92,7 +97,7 @@
 
 @media (min-width:300px) and (max-width:767px){
     .content-wrapper{
-        padding: 40px 15px 15px 15px;
+        padding: 15px;
         .search-something-wrapper{
             input{
                 width: 100%;

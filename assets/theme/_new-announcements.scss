@@ -67,7 +67,6 @@
                 .selection{
                     padding-top: 12px;
                     ul{
-                        padding: 12px 0;
                         max-height : 450px;
                         overflow-y : auto;
                         &:last-child{ 
@@ -209,12 +208,13 @@
 
 }
 
-@media(min-width: 300px) and (max-width:767px){   
+@media(min-width: 200px) and (max-width:767px){   
     .new-announcement-wrapper{
         padding: 15px 0;
         h3 {
+            font-size: 18px;
             line-height: 21px;
-            margin: 0 0 10px;
+            margin: 0;
             white-space  : nowrap;
             text-overflow: ellipsis;
         }
@@ -234,40 +234,15 @@
                     text-align: center;
                 }
                 button{
-                    margin: 0 15px 15px 0;
-                }
-            }
-            .recepient-wrapper{
-                p{
-                    margin: 10px 0;
-                }
-            }
-        }        
-    }
-    .content-wrapper{
-        .search-something-wrapper{
-            margin: 0 0 15px;
-        }
-        .table-wrapper{
-            padding: 0;
-        }
-    } 
-}
-@media(min-width: 200px) and (max-width:767px){
-    .new-announcement-wrapper{
-        h3{
-            font-size: 15px;
-            margin: 20px 0 5px;
-        }
-        form{
-            .announcement-submit-wrapper{
-                button {
                     margin   : 0 5px 15px 0 !important;
                     width    : 95px;
                     font-size: 12px;
                 }
             }
             .recepient-wrapper{
+                p{
+                    margin: 10px 0;
+                }
                 .recepients{
                     &.staff{
                         .selection{
@@ -284,15 +259,22 @@
                     }
                 }
             }
+        }        
+    }
+    .content-wrapper{
+        .search-something-wrapper{
+            margin: 0 0 15px;
         }
-
-    }  
+        .table-wrapper{
+            padding: 0;
+        }
+    } 
 }
+
 @media(min-width: 200px) and (max-width:480px){
     .new-announcement-wrapper{
         h3{
             font-size: 15px;
-            margin: 20px 0 5px;
         }
     }
 }
