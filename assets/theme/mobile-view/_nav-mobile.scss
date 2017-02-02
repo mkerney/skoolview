@@ -42,8 +42,8 @@
             cursor      : pointer;
             margin      : 0;
             display     : inline-block;
-            font-size   : 17px;
-            line-height : 45px;
+            font-size   : 20px;
+            line-height : 50px;
             padding-left: 60px;
             &:hover,&:active,&:focus{
                 color          : $white;
@@ -58,8 +58,7 @@
             }
             i{
                 font-size  : 26px;
-                margin-left: 15px;
-                vertical-align: middle;
+                margin-left: 10px;
             }
             small{
                 display  : block;
