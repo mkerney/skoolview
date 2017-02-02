@@ -59,44 +59,6 @@
     }
 }
 
-/*--  Media Styles  --*/
-/*@media(min-width: 768px) and (max-width: 991px){ 
-    .navbar-wrapper{
-        .container{
-            width: 100%;
-            .navbar-brand{
-                font-size  : 18px;
-                margin-left: -35px;
-            }
-        }
-        .navbar-collapse{
-            padding: 0;
-        }
-        .navbar-nav{
-            li{
-                a{
-                    font-size: 10px;
-                    padding  : 15px 8px;
-                }
-            }
-        }
-    }
-}
-
-@media(min-width: 320px) and (max-width: 767px){ 
-    .navbar-wrapper{
-        .navbar-header{
-            .navbar-toggle{
-                border-color    : $white;
-                background-color: transparent;
-                @include border-radius(2);
-                &:focus, &:active{
-                    background-color: transparent;
-                }
-            }
-        }
-    }
-}*/
 @media (min-width: 768px) and (max-width:1025px){
     .navbar-wrapper{
         .navbar-brand{
@@ -107,15 +69,15 @@
 }
 @media(min-width: 300px) and (max-width: 767px){ 
     .navbar-wrapper{
-        height:auto;
+        height     : 70px;
         .navbar-header{
             float: left;
             margin: 0;
             .navbar-brand{
                 font-size: 18px;
                 height: auto;
-                font-weight: bold;
-                line-height: 50px;
+                font-weight: normal;
+                line-height: 70px;
                 margin: 0;
                 padding: 0;
                 img{
@@ -131,7 +93,7 @@
             float: right;
             li{
                 a{
-                    padding: 8px 0;
+                    padding: 18px 0;
                     i{
                         font-size: 24px;
                         line-height: 34px
@@ -144,12 +106,10 @@
 
 @media (min-width:300px) and (max-width: 480px){
     .navbar-wrapper{
-        height:auto;
         .navbar-header{  
             margin: 0;
             float: left;  
-            .navbar-brand{
-                font-size: 16px;    
+            .navbar-brand{   
                 img{
                     width:25px;
                 }

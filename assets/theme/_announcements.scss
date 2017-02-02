@@ -30,34 +30,26 @@
         }
     }
     .table-wrapper{
-        padding: 0 12px;
-        table{
-            thead{
-                tr{
-                    th{
-                        padding      : 30px 12px; 
-                        overflow     : hidden;
-                        font-size    : 16px;
-                        white-space  : nowrap;
-                        font-weight  : normal;
-                        border-bottom: 3px solid $black;
-                        text-overflow: ellipsis;
-                        &:first-child{
-                            width: 100px;
-                        }
-                    }
+        /*padding: 0 12px;*/
+        .custom-table-view{
+            &.table-header{
+                padding      : 30px 12px; 
+                font-size    : 16px;
+                border-bottom: 3px solid $black;
+                .table-column{
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                    overflow     : hidden;
                 }
             }
-            tbody{
-                tr{
-                    td{
-                        font-size: $font-size-base;
-                        padding      : 28px 12px;  
-                        overflow     : hidden;                        
-                        white-space  : nowrap;
-                        text-overflow: ellipsis;
-                        border-bottom: 2px solid $border-green;
-                    }
+            &.table-body{
+                padding      : 28px 12px; 
+                font-size    : $font-size-base;
+                border-bottom: 2px solid $border-green;
+                .table-column{
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                    overflow     : hidden;
                 }
             }
         }
@@ -95,43 +87,96 @@
 
 @media (min-width:300px) and (max-width:767px){
     .content-wrapper{
-        padding: 15px;
-        .search-something-wrapper{
-            input{
-                width: 100%;
-            }
-            a{
-                display: block;
-                width: 100%;
-                float: none;
-            }
-            .custom-new-announcement{
-                right   : 10px;
-                bottom  : 40px;
-                position: fixed;
-                @include circle(50px);
-                i{
-                    font-size  : 26px;
-                    line-height: 40px;
-                }
-            }
+        padding: 0;
+        .custom-new-announcement{
+            right           : 10px;
+            bottom          : 40px;
+            z-index         : 9;
+            padding         : 0;
+            position        : fixed;
         }
-
-        .table-wrapper{   
-            table{
-                thead{  
-                    tr{  
-                        th{
-                            font-size: 13px;
-                            padding: 12px 10px;
+        .table-wrapper{
+            padding: 0;
+            .custom-table-view{
+                .custom-check{
+                    input[type="checkbox"]{
+                        display:none;
+                        &:checked {
+                            +  span{
+                                border-width: 1px;
+                            }
+                        }
+                    }
+                    span{
+                        border-width: 1px;
+                        i{
+                            left: -2px;
                         }
                     }
                 }
-                tbody{  
-                    tr{
-                        td{  
-                            font-size: 13px;
-                            padding: 12px 10px;
+                &:first-of-type{
+                    .custom-check{
+                        margin-top: 8px;
+                    }
+                }
+                &.table-header{
+                    border          : 0;
+                    padding         : 9px 0px;
+                    background-color: $light-gray-3;
+                    .custom-check{
+                        span{
+                            background-color: #ebebeb;
+                        }
+                    }
+                    .mobile-view-search{
+                        width: 90%;
+                        input{
+                            height       : 40px;
+                            display      : block;
+                            overflow     : hidden;
+                            white-space  : nowrap;
+                            text-overflow: ellipsis;
+                            &:focus{
+                                border-color: $light-gray-4;  
+                            }
+                        }
+                    }
+                }
+                &.table-body{
+                    &:first-child{
+                        padding-top: 5px;
+                    }
+                    .col-xs-1{
+                        padding: 0 0;
+                    }
+                    border : 0;
+                    padding: 5px 5px 0;
+                    .row{
+                        opacity: 1;
+                        line-height: 45px;
+                        border-color: $light-gray;
+                        background-color: $white;
+                        color: $black;
+                        padding: 6px 10px;
+                        border-radius: 3px;
+                        font-size: 12px;
+                        height: 55px;
+                        @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
+                        .mobile-view-content{
+                            position: relative;
+                            padding-left: 5px;
+                            p{
+                                width: 84%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            small{
+                                position: absolute;
+                                top     : 0;
+                                right   : 0;
+                                color   : #757575;
+                            }
                         }
                     }
                 }

@@ -415,3 +415,19 @@ body {
     display: inline-block;
     background-color: $save-bg-color;
 }
+
+@media(min-width: 300px) and (max-width: 767px){ 
+    .skoolview-wrapper{
+        .main-content-wrapper{
+            border-top: 0px solid transparent;
+        }
+    }
+    .pad0{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mar0{
+        margin-left:0;
+        margin-right:0;
+    }
+}
