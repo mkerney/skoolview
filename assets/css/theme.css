@@ -8822,17 +8822,17 @@ body {
       font-size: 16px;
       border-bottom: 3px solid #000000; }
       .content-wrapper .table-wrapper .custom-table-view.table-header .table-column {
-        text-overflow: ellipsis;
+        overflow: hidden;
         white-space: nowrap;
-        overflow: hidden; }
+        text-overflow: ellipsis; }
     .content-wrapper .table-wrapper .custom-table-view.table-body {
       padding: 28px 12px;
       font-size: 14px;
       border-bottom: 2px solid #99e394; }
       .content-wrapper .table-wrapper .custom-table-view.table-body .table-column {
-        text-overflow: ellipsis;
+        overflow: hidden;
         white-space: nowrap;
-        overflow: hidden; }
+        text-overflow: ellipsis; }
 
 @media (min-width: 768px) and (max-width: 1025px) {
   .content-wrapper {
@@ -8842,8 +8842,8 @@ body {
     width: 190px !important; } }
 @media (max-width: 767px) and (min-width: 480px) {
   .content-wrapper .search-something-wrapper input {
-    display: block;
-    width: 100%; }
+    width: 100%;
+    display: block; }
   .content-wrapper .search-something-wrapper a {
     float: none;
     width: 100%;
@@ -8859,14 +8859,6 @@ body {
       position: fixed; }
     .content-wrapper .table-wrapper {
       padding: 0; }
-      .content-wrapper .table-wrapper .custom-table-view .custom-check input[type="checkbox"] {
-        display: none; }
-        .content-wrapper .table-wrapper .custom-table-view .custom-check input[type="checkbox"]:checked + span {
-          border-width: 1px; }
-      .content-wrapper .table-wrapper .custom-table-view .custom-check span {
-        border-width: 1px; }
-        .content-wrapper .table-wrapper .custom-table-view .custom-check span i {
-          left: -2px; }
       .content-wrapper .table-wrapper .custom-table-view:first-of-type .custom-check {
         margin-top: 8px; }
       .content-wrapper .table-wrapper .custom-table-view.table-header {
@@ -8888,36 +8880,42 @@ body {
       .content-wrapper .table-wrapper .custom-table-view.table-body {
         border: 0;
         padding: 5px 5px 0; }
-        .content-wrapper .table-wrapper .custom-table-view.table-body:first-child {
-          padding-top: 5px; }
-        .content-wrapper .table-wrapper .custom-table-view.table-body .col-xs-1 {
-          padding: 0 0; }
-        .content-wrapper .table-wrapper .custom-table-view.table-body .row {
-          opacity: 1;
-          line-height: 45px;
-          border-color: #dddddd;
-          background-color: #ffffff;
-          color: #000000;
-          padding: 6px 10px;
-          border-radius: 3px;
-          font-size: 12px;
+        .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content {
+          border: 0;
           height: 55px;
+          padding: 5px 10px;
+          position: relative;
+          margin-bottom: 6px;
+          background-color: #ffffff;
           box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
           -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
           -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
-          .content-wrapper .table-wrapper .custom-table-view.table-body .row .mobile-view-content {
+          .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content .custom-check {
+            top: 14px;
+            left: 10px;
+            position: absolute; }
+          .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content a {
+            color: #000000;
+            display: block;
+            padding: 13px 50px 13px 0px;
             position: relative;
-            padding-left: 5px; }
-            .content-wrapper .table-wrapper .custom-table-view.table-body .row .mobile-view-content p {
-              width: 84%;
+            font-size: 12px;
+            margin-left: 30px;
+            border-color: #dddddd;
+            border-radius: 3px; }
+            .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content a:active, .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content a:hover, .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content a:focus {
+              text-decoration: none; }
+            .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content a p {
+              margin: 0;
               overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: nowrap; }
-            .content-wrapper .table-wrapper .custom-table-view.table-body .row .mobile-view-content small {
-              position: absolute;
-              top: 0;
+              position: relative;
+              white-space: nowrap;
+              text-overflow: ellipsis; }
+            .content-wrapper .table-wrapper .custom-table-view.table-body .mobile-view-content a small {
+              top: 15px;
               right: 0;
-              color: #757575; } }
+              color: #757575;
+              position: absolute; } }
 .new-announcement-wrapper {
   background-color: #e8e8e8; }
   .new-announcement-wrapper h3 {
