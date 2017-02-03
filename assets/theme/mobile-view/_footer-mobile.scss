@@ -22,9 +22,32 @@ body {
             display   : table-cell;
             text-align: center;
             &.active{
-                .footer-tabs{
+                > .footer-tabs{
                     color           : $save-bg-color;
+                    &:hover,&:focus{
+                        background-color: transparent;
+                    }
                     .footer-tab-icon{
+                        &.announcement{
+                            background-position: -5px 29px;
+                            width              : 18px;
+                            height             : 26px;
+                        }
+                        &.timetable{
+                            background-position: -29px 29px;
+                            width              : 24px;
+                            height             : 26px;
+                        }
+                        &.messages{
+                            background-position: 45px 29px;
+                            width              : 24px;
+                            height             : 26px;
+                        }
+                        &.more{
+                            background-position: 19px 30px;
+                            width              : 18px;
+                            height             : 26px;
+                        }
                         strong{
                             color: $white;
                         }
@@ -36,38 +59,85 @@ body {
                 border          : 0;
                 margin          : 0;
                 display         : inline-block;
-                padding         : 12px 12px 3px;
+                padding         : 12px 12px 5px;
                 font-size       : 12px;
                 background-color: transparent;
                 &:hover{
                     color           : $save-bg-color;
-                    border          : 0;
-                    background-color: transparent;
                     .footer-tab-icon{
+                        &.announcement{
+                            background-position: -5px 29px;
+                            width              : 18px;
+                            height             : 26px;
+                        }
+                        &.timetable{
+                            background-position: -29px 29px;
+                            width              : 24px;
+                            height             : 26px;
+                        }
+                        &.messages{
+                            background-position: 45px 29px;
+                            width              : 24px;
+                            height             : 26px;
+                        }
+                        &.more{
+                            background-position: 19px 30px;
+                            width              : 18px;
+                            height             : 26px;
+                        }
                         strong{
                             color: $white;
                         }
                     }
                 }
                 .footer-tab-icon{
-                    display   : inline-block;
-                    position  : relative;
-                    text-align: center;
-                    i{
-                        font-size : 26px;
-                    }
+                    display            : inline-block;
+                    position           : relative;
+                    text-align         : center;
+                    background-image   : url('../images/footer-split-image.png');
                     strong{
-                        top             : -6px;
-                        right           : -10px;
+                        top             : -5px;
                         position        : absolute;
                         font-size       : 12px;
                         line-height     : 20px;   
+                        /*border          : 1px solid $theme-color;*/
                         background-color: $save-bg-color;
                         @include circle(20px);
                     }
+                    &.announcement{
+                        background-position: -5px -5px;
+                        width              : 18px;
+                        height             : 26px;
+                        strong{
+                            right           : -20px;
+                        }
+                    }
+                    &.timetable{
+                        background-position: -29px -5px;
+                        width              : 24px;
+                        height             : 26px;
+                        strong{
+                            right           : -10px;
+                        }
+                    }
+                    &.messages{
+                        background-position: 45px -5px;
+                        width              : 24px;
+                        height             : 26px;
+                        strong{
+                            right           : -10px;
+                        }
+                    }
+                    &.more{
+                        background-position: 19px -4px;
+                        width              : 18px;
+                        height             : 26px;
+                        strong{
+                            right           : -15px;
+                        }
+                    }
                 }
                 p{
-                    margin-top   : 10px;
                     margin-bottom: 0;
                 }
             }

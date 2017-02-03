@@ -395,7 +395,7 @@ body {
 }
 
 .custom-dropdown-header{
-    top      : 58px;
+    top      : 57px;
     left     : -18px;
     right    : -18px;
     min-width: 100%;
@@ -407,10 +407,10 @@ body {
 
 
 .img-placeholder{
-    @include square(30px);
+    @include square(40px);
     @include border-radius(50%);
     color: $white;
-    line-height:30px;
+    line-height:40px;
     text-align: center;
     display: inline-block;
     background-color: $save-bg-color;
