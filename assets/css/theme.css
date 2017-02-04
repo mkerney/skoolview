@@ -9161,7 +9161,7 @@ body {
         text-decoration: none; }
       .navbar-wrapper-mobile .profile-information-wrapper .profile-name.teacher-chat {
         line-height: 22px;
-        padding-top: 6px; }
+        padding-top: 3px; }
       .navbar-wrapper-mobile .profile-information-wrapper .profile-name span {
         display: inline-block; }
       .navbar-wrapper-mobile .profile-information-wrapper .profile-name i {
@@ -9169,11 +9169,14 @@ body {
         margin-left: 10px; }
       .navbar-wrapper-mobile .profile-information-wrapper .profile-name small {
         display: block;
-        font-size: 12px; }
+        font-size: 14px; }
         .navbar-wrapper-mobile .profile-information-wrapper .profile-name small.teacher-profile {
           color: #bababa; }
           .navbar-wrapper-mobile .profile-information-wrapper .profile-name small.teacher-profile i {
-            margin-left: 6px; }
+            margin-left: 3px;
+            font-size: 28px;
+            vertical-align: middle;
+            line-height: 28px; }
     .navbar-wrapper-mobile .profile-information-wrapper .custom-dropdown-header {
       background-color: #2B3A42;
       padding: 0px;
@@ -9324,6 +9327,11 @@ body {
             width: 30px;
             height: 30px;
             position: absolute; }
+            .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a img.teacher-logo {
+              top: 5px;
+              left: 1px;
+              width: 40px;
+              height: 40px; }
           .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-heading .panel-title > a .img-placeholder {
             top: 5px;
             left: 0px;
@@ -9333,6 +9341,7 @@ body {
             color: #000000;
             position: absolute;
             font-weight: bold;
+            line-height: 15px;
             transform: translate(0, -50%);
             -o-transform: translate(0, -50%);
             -ms-transform: translate(0, -50%);
@@ -9386,6 +9395,10 @@ body {
       .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body p {
         margin: 0;
         font-size: 12px; }
+        .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body p a {
+          color: #000000;
+          font-weight: bold;
+          text-decoration: underline; }
       .parent-view-wrapper .content-wrapper-tabs .panel-list .panel.panel-default .panel-collapse .panel-body .spare-task-pins {
         float: right;
         margin: 15px 0 5px; }
@@ -9437,30 +9450,33 @@ body {
       -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
       -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4); }
       .main-view-wrapper .announcement-content .announcement-wrapper-mob .announcement-text > small {
-        position: absolute;
         top: 4px;
         right: 6px;
-        color: #B3B3B3; }
+        color: #B3B3B3;
+        position: absolute; }
 
 .announcement-footer-wrapper {
   cursor: pointer; }
   .announcement-footer-wrapper .footer-wrapper-mobile {
     height: 62px; }
     .announcement-footer-wrapper .footer-wrapper-mobile form {
-      position: relative;
-      padding: 0 30px 0 35px; }
+      padding: 0 30px 0 35px;
+      position: relative; }
       .announcement-footer-wrapper .footer-wrapper-mobile form .announcement-input-wrapper {
-        display: inline-block;
-        padding: 16px 10px;
-        position: absolute;
+        top: 0px;
         left: 0;
-        top: 0px; }
+        padding: 16px 10px;
+        display: inline-block;
+        position: absolute; }
         .announcement-footer-wrapper .footer-wrapper-mobile form .announcement-input-wrapper i {
-          transform: rotateZ(95deg); }
+          transform: rotateX(180deg);
+          -o-transform: rotateX(180deg);
+          -moz-transform: rotateX(180deg);
+          -webkit-transform: rotateX(180deg); }
       .announcement-footer-wrapper .footer-wrapper-mobile form .submit-wrapper {
+        width: 100%;
         padding: 9px;
-        display: block;
-        width: 100%; }
+        display: block; }
         .announcement-footer-wrapper .footer-wrapper-mobile form .submit-wrapper input {
           width: 100%;
           height: 44px;
@@ -9473,13 +9489,13 @@ body {
           -moz-border-radius: 10px;
           -webkit-border-radius: 10px; }
       .announcement-footer-wrapper .footer-wrapper-mobile form button {
-        position: absolute;
-        right: 2px;
         top: 0px;
+        right: 2px;
         border: 0;
         padding: 13px 10px;
-        background-color: transparent;
-        display: inline-block; }
+        display: inline-block;
+        position: absolute;
+        background-color: transparent; }
         .announcement-footer-wrapper .footer-wrapper-mobile form button i {
           color: #ffffff;
           font-size: 36px; }
