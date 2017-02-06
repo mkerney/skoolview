@@ -8792,6 +8792,7 @@ body {
   padding: 30px 15px 15px 50px; }
   .content-wrapper .search-something-wrapper {
     width: 100%;
+    border: 1px solid #c8c8c8;
     padding: 9px 11px;
     background-color: #ebebeb; }
     .content-wrapper .search-something-wrapper input {
@@ -8815,6 +8816,43 @@ body {
       border-radius: 0;
       text-overflow: ellipsis;
       background-color: #cc3333; }
+  .content-wrapper .scheduling-announcement-wrapper {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    padding: 9px 11px;
+    border-top: 0; }
+    .content-wrapper .scheduling-announcement-wrapper ul {
+      margin-bottom: 0; }
+      .content-wrapper .scheduling-announcement-wrapper ul li a {
+        color: #c53e3e;
+        border: 0;
+        position: relative;
+        font-size: 12px;
+        line-height: 28px; }
+        .content-wrapper .scheduling-announcement-wrapper ul li a:hover, .content-wrapper .scheduling-announcement-wrapper ul li a:focus {
+          text-decoration: none;
+          color: #c53e3e; }
+        .content-wrapper .scheduling-announcement-wrapper ul li a.send-announcement {
+          padding-left: 40px; }
+          .content-wrapper .scheduling-announcement-wrapper ul li a.send-announcement img {
+            top: -8px;
+            left: 0;
+            position: absolute; }
+        .content-wrapper .scheduling-announcement-wrapper ul li a.delete-announcement {
+          padding-left: 30px; }
+          .content-wrapper .scheduling-announcement-wrapper ul li a.delete-announcement img {
+            top: -8px;
+            left: 0;
+            position: absolute; }
+        .content-wrapper .scheduling-announcement-wrapper ul li a span {
+          font-weight: bold; }
+  .content-wrapper .select-status-wrapper {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    padding: 9px 11px; }
+    .content-wrapper .select-status-wrapper ul {
+      display: inline-block;
+      margin-bottom: 0; }
   .content-wrapper .table-wrapper {
     /*padding: 0 12px;*/ }
     .content-wrapper .table-wrapper .custom-table-view.table-header {

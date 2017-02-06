@@ -105,9 +105,93 @@
 
                 <div class="dashboard-wrapper">
                     <div class="content-wrapper">
-                        <div class="search-something-wrapper hidden-xs">
-                            <input type="text" class="form-control " placeholder="Search for something" />
-                            <a href="new-announcements.html" class="btn btn-danger"><i class="fa fa-plus"></i> NEW ANNOUNCEMENT</a>
+                        <div class="search-wrapper">
+                            <div class="search-something-wrapper hidden-xs">
+                                <input type="text" class="form-control " placeholder="Search for something" />
+                                <a href="new-announcements.html" class="btn btn-danger"><i class="fa fa-plus"></i> NEW ANNOUNCEMENT</a>
+                            </div>
+                            <div class="hidden-xs">
+                                <div class="scheduling-announcement-wrapper">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a class="send-announcement" href="javascript:void(0);">
+                                                <img src="assets/images/announcement.png" alt="announcement-mic"/>
+                                                <span>SEND ANNOUNCEMENT</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="delete-announcement" href="javascript:void(0);">
+                                                <img src="assets/images/bin.png" alt="announcement-del"/>
+                                                <span>DELETE</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="select-status-wrapper">
+                                    <form class="clearfix">
+                                        <ul class="list-inline select-status-list">
+                                            <li><span class="select-label">SELECT STATUS:</span></li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox"  name="checkbox" value=""/>
+                                                        <span>
+                                                            <i class="fa fa-check"></i>
+                                                        </span>
+                                                       ALL 
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox"  name="checkbox" value=""/>
+                                                        <span>
+                                                            <i class="fa fa-check"></i>
+                                                        </span>
+                                                        Announced
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox"  name="checkbox" value=""/>
+                                                        <span>
+                                                            <i class="fa fa-check"></i>
+                                                        </span>
+                                                        Draft
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" name="checkbox" value=""/>
+                                                        <span>
+                                                            <i class="fa fa-check"></i>
+                                                        </span>
+                                                        Scheduled
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-inline select-status-action pull-right">
+                                            <li>
+                                                <button type="reset" class="select-reset">
+                                                    <span>RESET</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <a class="select-close" href="javascript:void(0);">
+                                                    <span>CLOSE</span>
+                                                    <img src="assets/images/close.png" alt="select-close"/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <a href="new-announcements.html" class="visible-xs custom-new-announcement">
                             <img src="assets/images/add-announcement.png" alt=""/>

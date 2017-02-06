@@ -2,6 +2,7 @@
     padding: 30px 15px 15px 50px;
     .search-something-wrapper{
         width           : 100%;
+        border          : 1px solid $light-gray-6;
         padding         : 9px 11px;
         background-color: $light-gray-3;
         input{
@@ -27,6 +28,63 @@
             border-radius   : 0;
             text-overflow   : ellipsis;
             background-color: $maroon;
+        }
+    }
+    .scheduling-announcement-wrapper{
+        width     : 100%;
+        border    : 1px solid $light-gray-6;
+        padding   : 9px 11px;
+        border-top: 0;
+        ul{
+            margin-bottom: 0;
+            li{
+                a{
+                    color       : $maroon-2;
+                    border      : 0;
+                    position    : relative;    
+                    font-size   : 12px;
+                    line-height : 28px;
+                    &:hover,&:focus{
+                        text-decoration: none;
+                        color: $maroon-2;
+                    }
+                    &.send-announcement{
+                        padding-left: 40px;
+                        img{
+                            top     : -8px;
+                            left    : 0;
+                            position: absolute;
+                        }
+                    }
+                    &.delete-announcement{
+                        padding-left: 30px;
+                        img{
+                            top     : -8px;
+                            left    : 0;
+                            position: absolute;
+                        }
+                    }
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    .select-status-wrapper{
+        width           : 100%;
+        border          : 1px solid $light-gray-6;
+        padding         : 9px 11px;
+        ul{
+            display: inline-block;
+            margin-bottom: 0;
+            &.select-status-list{
+                li{
+                    .select-label{
+                        
+                    }
+                }
+            }
         }
     }
     .table-wrapper{
