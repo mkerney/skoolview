@@ -40,7 +40,7 @@ body {
                     border          : 2px solid $black-6;
                     cursor          : pointer;
                     display         : inline-block;
-                    height          : 18px;
+                    height          : 18px; 
                     line-height     : 14px;
                     margin          : -1px 10px 0 0;
                     padding         : 3px;
@@ -165,10 +165,10 @@ body {
         }
     }
     &[disabled], &.btn-default[disabled]{
-        pointer-events  : none;
+        /*pointer-events  : none;*/
         background-color: $gray;
         &:hover, &:active, &:focus{
-            pointer-events  : none;
+            /*pointer-events  : none;*/
             background-color: $gray;
         }
     }

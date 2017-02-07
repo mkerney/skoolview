@@ -3,14 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp_4/htdocs/skoolview/assets/theme/mobile-view/_mob-teacher-announcement.scss</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/assets/theme/_mixins.scss</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/mob-teacher.html</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/assets/theme/mobile-view/_parent-view.scss</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/assets/theme/_variable.scss</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/mob-parent.html</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/assets/theme/mobile-view/_nav-mobile.scss</file>
-            <file>file:/C:/xampp_4/htdocs/skoolview/mob-teacher-announcement.html</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/bootstrap/_close.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/bootstrap/_carousel.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/path.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/bootstrap/_buttons.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/bootstrap/_button-groups.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/bootstrap/_dropdowns.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/css/theme.css</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/path/theme.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/bootstrap/_forms.scss</file>
+            <file>file:/C:/xampp/htdocs/skoolview/assets/theme/bootstrap-scss/_bootstrap.scss</file>
         </group>
     </open-files>
 </project-private>
