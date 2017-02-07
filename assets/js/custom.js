@@ -120,7 +120,9 @@ $(document).ready(function () {
     });
 
 //Announcement Multiple check
-    $("#announcementCheckbox").change(function () {
+    $("#announcementCheckbox").change(function (e) {
+        e.stopPropagation();
+        $('#schedulingAnnouncement').slideToggle();
         var status = this.checked;
         $('.announcementCheck').each(function () {
             this.checked = status;
@@ -142,14 +144,14 @@ $(document).ready(function () {
     });
 
 //Select Status
-    $('#schedulingAnnouncement').hide();
+    
     $('.custom-check .checkbox-inline .open-send-announcement').on('change', schedulingAnnouncementWrapper);
-
+    $('#schedulingAnnouncement').slideUp();
     function schedulingAnnouncementWrapper() {
         if ($(this).hasClass('announcementCheck')) {
-            $('#schedulingAnnouncement').slideDown();
-            if ($('.custom-check .checkbox-inline .open-send-announcement:checked').length === 0) {
-                $('#schedulingAnnouncement').slideUp();
+//            $('#schedulingAnnouncement').slideUp();
+            if (($('.custom-check .checkbox-inline .open-send-announcement:checked').length === 0)) {
+                $('#schedulingAnnouncement').slideToggle();
             }
         }
     }
