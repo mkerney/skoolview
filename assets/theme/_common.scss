@@ -165,10 +165,10 @@ body {
         }
     }
     &[disabled], &.btn-default[disabled]{
-        pointer-events  : none;
+        /*pointer-events  : none;*/
         background-color: $gray;
         &:hover, &:active, &:focus{
-            pointer-events  : none;
+            /*pointer-events  : none;*/
             background-color: $gray;
         }
     }
