@@ -53,18 +53,6 @@ $(document).ready(function () {
         }
     });
 
-//// Panel collapse nowrap
-//    $('.collapse-click').on('click', function () {
-//        $('.collapse-click').parents('.panel.panel-default').find('.collapse-click').css('white-space', 'nowrap');
-//        setTimeout(function () {
-//            if ($(this).parents('.panel-heading').siblings('.panel-collapse.collapse').hasClass('in')) {
-//                $(this).css('white-space', 'normal');
-//            }
-//        }, 2000);
-//    });
-
-
-
 //Class Multiple check
     $("#checkbox-student").change(function () {
         var status = this.checked;
@@ -120,42 +108,36 @@ $(document).ready(function () {
     });
 
 //Announcement Multiple check
+    $('#schedulingAnnouncement').slideUp();
     $("#announcementCheckbox").change(function (e) {
-        e.stopPropagation();
-        $('#schedulingAnnouncement').slideToggle();
+//        e.stopPropagation();
+        $('#schedulingAnnouncement').slideDown();
         var status = this.checked;
+        if (this.checked == false) {
+            $('#schedulingAnnouncement').slideUp();
+        }
         $('.announcementCheck').each(function () {
             this.checked = status;
         });
     });
 
-    $('.announcementCheck').change(function () {
-
+    $('.table-body .announcementCheck').change(function () {
         if (this.checked == false) {
             $("#announcementCheckbox")[0].checked = false;
         }
-
-        if ($('.announcementCheck:checked').length == $('.announcementCheck').length) {
+        console.log($('.table-body .hidden-xs .announcementCheck').length);
+        if ($('.table-body .col-xs-1 .announcementCheck:checked').length == $('.table-body .hidden-xs .announcementCheck').length) {
             $("#announcementCheckbox")[0].checked = true;
+        }
+        $('#schedulingAnnouncement').slideDown();
+        console.log($('.table-body .col-xs-1 .custom-check .checkbox-inline .announcementCheck:checked').length);
+        if ($('.table-body .col-xs-1 .custom-check .checkbox-inline .announcementCheck:checked').length === 0) {
+            $('#schedulingAnnouncement').slideUp();
         }
     });
     $('.glyphicon-trigger span').on('click', function () {
         $(this).siblings('.form-control').focus();
     });
-
-//Select Status
-    
-    $('.custom-check .checkbox-inline .open-send-announcement').on('change', schedulingAnnouncementWrapper);
-    $('#schedulingAnnouncement').slideUp();
-    function schedulingAnnouncementWrapper() {
-        if ($(this).hasClass('announcementCheck')) {
-//            $('#schedulingAnnouncement').slideUp();
-            if (($('.custom-check .checkbox-inline .open-send-announcement:checked').length === 0)) {
-                $('#schedulingAnnouncement').slideToggle();
-            }
-        }
-    }
-
 
 //Send Status
 
@@ -164,8 +146,8 @@ $(document).ready(function () {
 
     function selectStatusWrapper() {
         $('#selectStatus').slideToggle();
-        $('.select-status-wrapper .select-status-action .select-close').on('click',function(){
-           $('#selectStatus').slideUp(); 
+        $('.select-status-wrapper .select-status-action .select-close').on('click', function () {
+            $('#selectStatus').slideUp();
         });
     }
 });
