@@ -139,5 +139,29 @@ $(document).ready(function () {
         $(this).siblings('.form-control').focus();
     });
 
+//Select Status
+    $('#schedulingAnnouncement').hide();
+    $('.custom-check .checkbox-inline .open-send-announcement').on('change', schedulingAnnouncementWrapper);
 
+    function schedulingAnnouncementWrapper() {
+        if ($(this).hasClass('announcementCheck')) {
+            $('#schedulingAnnouncement').slideDown();
+            if ($('.custom-check .checkbox-inline .open-send-announcement:checked').length === 0) {
+                $('#schedulingAnnouncement').slideUp();
+            }
+        }
+    }
+
+
+//Send Status
+
+    $('#selectStatus').hide();
+    $('.table-header .table-column.status-checking .status-checked').on('click', selectStatusWrapper);
+
+    function selectStatusWrapper() {
+        $('#selectStatus').slideToggle();
+        $('.select-status-wrapper .select-status-action .select-close').on('click',function(){
+           $('#selectStatus').slideUp(); 
+        });
+    }
 });

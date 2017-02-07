@@ -95,7 +95,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" class="admin-tasks active">
+                                <a href="javascript:void(0);" class="admin-tasks">
                                     Settings
                                 </a>
                             </li>
@@ -108,15 +108,15 @@
                     </div>
                 </aside>
 
-                <div class="dashboard-wrapper">
+                <div class="dashboard-wrapper custom-background">
                     <div class="content-wrapper">
-                        <div class="search-wrapper">
+                        <div class="search-wrapper container-fluid">
                             <div class="search-something-wrapper hidden-xs">
                                 <input type="text" class="form-control " placeholder="Search for something" />
                                 <a href="new-announcements.html" class="btn btn-danger"><i class="fa fa-plus"></i> NEW ANNOUNCEMENT</a>
                             </div>
                             <div class="hidden-xs">
-                                <div class="select-status-wrapper">
+                                <div id="selectStatus" class="select-status-wrapper">
                                     <form class="clearfix">
                                         <ul class="list-inline select-status-list">
                                             <li><span class="select-label">SELECT STATUS:</span></li>
@@ -125,7 +125,7 @@
                                                     <label class="checkbox-inline">
                                                         <input type="checkbox"  name="checkbox" value=""/>
                                                         <span>
-                                                            <i class="fa fa-check"></i>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                         ALL 
                                                     </label>
@@ -136,7 +136,7 @@
                                                     <label class="checkbox-inline">
                                                         <input type="checkbox"  name="checkbox" value=""/>
                                                         <span>
-                                                            <i class="fa fa-check"></i>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                         Announced
                                                     </label>
@@ -147,7 +147,7 @@
                                                     <label class="checkbox-inline">
                                                         <input type="checkbox"  name="checkbox" value=""/>
                                                         <span>
-                                                            <i class="fa fa-check"></i>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                         Draft
                                                     </label>
@@ -158,7 +158,7 @@
                                                     <label class="checkbox-inline">
                                                         <input type="checkbox" name="checkbox" value=""/>
                                                         <span>
-                                                            <i class="fa fa-check"></i>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                         Scheduled
                                                     </label>
@@ -180,7 +180,7 @@
                                         </ul>
                                     </form>
                                 </div>
-                                <div class="scheduling-announcement-wrapper">
+                                <div id="schedulingAnnouncement" class="scheduling-announcement-wrapper">
                                     <ul class="list-inline">
                                         <li>
                                             <a class="send-announcement" href="javascript:void(0);">
@@ -208,16 +208,16 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" id="announcementCheckbox" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="open-send-announcement" id="announcementCheckbox" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 hidden-xs table-column">Announcement Headline</div>
-                                        <div class="col-xs-2 hidden-xs table-column">Announcement Date</div>
-                                        <div class="col-xs-2 hidden-xs table-column">Status</div>
+                                        <div class="col-xs-4 hidden-xs table-column">Announcement Headline</div>
+                                        <div class="col-xs-3 hidden-xs table-column date-checking">Announcement Date  <a class="date-checked" href="javascript:void(0)"><i class="fa fa-angle-down"></i></a></div>
+                                        <div class="col-xs-2 hidden-xs table-column status-checking">Status <a class="status-checked" href="javascript:void(0)"><i class="fa fa-angle-down"></i></a></div>
                                         <div class="col-xs-2 hidden-xs table-column">Audience</div>
                                         <div class="col-xs-11 visible-xs mobile-view-search">
                                             <input type="text" class="form-control " placeholder="Search for something" />
@@ -229,15 +229,15 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">Road works starting from 15-Apr-2016</div>
-                                        <div class="col-xs-2 table-column">20-May-2016</div>
+                                        <div class="col-xs-4 table-column">Road works starting from 15-Apr-2016</div>
+                                        <div class="col-xs-3 table-column">20-May-2016</div>
                                         <div class="col-xs-2 table-column">Scheduled</div>
                                         <div class="col-xs-2 table-column">Staff</div>
                                     </div>
@@ -245,9 +245,9 @@
                                     <div class="mobile-view-content visible-xs">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
@@ -266,24 +266,24 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">JK Rowling visit, National Story Telling day 05-Mar-2016</div>
-                                        <div class="col-xs-2 table-column">15-Apr-2016</div>
+                                        <div class="col-xs-4 table-column">JK Rowling visit, National Story Telling day 05-Mar-2016</div>
+                                        <div class="col-xs-3 table-column">15-Apr-2016</div>
                                         <div class="col-xs-2 table-column">Announced</div>
                                         <div class="col-xs-2 table-column">Class 2</div>
                                     </div>
                                     <div class="visible-xs mobile-view-content">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
@@ -302,24 +302,24 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">Welcome back to Spring Term</div>
-                                        <div class="col-xs-2 table-column">12-Apr-2016</div>
+                                        <div class="col-xs-4 table-column">Welcome back to Spring Term</div>
+                                        <div class="col-xs-3 table-column">12-Apr-2016</div>
                                         <div class="col-xs-2 table-column">Announced</div>
                                         <div class="col-xs-2 table-column">Classes 3A, 4B, 5, 6 </div>
                                     </div>
                                     <div class="visible-xs mobile-view-content">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
@@ -338,24 +338,24 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">Christmas Nativity play from children of year 2</div>
-                                        <div class="col-xs-2 table-column">3-Mar-2016</div>
+                                        <div class="col-xs-4 table-column">Christmas Nativity play from children of year 2</div>
+                                        <div class="col-xs-3 table-column">3-Mar-2016</div>
                                         <div class="col-xs-2 table-column">Draft</div>
                                         <div class="col-xs-2 table-column">Entire School</div>
                                     </div>
                                     <div class="visible-xs mobile-view-content">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
@@ -374,24 +374,24 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">School closed for elections</div>
-                                        <div class="col-xs-2 table-column">1-Mar-2016</div>
+                                        <div class="col-xs-4 table-column">School closed for elections</div>
+                                        <div class="col-xs-3 table-column">1-Mar-2016</div>
                                         <div class="col-xs-2 table-column">Announced</div>
                                         <div class="col-xs-2 table-column">Entire School</div>
                                     </div>
                                     <div class="visible-xs mobile-view-content">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
@@ -410,24 +410,24 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">Townhall talk with game of thrones cast</div>
-                                        <div class="col-xs-2 table-column">27-Feb-2016</div>
+                                        <div class="col-xs-4 table-column">Townhall talk with game of thrones cast</div>
+                                        <div class="col-xs-3 table-column">27-Feb-2016</div>
                                         <div class="col-xs-2 table-column">Announced</div>
                                         <div class="col-xs-2 table-column">Class 10A, 10B</div>
                                     </div>
                                     <div class="visible-xs mobile-view-content">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
@@ -446,24 +446,24 @@
                                         <div class="col-xs-1">
                                             <div class="custom-check">
                                                 <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                     <span>
-                                                        <i class="fa fa-check"></i>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                     </span>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="col-xs-5 table-column">Annual day practice. Change in timetable</div>
-                                        <div class="col-xs-2 table-column">14-Feb-2016</div>
+                                        <div class="col-xs-4 table-column">Annual day practice. Change in timetable</div>
+                                        <div class="col-xs-3 table-column">14-Feb-2016</div>
                                         <div class="col-xs-2 table-column">Announced</div>
                                         <div class="col-xs-2 table-column">Entire School</div>
                                     </div>
                                     <div class="visible-xs mobile-view-content">
                                         <div class="custom-check">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck" name="checkbox" value=""/>
+                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
                                                 <span>
-                                                    <i class="fa fa-check"></i>
+                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                 </span>
                                             </label>
                                         </div>
