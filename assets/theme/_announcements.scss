@@ -30,6 +30,49 @@
             background-color: $maroon;
         }
     }
+    .select-status-wrapper{
+        width     : 100%;
+        border    : 1px solid $light-gray-6;
+        padding   : 9px 11px;
+        border-top: 0;
+        ul{
+            display: inline-block;
+            margin-bottom: 0;
+            &.select-status-list{
+                li{
+                    .select-label{
+                        font-size  : 14px;
+                        font-weight: bold;
+                        line-height: 36px;
+                    }
+                    .custom-check{
+                        font-size   : 12px; 
+                        margin-right: 20px;
+                        span{
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+            &.select-status-action{
+                li{
+                    font-weight: bold;
+                    button{
+                        color           : $maroon-2;
+                        border          : 0;
+                        background-color: transparent;
+                    }
+                    .select-close{
+                        color           : $maroon-2;
+                        &:hover,&:focus{
+                            text-decoration: none;
+                            color          : $maroon-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .scheduling-announcement-wrapper{
         width     : 100%;
         border    : 1px solid $light-gray-6;
@@ -66,22 +109,6 @@
                     }
                     span{
                         font-weight: bold;
-                    }
-                }
-            }
-        }
-    }
-    .select-status-wrapper{
-        width           : 100%;
-        border          : 1px solid $light-gray-6;
-        padding         : 9px 11px;
-        ul{
-            display: inline-block;
-            margin-bottom: 0;
-            &.select-status-list{
-                li{
-                    .select-label{
-                        
                     }
                 }
             }

@@ -8816,6 +8816,34 @@ body {
       border-radius: 0;
       text-overflow: ellipsis;
       background-color: #cc3333; }
+  .content-wrapper .select-status-wrapper {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    padding: 9px 11px;
+    border-top: 0; }
+    .content-wrapper .select-status-wrapper ul {
+      display: inline-block;
+      margin-bottom: 0; }
+      .content-wrapper .select-status-wrapper ul.select-status-list li .select-label {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 36px; }
+      .content-wrapper .select-status-wrapper ul.select-status-list li .custom-check {
+        font-size: 12px;
+        margin-right: 20px; }
+        .content-wrapper .select-status-wrapper ul.select-status-list li .custom-check span {
+          margin-right: 3px; }
+      .content-wrapper .select-status-wrapper ul.select-status-action li {
+        font-weight: bold; }
+        .content-wrapper .select-status-wrapper ul.select-status-action li button {
+          color: #c53e3e;
+          border: 0;
+          background-color: transparent; }
+        .content-wrapper .select-status-wrapper ul.select-status-action li .select-close {
+          color: #c53e3e; }
+          .content-wrapper .select-status-wrapper ul.select-status-action li .select-close:hover, .content-wrapper .select-status-wrapper ul.select-status-action li .select-close:focus {
+            text-decoration: none;
+            color: #c53e3e; }
   .content-wrapper .scheduling-announcement-wrapper {
     width: 100%;
     border: 1px solid #c8c8c8;
@@ -8846,13 +8874,6 @@ body {
             position: absolute; }
         .content-wrapper .scheduling-announcement-wrapper ul li a span {
           font-weight: bold; }
-  .content-wrapper .select-status-wrapper {
-    width: 100%;
-    border: 1px solid #c8c8c8;
-    padding: 9px 11px; }
-    .content-wrapper .select-status-wrapper ul {
-      display: inline-block;
-      margin-bottom: 0; }
   .content-wrapper .table-wrapper {
     /*padding: 0 12px;*/ }
     .content-wrapper .table-wrapper .custom-table-view.table-header {
