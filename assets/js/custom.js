@@ -4,7 +4,9 @@ $(document).ready(function () {
         var wHeight = $(window).height();
         var headerHeight = $(".navbar-wrapper").height();
         var actualHeight = wHeight - headerHeight - 5;
+        var asideHeight = $(".aside-wrapper").height();
         $(".media-height").css('min-height', actualHeight);
+        $(".dashboard-wrapper .content-wrapper").css('min-height', asideHeight);
     }
 
 
