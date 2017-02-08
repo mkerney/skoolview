@@ -135,6 +135,8 @@ $(document).ready(function () {
             $('#schedulingAnnouncement').slideUp();
         }
     });
+    
+//Datepicker and Timepicker trigger    
     $('.glyphicon-trigger span').on('click', function () {
         $(this).siblings('.form-control').focus();
     });
@@ -150,4 +152,16 @@ $(document).ready(function () {
             $('#selectStatus').slideUp();
         });
     }
+    
+// table hover and action
+    $('.table-body .row .table-column').on('mouseenter', function(){
+        $(this).closest('.table-body .row').addClass('background');
+    });
+    $('.table-body .row .table-column').on('mouseleave', function(){
+        $(this).closest('.table-body .row').removeClass('background');
+    });
+    
+    $('.table-body .row .table-column').on('click', function(){
+        window.location.href='new-announcements.html';
+    });
 });

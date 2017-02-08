@@ -89,6 +89,7 @@
         border    : 1px solid $light-gray-6;
         padding   : 9px 11px;
         border-top: 0;
+        display   : none;
         ul{
             margin-bottom: 0;
             li{
@@ -173,17 +174,26 @@
                 /*padding      : 20px 12px;*/ 
                 font-size    : $font-size-base;
                 border-bottom: 2px solid $border-green;
-                .col-xs-1{
-                    .custom-check{
-                        padding: 18px 0px 18px 12px;
+                .row{
+                    @include transition(background-color 0.7s ease);
+                    &.background{
+                        background-color: $table-pink;
                     }
-                }
-                .table-column{
-                    overflow     : hidden;
-                    font-size    : 12px;
-                    line-height  : 60px; 
-                    white-space  : nowrap;
-                    text-overflow: ellipsis;
+                    .col-xs-1{
+                        .custom-check{
+                            padding: 18px 0px 18px 12px;
+                        }
+                    }
+                    .table-column{
+                        overflow     : hidden;
+                        font-size    : 12px;
+                        line-height  : 60px; 
+                        white-space  : nowrap;
+                        text-overflow: ellipsis;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
         }

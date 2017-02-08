@@ -8529,6 +8529,10 @@ body {
 .content-wrapper-mobile {
   margin-top: 70px; }
 
+.mar0 {
+  margin-left: 0;
+  margin-right: 0; }
+
 .img-placeholder {
   width: 40px;
   height: 40px;
@@ -8839,7 +8843,8 @@ body {
     opacity: 1;
     border: 1px solid #c8c8c8;
     padding: 9px 11px;
-    border-top: 0; }
+    border-top: 0;
+    display: none; }
     .content-wrapper .scheduling-announcement-wrapper ul {
       margin-bottom: 0; }
       .content-wrapper .scheduling-announcement-wrapper ul li a {
@@ -8901,14 +8906,24 @@ body {
       /*padding      : 20px 12px;*/
       font-size: 14px;
       border-bottom: 2px solid #99e394; }
-      .content-wrapper .table-wrapper .custom-table-view.table-body .col-xs-1 .custom-check {
-        padding: 18px 0px 18px 12px; }
-      .content-wrapper .table-wrapper .custom-table-view.table-body .table-column {
-        overflow: hidden;
-        font-size: 12px;
-        line-height: 60px;
-        white-space: nowrap;
-        text-overflow: ellipsis; }
+      .content-wrapper .table-wrapper .custom-table-view.table-body .row {
+        transition: background-color 0.7s ease;
+        -ms-transition: background-color 0.7s ease;
+        -o-transition: background-color 0.7s ease;
+        -moz-transition: background-color 0.7s ease;
+        -webkit-transition: background-color 0.7s ease; }
+        .content-wrapper .table-wrapper .custom-table-view.table-body .row.background {
+          background-color: #fffad5; }
+        .content-wrapper .table-wrapper .custom-table-view.table-body .row .col-xs-1 .custom-check {
+          padding: 18px 0px 18px 12px; }
+        .content-wrapper .table-wrapper .custom-table-view.table-body .row .table-column {
+          overflow: hidden;
+          font-size: 12px;
+          line-height: 60px;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+          .content-wrapper .table-wrapper .custom-table-view.table-body .row .table-column:hover {
+            cursor: pointer; }
 
 @media (min-width: 768px) and (max-width: 1025px) {
   .content-wrapper {

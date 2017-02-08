@@ -415,6 +415,10 @@ body {
     margin-top: 70px;
 }
 
+.mar0{
+    margin-left:0;
+    margin-right:0;
+}
 
 .img-placeholder{
     @include square(40px);
