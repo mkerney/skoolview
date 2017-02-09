@@ -1,0 +1,222 @@
+.footer-margin{
+    .repeat-wrapper{
+        height          : 1px;
+        margin          : 30px 0 20px;
+        display         : block;
+        position        : relative;
+        background-color: $white;
+        span{
+            top              : -9px;
+            left             : 50%;
+            color            : $black;
+            padding          : 0 30px;
+            position         : absolute;
+            font-size        : 16px;
+            background-color : $light-gray-2;
+            transform        : translate(-50%,0);
+            -o-transform     : translate(-50%,0);
+            -moz-transform   : translate(-50%,0);
+            -webkit-transform: translate(-50%,0);
+        }
+    }
+    .modal-backdrop{
+        &.in{
+            opacity: 0;
+        }
+    }
+    .bootstrap-timepicker-widget{
+        z-index: 1051;
+    }
+    .modal-wrapper{
+        transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -webkit-transform: translateY(50%);
+        -o-transform: translateY(50%);
+        .modal-content{
+            border          : 0;
+            height          : 60px;
+            box-shadow      : none; 
+            text-align      : center;
+            border-radius   : 10px;
+            background-color: rgba(0, 0, 0, 0.85);
+            p{
+                color      : $white;
+                margin     : 0;
+                font-size  : 12px;
+                line-height: 60px;
+                a{
+                    color          : $white;
+                    font-weight    : bold;  
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .modal-settings-wrapper{
+        .modal-dialog{
+            margin: 0;
+            .modal-content{
+                border          : 0;
+                box-shadow      : none; 
+                border-radius   : 0px;
+                background-color: $light-gray-2;
+                .modal-header{
+                    color           : $white;
+                    height          : 118px;
+                    text-align      : center;
+                    border-bottom   : 0;
+                    background-color: $theme-color;
+                    .header-content{
+                        transform        : translateY(80%);
+                        -moz-transform   : translateY(80%);
+                        -webkit-transform: translateY(80%);
+                        -o-transform     : translateY(80%);
+                        h4{
+                            margin     : 0;
+                            font-size  : 14px;
+                            font-weight: bold;
+                        }
+                        p{
+                            margin: 0
+                        }
+                    }
+                }
+                .modal-body{
+                    padding: 0 25px;
+                    .custom-form-group{
+                        margin: 20px 0 0;
+                        &:last-child{
+                            margin: 10px 0;
+                        }
+                        > .glyphicon-trigger{
+                            padding : 0 30px 0 110px;
+                            position: relative;
+                            label{
+                                top        : 8px;
+                                left       : 0;
+                                color      : $black;
+                                position   : absolute;
+                                font-weight: normal;
+                            }
+                            input{
+                                color        : $input-color;
+                                border       : 1px solid $light-gray-6;
+                                height       : 34px;
+                                padding      : 0px 10px;
+                                font-size    : 14px;
+                                border-radius: 0px;
+                            }
+                            span{
+                                top      : 5px;
+                                right    : 0;
+                                position : absolute;
+                                font-size: 24px;
+                            }
+                            &.pick-time{
+                                label{
+                                    left: 85px;
+                                }
+                            }
+                        }
+                        textarea{
+                            color        : $input-color;
+                            height       : 100px;
+                            border       : 1px solid $light-gray-6;
+                            resize       : none; 
+                            padding      : 10px;
+                            font-size    : 14px;
+                            margin-top   : 10px; 
+                            border-radius: 0px;
+                        }
+                    }
+                    .remainder-type-wrapper{
+                        .type-one-wrapper{
+                            > ul{
+                                margin: 0;
+                                li{
+                                    float     : left;
+                                    width     : 33.333333%;
+                                    text-align: center;
+                                    label{
+                                        color : $black;
+                                    }
+                                }
+                            }
+                        }
+                        .type-two-wrapper{
+                            margin-top: 20px;
+                            > ul{
+                                margin: 0;
+                                li{
+                                    padding   : 0;
+                                    width     : 14.285714285714286%;
+                                    float     : left;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .type-three-wrapper{
+                            .custom-form-group{
+                                margin: 30px 0 20px;
+                                > .glyphicon-trigger{
+                                    padding : 0 30px 0 110px;
+                                    position: relative;
+                                    label{
+                                        top        : 8px;
+                                        left       : 70px;
+                                        color      : $black;
+                                        position   : absolute;
+                                        font-weight: normal;
+                                    }
+                                    input{
+                                        color        : $input-color;
+                                        border       : 1px solid $light-gray-6;
+                                        height       : 34px;
+                                        padding      : 0px 10px;
+                                        font-size    : 14px;
+                                        border-radius: 0px;
+                                    }
+                                    span{
+                                        top      : 5px;
+                                        right    : 0;
+                                        position : absolute;
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .modal-footer{
+                    padding: 0px 25px 20px;
+                    border : 0; 
+                    button{
+                        color           : $black;
+                        border          : 0;
+                        position        : relative;
+                        background-color: transparent;
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                    button[type="reset"]{
+                        padding-left: 13px;
+                        i{
+                            top     : 5px;
+                            left    : 0; 
+                            position: absolute;
+                        }
+                    }
+                    button[type="submit"]{
+                        padding-right: 13px;
+                        i{
+                            top     : 5px;
+                            right   : 0; 
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
