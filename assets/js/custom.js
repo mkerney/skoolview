@@ -156,6 +156,9 @@ $(document).ready(function () {
     // Archived event
     $('body').on("click", ".archive-success", function () {
         $(this).closest(".panel-heading").removeClass("panel-heading-open");
+        $(this).parents('.panel-collapse').removeClass('in');
+        $(this).parents('.panel-collapse').siblings().find('.event-controls')
+                .css("opacity", "1").css("pointer-events", "visible");
 //        console.log($(this).closest('.panel.panel-default'));
         var readText = $(this).closest('.panel.panel-default');
         $(this).closest('.panel.panel-default').remove();
@@ -170,12 +173,15 @@ $(document).ready(function () {
 
 
     // Pinned event
-    $(".pinned-success").on("click", function () {
+    $('body').on("click", ".pinned-success", function () {
         $(this).closest(".panel-heading").removeClass("panel-heading-open");
+        $(this).parents('.panel-collapse').removeClass('in');
+        $(this).parents('.panel-collapse').siblings().find('.event-controls')
+                .css("opacity", "1").css("pointer-events", "visible");
 //        console.log($(this).closest('.panel.panel-default'));
         var readText = $(this).closest('.panel.panel-default');
         $(this).closest('.panel.panel-default').remove();
-        $('#accordion1').append(readText);
+        $('#accordion1').prepend(readText);
         $("#pinnedSuccess").modal("toggle");
         function explode() {
             $('#pinnedSuccess').modal('hide');
@@ -186,8 +192,12 @@ $(document).ready(function () {
 
 
     // Pinned event
-    $(".remainder-success").on("click", function () {
+    $('body').on("click",".remainder-success", function () {
         $(this).closest(".panel-heading").removeClass("panel-heading-open");
+        $(this).parents('.panel-collapse').removeClass('in');
+        $(this).parents('.panel-collapse').siblings().find('.event-controls')
+                .css("opacity", "1").css("pointer-events", "visible");
+//        .removeClass('in');
 //        console.log($(this).closest('.panel.panel-default'));
         var readText = $(this).closest('.panel.panel-default');
         
@@ -196,7 +206,7 @@ $(document).ready(function () {
             e.preventDefault();
 
             $(this).closest('.panel.panel-default').remove();
-            $('#accordion1').append(readText);
+            $('#accordion1').prepend(readText);
             $('#remainderSettings')
                     .modal('hide')
                     .on('hidden.bs.modal', function (e) {
