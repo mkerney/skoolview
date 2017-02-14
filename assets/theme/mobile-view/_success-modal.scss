@@ -53,8 +53,9 @@
         }
     }
     .modal-settings-wrapper{
+        padding: 0 !important;
         .modal-dialog{
-            margin: 0;
+            margin: 0 auto;
             .modal-content{
                 border          : 0;
                 box-shadow      : none; 

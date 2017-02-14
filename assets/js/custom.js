@@ -40,6 +40,12 @@ $(document).ready(function () {
     $('.panel-sidebar > ul > li > a.back-pin').on("click", function () {
         $(this).closest(".panel-heading").removeClass("panel-heading-open");
     });
+    $(document).on("click", function (e) {
+//        console.log($(e.target).is(".panel-heading > .panel-title > i.fa.fa-ellipsis-v"));
+        if ($(e.target).is(".panel-heading > .panel-title > i.fa.fa-ellipsis-v") === false) {
+            $(".panel-heading").removeClass("panel-heading-open");
+        }
+    });
     $(document).on('click', '.collapse-click', function () {
         $(".panel-heading").find('.event-controls').css("opacity", "1").css("pointer-events", "visible");
         if ($(this).hasClass('collapsed')) {
@@ -48,6 +54,7 @@ $(document).ready(function () {
             $(this).parent().find('.event-controls').css("opacity", "0").css("pointer-events", "none");
         }
     });
+    
 //Class Multiple check
     $("#checkbox-student").change(function () {
         var status = this.checked;
@@ -192,7 +199,7 @@ $(document).ready(function () {
 
 
     // Pinned event
-    $('body').on("click",".remainder-success", function () {
+    $('body').on("click", ".remainder-success", function () {
         $(this).closest(".panel-heading").removeClass("panel-heading-open");
         $(this).parents('.panel-collapse').removeClass('in');
         $(this).parents('.panel-collapse').siblings().find('.event-controls')
@@ -200,7 +207,7 @@ $(document).ready(function () {
 //        .removeClass('in');
 //        console.log($(this).closest('.panel.panel-default'));
         var readText = $(this).closest('.panel.panel-default');
-        
+
         $("#remainderSettings").modal("show");
         $('.remainder-setings').click(function (e) {
             e.preventDefault();
@@ -230,39 +237,4 @@ $(document).ready(function () {
     $('body').on("click", '.panel-sidebar > ul > li > a.back-pin', function () {
         $(this).closest(".panel-heading").removeClass("panel-heading-open");
     });
-
-// Addresing cards to different Pinned / Archive / Remainder
-//    $(".archive-success").on("click", function () {
-//        $("#archiveSuccess").modal("toggle");
-//        function explode() {
-//            $('#archiveSuccess').modal('hide');
-//        }
-//        setTimeout(explode, 2000);
-//    });
-//    $(".pinned-success").on("click", function () {
-//        $("#pinnedSuccess").modal("toggle");
-//        function explode() {
-//            $('#pinnedSuccess').modal('hide');
-//        }
-//        setTimeout(explode, 2000);
-//    });
-//    $(".remainder-success").on("click", function () {
-//        $("#remainderSettings").modal("toggle");
-//    });
-//    $('.remainder-setings').click(function (e) {
-//        e.preventDefault();
-//
-//        $('#remainderSettings')
-//                .modal('hide')
-//                .on('hidden.bs.modal', function (e) {
-//                    $('#remainderSuccess').modal('show');
-//                    function explode() {
-//                        $('#remainderSuccess').modal('hide');
-//                    }
-//                    setTimeout(explode, 2000);
-//
-//                    $(this).off('hidden.bs.modal'); // Remove the 'on' event binding
-//                });
-//
-//    });
 });
