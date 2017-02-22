@@ -1,0 +1,99 @@
+.login-wrapper{
+    height          : auto;
+    position        : relative;
+    min-height      : 100vh;
+    background-color: $theme-color;
+    .login-inner-wrapper{
+        width  : 335px;
+        margin : 0 auto;
+        padding: 50px 0;
+        .logo{
+            width  : 80px;
+            margin : 0 auto;
+            display: block;
+        }
+        h2{
+            color      : $white;
+            margin     : 40px 0;
+            font-size  : ($font-size-base * 2);
+            text-align : center;
+            font-family: $lato;
+        }
+        .form-wrapper{
+            padding: 25px;
+            background-color: $white;
+            .form-group{
+                .form-control{
+                    @include border-radius(0);
+                    @include box-shadow(none);
+                    color: $light-gray-9;
+                    font-family:  $lato;
+                    font-size: $font-size-base;
+                    height: 32px;
+                    margin: 30px 0 0;
+                    padding: 0;
+                    border: 0;                
+                    border-bottom: 1px solid $dropup-border-bottom;                
+                    &:focus{              
+                        border-bottom: 1px solid $dropup-border-bottom;       
+                    }
+                    &::-webkit-input-placeholder{
+                        font-family:  $lato;
+                        font-size: $font-size-base;
+                        color: $light-gray-9;
+                        opacity: 1;  
+                    }
+                    &:-moz-placeholder{
+                        font-family:  $lato;
+                        color: $light-gray-9;
+                        font-size: $font-size-base;
+                        opacity: 1; 
+                    }
+                    &::-moz-placeholder{
+                        font-family:  $lato;
+                        color: $light-gray-9;
+                        font-size: $font-size-base;
+                        opacity: 1;   
+                    }
+                    &::-ms-input-placeholder{
+                        font-family:  $lato;
+                        color: $light-gray-9;
+                        font-size: $font-size-base;
+                        opacity: 1; 
+                    }
+                }
+                a{
+                    color: $light-blue;
+                    margin: 15px 0 37px;
+                    border-bottom: 1px solid $light-blue;
+                    &:hover,&:focus{
+                        color: $light-blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .btn-login{
+                @include border-radius(0);
+                width: 100%;
+                font-family:  $lato;
+                background-color: $light-green;
+                padding: 25px 15px;
+                color: $light-blue1;
+                font-size: ($font-size-base);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media(min-width: 300px) and (max-width: 480px){
+    .login-wrapper{
+        .login-inner-wrapper{
+            width: 100%;
+            padding: 25px 15px;
+            h2{
+                margin: 15px 0;
+            }
+        }
+    }
+}

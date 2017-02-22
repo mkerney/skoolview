@@ -10004,5 +10004,93 @@ body.footer-margin {
 @media (min-width: 300px) and (max-width: 480px) {
   .footer-wrapper-mobile .footer-pills > li .footer-tabs .footer-tab-icon i {
     font-size: 21px; } }
+.login-wrapper {
+  height: auto;
+  position: relative;
+  min-height: 100vh;
+  background-color: #2B3A42; }
+  .login-wrapper .login-inner-wrapper {
+    width: 335px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .login-wrapper .login-inner-wrapper .logo {
+      width: 80px;
+      margin: 0 auto;
+      display: block; }
+    .login-wrapper .login-inner-wrapper h2 {
+      color: #ffffff;
+      margin: 40px 0;
+      font-size: 28px;
+      text-align: center;
+      font-family: "lato"; }
+    .login-wrapper .login-inner-wrapper .form-wrapper {
+      padding: 25px;
+      background-color: #ffffff; }
+      .login-wrapper .login-inner-wrapper .form-wrapper .form-group .form-control {
+        border-radius: 0;
+        -o-border-radius: 0;
+        -ms-border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        box-shadow: none;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        color: #8C8C8C;
+        font-family: "lato";
+        font-size: 14px;
+        height: 32px;
+        margin: 30px 0 0;
+        padding: 0;
+        border: 0;
+        border-bottom: 1px solid #8a8a8a; }
+        .login-wrapper .login-inner-wrapper .form-wrapper .form-group .form-control:focus {
+          border-bottom: 1px solid #8a8a8a; }
+        .login-wrapper .login-inner-wrapper .form-wrapper .form-group .form-control::-webkit-input-placeholder {
+          font-family: "lato";
+          font-size: 14px;
+          color: #8C8C8C;
+          opacity: 1; }
+        .login-wrapper .login-inner-wrapper .form-wrapper .form-group .form-control:-moz-placeholder {
+          font-family: "lato";
+          color: #8C8C8C;
+          font-size: 14px;
+          opacity: 1; }
+        .login-wrapper .login-inner-wrapper .form-wrapper .form-group .form-control::-moz-placeholder {
+          font-family: "lato";
+          color: #8C8C8C;
+          font-size: 14px;
+          opacity: 1; }
+        .login-wrapper .login-inner-wrapper .form-wrapper .form-group .form-control::-ms-input-placeholder {
+          font-family: "lato";
+          color: #8C8C8C;
+          font-size: 14px;
+          opacity: 1; }
+      .login-wrapper .login-inner-wrapper .form-wrapper .form-group a {
+        color: #2C3B43;
+        margin: 15px 0 37px;
+        border-bottom: 1px solid #2C3B43; }
+        .login-wrapper .login-inner-wrapper .form-wrapper .form-group a:hover, .login-wrapper .login-inner-wrapper .form-wrapper .form-group a:focus {
+          color: #2C3B43;
+          text-decoration: none; }
+      .login-wrapper .login-inner-wrapper .form-wrapper .btn-login {
+        border-radius: 0;
+        -o-border-radius: 0;
+        -ms-border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        width: 100%;
+        font-family: "lato";
+        background-color: #29D9C2;
+        padding: 25px 15px;
+        color: #162800;
+        font-size: 14px;
+        text-transform: uppercase; }
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .login-wrapper .login-inner-wrapper {
+    width: 100%;
+    padding: 25px 15px; }
+    .login-wrapper .login-inner-wrapper h2 {
+      margin: 15px 0; } }
 
 /*# sourceMappingURL=theme.css.map */
