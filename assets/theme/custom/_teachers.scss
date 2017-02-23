@@ -1,0 +1,17 @@
+.main-content-wrapper{
+    .content-wrapper{
+        &.teachers-wrapper{
+            padding: 0;
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .main-content-wrapper{
+        .content-wrapper{
+            &.teachers-wrapper {
+                padding: 15px 0;
+            }
+        }
+    }
+}

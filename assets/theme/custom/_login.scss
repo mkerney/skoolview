@@ -2,6 +2,10 @@
     height          : auto;
     position        : relative;
     min-height      : 100vh;
+    display         : -webkit-flex; /* Safari */;
+    display         : flex;
+    align-items     : -webkit-flex; /* Safari */;
+    align-items     : center;
     background-color: $theme-color;
     .login-inner-wrapper{
         width  : 335px;

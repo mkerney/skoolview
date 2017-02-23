@@ -1,0 +1,101 @@
+.skoolview-wrapper{
+    .main-content-wrapper{
+        &.custom-main{
+            background-color: $white;
+            border-color: $white;
+            .dashboard-wrapper{
+                border: 0; 
+                .content-wrapper{
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+.dashboard-wrapper{
+    .content-wrapper{
+        &.dashboard-inner-wrapper{
+            text-align: center;
+            .eagle-logo{
+                display: inline-block;
+            }
+            h3{
+                color      : $black;  
+                margin     : 15px 0 0;
+                font-size  : ($font-size-base + 2);
+                font-weight: bold;
+                text-align : center;
+            }
+            p{
+                color      : $black;
+                margin     : 5px 0 35px;
+                font-size  : ($font-size-base);
+                text-align : center;
+            }
+            .tiles-main-wrapper{
+                .tiles-wrapper{
+                    padding: 15px;
+                    background-color: $save-bg-color;
+                    h2{
+                        color      : $white;
+                        margin     : 5px 0 0;
+                        font-size  : ($font-size-base * 4);
+                        font-weight: bold;
+                        text-align : center;
+                        font-family: $lato;
+                        .help-block{
+                            color      : $white;
+                            margin     : 5px 0;
+                            font-size  : ($font-size-base + 2);
+                        }
+                    }
+                }
+                + .tiles-main-wrapper{
+                    margin: 8px -15px 0;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 300px) and (max-width: 767px){
+    .dashboard-wrapper{
+        .content-wrapper{
+            &.dashboard-inner-wrapper{
+                padding: 15px;
+                p{
+                    margin: 5px 0 15px;
+                }
+                .tiles-main-wrapper{
+                    .tiles-wrapper{
+                        h2{
+                            font-size: ($font-size-base * 2.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  
+@media(min-width: 300px) and (max-width: 480px){
+    .dashboard-wrapper{
+        .content-wrapper{
+            &.dashboard-inner-wrapper{               
+                .tiles-main-wrapper{
+                    .col-xs-4{
+                        width: 100%;
+                    }
+                    .tiles-wrapper{
+                        margin: 0 0 8px;
+                        h2{
+                            font-size: ($font-size-base * 1.5);
+                        }                       
+                    }
+                    + .tiles-main-wrapper{
+                        margin: 0 -15px;
+                    }
+                }
+            }
+        }
+    }
+}

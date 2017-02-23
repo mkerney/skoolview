@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 Jun, 2016, 12:19:52 PM
+    Author     : Ahex  
+*/  
+
+@import "../bootstrap-scss/_bootstrap.scss";
+@import "../fontawesome/font-awesome.scss";
+@import "../plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css";
+@import "../plugins/datepicker/css/bootstrap-datepicker.min.css";
+@import "_mixins.scss";
+@import "_variable.scss";
+@import "_common.scss";  
+@import "_table.scss";
+@import "_nav.scss";
+@import "_sidebar.scss";    
+@import "_announcements.scss";   
+@import "_new-announcements.scss";
+@import "_login.scss";
+@import "_dashboard.scss";
+@import "_teachers.scss";
+@import "../mobile-view/_nav-mobile.scss";
+@import "../mobile-view/_success-modal.scss";
+@import "../mobile-view/_parent-view.scss";
+@import "../mobile-view/_mob-teacher-announcement.scss";
+@import "../mobile-view/_footer-mobile.scss";
