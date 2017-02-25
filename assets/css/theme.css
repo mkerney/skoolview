@@ -9131,7 +9131,8 @@ body {
     max-width: 85%;
     margin: 0 auto; }
     .new-announcement-wrapper form .form-group label {
-      text-align: left; }
+      text-align: left;
+      padding-top: 11px; }
     .new-announcement-wrapper form .form-group input {
       height: 40px; }
       .new-announcement-wrapper form .form-group input:focus {
@@ -9468,6 +9469,57 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-content-wrapper .content-wrapper.teachers-wrapper {
     padding: 15px 0; } }
+
+.new-teacher-wrapper .new-announcement-wrapper form {
+  max-width: 90%; }
+  .new-teacher-wrapper .new-announcement-wrapper form .recepient-wrapper p {
+    margin-top: 11px;
+    text-decoration: none; }
+
+.new-teacher-wrapper .img-new-teacher {
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 auto; }
+
+.new-teacher-wrapper .add-remove-icon-list {
+  margin: 10px 0;
+  text-align: center; }
+  .new-teacher-wrapper .add-remove-icon-list li {
+    padding: 0; }
+    .new-teacher-wrapper .add-remove-icon-list li a {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      -o-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      line-height: 25px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      color: #ffffff; }
+      .new-teacher-wrapper .add-remove-icon-list li a .fa {
+        vertical-align: middle; }
+      .new-teacher-wrapper .add-remove-icon-list li a.btn-remove {
+        background-color: #c53e3e; }
+      .new-teacher-wrapper .add-remove-icon-list li a.btn-add {
+        background-color: #29d9c2; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .new-teacher-wrapper .new-announcement-wrapper form {
+    max-width: 100%; }
+    .new-teacher-wrapper .new-announcement-wrapper form .form-group .control-label {
+      font-size: 13px;
+      padding-right: 0; } }
 
 .navbar-wrapper-mobile {
   color: #ffffff;

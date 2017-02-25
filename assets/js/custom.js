@@ -54,7 +54,7 @@ $(document).ready(function () {
             $(this).parent().find('.event-controls').css("opacity", "0").css("pointer-events", "none");
         }
     });
-    
+
 //Class Multiple check
     $("#checkbox-student").change(function () {
         var status = this.checked;
