@@ -1,0 +1,37 @@
+.img-new{
+    @include border-radius(5px);
+    margin: 0 auto;
+}     
+.add-remove-icon-list{
+    margin: 10px 0;
+    text-align: center;
+    li{
+        padding: 0;
+        a{
+            @include square(25px);
+            @include border-radius(50%);
+            @include transition(all 0.3s ease-in-out);
+            line-height: 25px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            color: $white;
+            .fa{
+                vertical-align: middle;
+            }
+            &.btn-remove{
+                background-color: $maroon-2;
+            }
+            &.btn-add{
+                background-color: $save-bg-color;
+            }
+        }
+    }
+}
+.custom-form-group{
+    .form-group{
+        .control-label{
+            font-weight: normal;
+        }
+    }
+}

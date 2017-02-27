@@ -12,9 +12,11 @@ and open the template in the editor.
 @import "../fontawesome/font-awesome.scss";
 @import "../plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css";
 @import "../plugins/datepicker/css/bootstrap-datepicker.min.css";
+@import "../../plugins/select2/scss/core.scss";
 @import "_mixins.scss";
 @import "_variable.scss";
 @import "_common.scss";  
+@import "_common_student_teacher.scss";
 @import "_table.scss";
 @import "_nav.scss";
 @import "_sidebar.scss";    
@@ -24,6 +26,8 @@ and open the template in the editor.
 @import "_dashboard.scss";
 @import "_teachers.scss";
 @import "_new_teacher.scss";
+@import "_students.scss";
+@import "_new_student.scss";
 @import "../mobile-view/_nav-mobile.scss";
 @import "../mobile-view/_success-modal.scss";
 @import "../mobile-view/_parent-view.scss";

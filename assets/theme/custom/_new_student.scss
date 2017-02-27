@@ -1,0 +1,13 @@
+.new-student-wrapper{
+    .img-new{
+        max-width: 150px;
+    }
+    .new-announcement-wrapper{
+        form{
+            max-width: 90%;
+            .control-label{
+                font-size: ($font-size-base - 1);
+            }
+        }
+    }
+}

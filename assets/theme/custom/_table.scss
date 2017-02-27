@@ -39,3 +39,39 @@
     }
 }
 
+
+@media(min-width: 1200px){
+
+}
+
+@media(min-width:992px) and (max-width: 1199px){
+    .table-wrapper{
+        .custom-table-view{
+            &.table-body{
+                .img-circle{
+                    margin: 0;
+                }
+            }
+        }  
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .table-wrapper{
+        .custom-table-view{
+            &.table-body{
+                .img-circle{
+                    margin: 0;
+                }
+            }
+        }  
+    }  
+}
+
+@media(min-width: 300px) and (max-width: 767px){
+
+}
+
+@media(min-width:300px) and (max-width: 480px){
+
+}
