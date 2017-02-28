@@ -9163,6 +9163,72 @@ body {
 .custom-form-group .form-group .control-label {
   font-weight: normal; }
 
+.add-item-list {
+  margin: 0; }
+  .add-item-list li {
+    padding: 0;
+    vertical-align: top; }
+    .add-item-list li a {
+      border-radius: 50%;
+      -o-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      line-height: 25px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      color: #ffffff; }
+      .add-item-list li a .fa {
+        vertical-align: middle; }
+      .add-item-list li a.btn-remove {
+        width: 25px;
+        height: 25px;
+        background-color: #c53e3e; }
+      .add-item-list li a.btn-add {
+        width: 67px;
+        height: 67px;
+        line-height: 63px;
+        margin: 0 0 0 30px;
+        font-size: 42px;
+        background-color: #29d9c2; }
+      .add-item-list li a.btn-avatar {
+        width: 52px;
+        height: 52px;
+        display: inline-block;
+        overflow: hidden; }
+    .add-item-list li p {
+      margin: 15px 0 0; }
+      .add-item-list li p span {
+        display: block; }
+
+.select-box-wrapper .select2-container .select2-selection--single {
+  height: 40px; }
+
+.select-box-wrapper .select2-container--default .select2-selection--single .select2-selection__rendered {
+  height: 40px;
+  line-height: 40px; }
+
+.select-box-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow {
+  width: 48px;
+  height: 35px; }
+
+.select-box-wrapper .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #000 transparent transparent transparent;
+  border-width: 8px 6px 0 6px; }
+
+.select2-container--default .select2-results__group {
+  padding: 0; }
+
+.select2-container--default .select2-results__option .select2-results__option {
+  min-height: 40px;
+  line-height: 28px; }
+
 .table-wrapper .custom-table-view {
   /*--  Header Styles  --*/
   /*--  Body Styles  --*/ }
@@ -10027,6 +10093,10 @@ body {
   max-width: 90%; }
   .new-student-wrapper .new-announcement-wrapper form .control-label {
     font-size: 13px; }
+  .new-student-wrapper .new-announcement-wrapper form .custom-date-time .pick-date span {
+    right: 15px; }
+  .new-student-wrapper .new-announcement-wrapper form .announcement-submit-wrapper {
+    padding: 0 0 10px; }
 
 .navbar-wrapper-mobile {
   color: #ffffff;

@@ -4,7 +4,9 @@ $(document).ready(function () {
     $('.datepicker-dob').datepicker();
     
     /*--  Custom Select2  --*/
-    $(".custom-select2").select2();
+    $(".custom-select2").select2({
+          minimumResultsForSearch: Infinity
+    });
     
 });
 

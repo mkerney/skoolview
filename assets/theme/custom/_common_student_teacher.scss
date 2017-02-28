@@ -35,3 +35,44 @@
         }
     }
 }
+.add-item-list{
+    margin: 0;
+    li{
+        padding: 0;
+        vertical-align: top;
+        a{
+            @include border-radius(50%);
+            @include transition(all 0.3s ease-in-out);
+            line-height: 25px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            color: $white;
+            .fa{
+                vertical-align: middle;
+            }
+            &.btn-remove{
+                @include square(25px);
+                background-color: $maroon-2;
+            }
+            &.btn-add{  
+                @include square(67px);
+                line-height: 63px;  
+                margin: 0 0 0 30px;
+                font-size: ($font-size-base *3);
+                background-color: $save-bg-color;
+            }  
+            &.btn-avatar{
+                @include square(52px);
+                display: inline-block;
+                overflow: hidden;
+            }          
+        }
+        p{
+            margin: 15px 0 0;
+            span{
+                display: block;
+            }
+        }
+    }
+}

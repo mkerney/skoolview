@@ -1,0 +1,23 @@
+.select-box-wrapper{
+    .select2-container .select2-selection--single{
+        height: 40px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        height: 40px;
+        line-height: 40px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+        @include size(48px,35px);
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        border-color: #000 transparent transparent transparent;
+        border-width: 8px 6px 0 6px;
+    }
+}    
+.select2-container--default .select2-results__group{
+    padding: 0;
+}
+.select2-container--default .select2-results__option .select2-results__option{
+    min-height: 40px;
+    line-height: 28px;
+}
