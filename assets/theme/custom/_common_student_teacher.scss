@@ -76,3 +76,26 @@
         }
     }
 }
+
+@media(min-width: 300px) and (max-width: 767px){
+    .custom-form-group{
+        .form-group{
+            &:first-of-type{
+                .control-label{
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 300px) and (max-width: 480px){
+    .add-item-list{
+        li{
+            display: block;
+            a{
+                
+            }
+        }
+    }
+}

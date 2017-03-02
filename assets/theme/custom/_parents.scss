@@ -1,0 +1,17 @@
+.parents-wrapper{
+    .table-wrapper{
+        .custom-table-view{
+            &.table-header{
+                .first-table-column,.table-column{
+                    width: 14.28%;
+                }
+            }
+            &.table-body{
+                .first-table-column,.table-column{
+                    width: 14.28%;
+                }
+            }
+        } 
+    }
+}
+    

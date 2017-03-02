@@ -1,0 +1,107 @@
+.new-parent-wrapper{
+    .img-new{
+        max-width: 150px;
+    }
+    .new-announcement-wrapper{
+        form{
+            max-width: 90%;
+            .control-label{
+                font-size: ($font-size-base - 1);
+            }
+            .custom-date-time{
+                .pick-date{  
+                    span{
+                        right:15px;  
+                    }
+                }
+            }
+            .announcement-submit-wrapper{
+                padding: 0 0 10px;
+            }
+        }
+    }
+    .add-item-list{
+        margin: 0 0 15px;
+        li{
+            a{
+                &.btn-avatar{
+                    margin: 0 25px 0 0;
+                }
+                &.btn-add{
+                    +  span{
+                        display: block;
+                        margin: 0 0 0 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .new-parent-wrapper{
+        .add-item-list{
+            li{
+                a{
+                    &.btn-avatar{
+                        margin: 0 15px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 300px) and (max-width: 767px){
+    .new-parent-wrapper{
+        .new-announcement-wrapper{
+            padding: 0;
+            form{
+                max-width: 100%;
+                .announcement-submit-wrapper{
+                    .col-sm-12{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 300px) and (max-width: 480px){
+    .new-parent-wrapper{
+        .new-announcement-wrapper{
+            form{
+                .announcement-submit-wrapper{
+                    button{
+                        float: left;
+                         width: 48%;
+                        &#saveAndInvite{
+                            float: none;
+                            margin: 0 0 15px !important;
+                            width: 100%;
+                        }
+                        &:last-of-type{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .add-item-list{
+            li{
+                &:last-child{
+                    display: block;
+                    padding: 15px 0;
+                    a{
+                        margin: 0 auto;
+                        display: block;
+                        + span{
+                            margin: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

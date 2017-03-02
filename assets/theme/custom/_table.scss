@@ -20,13 +20,13 @@
         /*--  Body Styles  --*/
         &.table-body{
             .first-table-column{
-                line-height: 50px;
+                line-height: 60px;
             }
             .custom-check{
                 display: inline-block;
             }
             .img-circle{
-                max-width: 45px;
+                @include square(40px);
                 display: inline-block;
                 margin: 0 0 0 15px;
             }
@@ -34,6 +34,58 @@
                 max-width: 45px;
                 display: inline-block;
                 margin: 0 0 0 20px;
+            }
+            .active{
+                color: $dark-green; 
+            }
+            .invited{
+                color: $light-orange;
+            }
+            .draft{
+                color: $light-blue2;  
+            }
+            .more{
+                color: $accent-red1;
+                bottom: 5px;
+                display: inline-block;
+                line-height: 15px;
+                position: absolute;  
+                right: 28px;
+                text-decoration: none;
+                border-bottom: 2px solid $accent-red1;
+            }
+            .mobile-view-content{
+                @include box-shadow(none);
+                padding: 5px 15px;
+                border-bottom: 1px dashed $light-gray-2;
+                .media{
+                    .media-left{
+                        min-width: 100px;
+                        .custom-check{
+                            left: 0;
+                            line-height: 40px;
+                            margin: 0;
+                            position: relative;
+                            top: 0;
+                        }
+                        a{
+                            display: inline-block;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                    .media-body{
+                        .media-heading{
+                            font-size: $font-size-base;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: ($font-size-base - 2);
+                            color: $dark-gray-3;
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -66,10 +118,6 @@
             }
         }  
     }  
-}
-
-@media(min-width: 300px) and (max-width: 767px){
-
 }
 
 @media(min-width:300px) and (max-width: 480px){

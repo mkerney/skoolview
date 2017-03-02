@@ -15,3 +15,12 @@
         }
     }
 }
+@media(min-width: 300px) and (max-width: 767px){
+    .main-content-wrapper{
+        .content-wrapper{
+            &.teachers-wrapper {
+                padding: 15px;
+            }
+        }
+    }
+}

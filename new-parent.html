@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="assets/images/favicon.png">
 
-        <title>Skoolview | New Student</title>
+        <title>Skoolview | New Parent</title>
 
         <!-- Custom styles for this template -->
         <link href="assets/css/theme.css" rel="stylesheet" type="text/css"/>
@@ -31,10 +31,10 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a href="javascript:void(0);" class="toggle-aside hidden-xs"><i class="fa fa-bars"></i></a>
-                        <a href="students.html" class="back visible-xs-inline-block"><i class="fa fa-angle-left"></i></a>
+                        <a href="parents.html" class="back visible-xs-inline-block"><i class="fa fa-angle-left"></i></a>
                         <a class="navbar-brand" href="#">
                             <img class="hidden-xs" src="assets/images/school.png" alt="school"/>
-                            <span class="visible-xs">New Student</span>
+                            <span class="visible-xs">New Parent</span>
                             <span class="hidden-xs">Skoolview</span>
                         </a>
                     </div>
@@ -83,7 +83,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="students.html" class="admin-tasks active">
+                                <a href="students.html" class="admin-tasks">
                                     Students
                                 </a>
                             </li>
@@ -93,7 +93,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="parents.html" class="admin-tasks">
+                                <a href="parents.html" class="admin-tasks active">
                                     Parents
                                 </a>
                             </li>
@@ -118,11 +118,11 @@
                 <!--  Aside Wrapper Ends  -->
 
                 <!--  Dashboard Wrapper Starts  -->
-                <div class="dashboard-wrapper new-student-wrapper">
+                <div class="dashboard-wrapper new-parent-wrapper">
 
                     <!--  New Announcement Wrapper Starts  -->
                     <div class="new-announcement-wrapper media-height">
-                        <h3 class="text-center hidden-xs">New Student</h3>
+                        <h3 class="text-center hidden-xs">New Parent</h3>
                         <div class="container-fluid">
                             <form class="form-horizontal">
                                 <div class="row">
@@ -144,38 +144,25 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group custom-date-time">
-                                                    <label class="control-label col-md-4 col-sm-3" for="subject">Date of Birth</label>
-                                                    <div class="col-md-8 col-sm-7">
-                                                        <div class="glyphicon-trigger pick-date"> 
-                                                            <input type="text" class="form-control datepicker-dob" value="">
-                                                            <span class="glyphicon glyphicon-calendar "></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div>                   
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="form-group">
-                                                    <label class="control-label col-md-4 col-sm-3" for="mobile">Class</label>
-                                                    <div class="col-md-8 col-sm-7 select-box-wrapper">
-                                                        <select class="form-control custom-select2">
-                                                            <optgroup>
-                                                                <option value="1A">1A</option>
-                                                                <option value="2A">2A</option>
-                                                                <option value="3A">3A</option>
-                                                                <option value="3C">3C</option>
-                                                                <option value="4C">4C</option>
-                                                            </optgroup>
-                                                        </select>
+                                                    <label class="control-label col-md-4 col-sm-3" for="mobileNumber">Mobile Number</label>
+                                                    <div class="col-md-8 col-sm-7">
+                                                        <input type="text" class="form-control" id="firstName" placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div> 
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-4 col-sm-3" for="email">Email</label>
+                                                    <div class="col-md-8 col-sm-7">                                                       
+                                                        <input type="email" class="form-control" id="subject" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                   
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
@@ -216,14 +203,32 @@
                                             </div>
                                         </div> 
                                         <div class="row">
-                                            <label class="col-md-2 col-sm-3">Parents</label>
-                                            <div class="col-md-8 col-sm-8">
+                                            <label class="col-md-2 col-sm-3">Students</label>
+                                            <div class="col-md-10 col-sm-9">
                                                 <ul class="list-inline add-item-list">
                                                     <li>
                                                         <a class="btn-avatar" href="javascript:void(0);">
-                                                            <img class="img-responsive" src="assets/images/parents/nancy-emmut.jpg">
+                                                            <img class="img-responsive" src="assets/images/students/harry.jpg" alt="harry">
                                                         </a>
-                                                        <p><span>Nancy</span>Emmut</p>
+                                                        <p><span>Harry</span>Emmut</p>
+                                                        <a class="btn-remove" href="javascript:void(0);">
+                                                            <i class="fa fa-minus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="btn-avatar" href="javascript:void(0);">
+                                                            <img class="img-responsive" src="assets/images/students/kane.jpg" alt="kane">
+                                                        </a>
+                                                        <p><span>Kane </span>Emmut</p>
+                                                        <a class="btn-remove" href="javascript:void(0);">
+                                                            <i class="fa fa-minus"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="btn-avatar" href="javascript:void(0);">
+                                                            <img class="img-responsive" src="assets/images/students/emma.jpg" alt="emma">
+                                                        </a>
+                                                        <p><span>Emma</span>Emmut</p>
                                                         <a class="btn-remove" href="javascript:void(0);">
                                                             <i class="fa fa-minus"></i>
                                                         </a>
@@ -232,6 +237,7 @@
                                                         <a class="btn-add" href="javascript:void(0);">
                                                             <i class="fa fa-plus"></i>
                                                         </a>
+                                                        <span>Add New</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -240,7 +246,7 @@
                                     <div class="col-sm-4">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <img class="img-responsive img-new" src="assets/images/students/new-student.jpg" alt="new-student"/>
+                                                <img class="img-responsive img-new" src="assets/images/parents/new-parent.jpg" alt="new-parent"/>
                                                 <ul class="list-inline add-remove-icon-list">
                                                     <li><a href="javascript:void(0);" class="btn-remove"><i class="fa fa-minus"></i></a></li>
                                                     <li><a href="javascript:void(0);" class="btn-add"><i class="fa fa-plus"></i></a></li>
@@ -254,8 +260,9 @@
                                         <div class="form-group announcement-submit-wrapper"> 
                                             <div class="col-sm-12">
                                                 <div class="pull-right">
-                                                    <button type="reset" id="resetAnnouncement" class="btn btn-default text-uppercase">Cancel</button>
+                                                    <button type="button" id="saveAndInvite" class="btn btn-default text-uppercase">Save & Invite</button>
                                                     <button type="button" id="saveAnnouncement" class="btn btn-default text-uppercase">Save</button>
+                                                    <button type="reset" id="resetAnnouncement" class="btn btn-default text-uppercase">Cancel</button>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,0 +1,20 @@
+@media(min-width: 300px) and (max-width: 767px){
+    .content-wrapper{
+        .table-wrapper{
+            .custom-table-view{
+                &.table-body{
+                    .mobile-view-content{
+                        @include box-shadow(none);
+                        padding: 0;
+                        border-bottom: 1px dashed $light-gray-2;
+                        height: auto;
+                        min-height: 50px;
+                        .img-calendar{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

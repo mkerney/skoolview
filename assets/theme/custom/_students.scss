@@ -13,3 +13,17 @@
 .students-wrapper{
 
 }
+
+@media(min-width: 300px) and (max-width: 767px){
+    .skoolview-wrapper{
+        .main-content-wrapper{
+            .dashboard-wrapper{
+                .content-wrapper{
+                    &.students-wrapper{
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

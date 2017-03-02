@@ -57,6 +57,18 @@
             }
         }
     }
+    .img-search{
+        margin: 2px 0;
+        max-width: 30px;
+    }
+    .back{
+        color: $white;
+        font-size: ($font-size-base * 1.5);
+        margin: 0 25px 0 10px;
+        &:hover,&:focus{
+            color: $white;
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width:1025px){

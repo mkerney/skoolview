@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="assets/images/favicon.png">
 
-        <title>Skoolview | Students</title>
+        <title>Skoolview | Parents</title>
 
         <!-- Custom styles for this template -->
         <link href="assets/css/theme.css" rel="stylesheet" type="text/css"/>
@@ -33,7 +33,7 @@
                         <a href="javascript:void(0);" class="toggle-aside"><i class="fa fa-bars"></i></a>
                         <a class="navbar-brand" href="javascript:void(0);">
                             <img class="hidden-xs" src="assets/images/school.png" alt="school"/>
-                            <span class="visible-xs">Students</span>
+                            <span class="visible-xs">Caretakers</span>
                             <span class="hidden-xs">Skoolview</span>
                         </a>
                     </div>
@@ -82,7 +82,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="students.html" class="admin-tasks active">
+                                <a href="students.html" class="admin-tasks">
                                     Students
                                 </a>
                             </li>
@@ -92,7 +92,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="parents.html" class="admin-tasks">
+                                <a href="parents.html" class="admin-tasks active">
                                     Parents
                                 </a>
                             </li>
@@ -118,13 +118,13 @@
 
                 <!--  Dashboard Wrapper Starts  -->
                 <div class="dashboard-wrapper custom-background">
-                    <div class="content-wrapper students-wrapper">
+                    <div class="content-wrapper parents-wrapper">
                         <div class="search-wrapper container-fluid">
 
                             <!--  Search Bar Starts  -->
                             <div class="search-something-wrapper hidden-xs">
                                 <input type="text" class="form-control " placeholder="Search for something" />
-                                <a id="newTeacherTrigger" href="new-student.html" class="btn btn-danger"><i class="fa fa-plus"></i>&nbsp;NEW STUDENTS</a>
+                                <a id="newTeacherTrigger" href="new-parent.html" class="btn btn-danger"><i class="fa fa-plus"></i>&nbsp;NEW PARENT</a>
                             </div>
                             <!--  Search Bar Ends  -->
 
@@ -216,7 +216,7 @@
                         </div>
 
                         <!--  Add Announcements Starts -->
-                        <a href="new-student.html" class="visible-xs custom-new-announcement">
+                        <a href="new-parent.html" class="visible-xs custom-new-announcement">
                             <img src="assets/images/add-announcement.png" alt="add-announcement"/>
                         </a>
                         <!--  Add Announcements Ends -->
@@ -239,17 +239,11 @@
                                             </div>
                                         </div>
                                         <div class="col-xs-2 hidden-xs table-column">Name</div>
-                                        <div class="col-xs-2 hidden-xs table-column date-checking">
-                                            Class
-                                            <a class="data-checked" href="javascript:void(0)"><i class="fa fa-filter"></i></a>
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column status-checking">
-                                            Date of Birth
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column">
-                                            Address
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column">Parents</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Status</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Students</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Mobile</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Email</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Address</div>
                                         <div class="col-xs-2 visible-xs mobile-view-search">
                                             <input type="text" class="form-control " placeholder="Search for something" />
                                         </div>
@@ -273,18 +267,19 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/students/harry.jpg" alt="harry"/>
+                                            <img class="img-circle" src="assets/images/parents/nancy-emmut.jpg" alt="nancy-emmut"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Harry Emmut</div>
-                                        <div class="col-xs-2 table-column">3A</div>
-                                        <div class="col-xs-2 table-column">21-May-2005</div>
-                                        <div class="col-xs-2 table-column">221 B,  Baker Street, London</div>
                                         <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column"><span class="active">Active</span></div>
+                                        <div class="col-xs-2 table-column">William Emmut, 3A<a class="more" href="javascript:void(0);">3 more</a></div>
+                                        <div class="col-xs-2 table-column">343430023</div>
+                                        <div class="col-xs-2 table-column">nemmut@gmail.com</div>
+                                        <div class="col-xs-2 table-column">88 A, Westminister, London</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
                                     <!--  Mobile View Starts  -->
-                                    <div class="mobile-view-content visible-xs">
+                                    <div class="mobile-view-content visible-xs">                                
                                         <div class="media">
                                             <div class="media-left">
                                                 <div class="custom-check">
@@ -296,16 +291,18 @@
                                                     </label>
                                                 </div> 
                                                 <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/students/emma.jpg" alt="emma"/>
+                                                    <img class="media-object img-circle" src="assets/images/parents/nancy-emmut.jpg" alt="nancy-emmut"/>
                                                 </a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading">Emma Watson</h4>
-                                                <p>2C</p>
+                                                <h4 class="media-heading">Nancy Emmut</h4>
+                                                <p>
+                                                    Harry Emmut, Kane Emmut, William Emmut
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--  Mobile View Starts  -->
+                                    <!--  Mobile View Ends  -->
 
                                 </div>
                                 <!--  First Row Ends  -->
@@ -324,13 +321,14 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/students/kane.jpg" alt="kane"/>
+                                            <img class="img-circle" src="assets/images/parents/sharatha.jpg" alt="sharatha"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Kane Emmut</div>
-                                        <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Jan-2006</div>
-                                        <div class="col-xs-2 table-column">33, Castle Avenue,​​​​​​​ London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">Sharadha Rao</div>
+                                        <div class="col-xs-2 table-column"><span class="invited">Invited</span></div>
+                                        <div class="col-xs-2 table-column">Tanvi Rao, 2C</div>
+                                        <div class="col-xs-2 table-column">343431023</div>
+                                        <div class="col-xs-2 table-column">srao@gmail.com</div>
+                                        <div class="col-xs-2 table-column">81, Governors Park, London</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -345,18 +343,20 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
+                                                </div>
                                                 <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/students/harry.jpg" alt="harry"/>
+                                                    <img class="media-object img-circle" src="assets/images/parents/sharatha.jpg" alt="sharatha"/>
                                                 </a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading">Willam Emmut</h4>
-                                                <p>4A</p>
+                                                <h4 class="media-heading">Sharadha Rao</h4>
+                                                <p>
+                                                    Tanvi Rao
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--  Mobile View Starts  -->
+                                    <!--  Mobile View Ends  -->
 
                                 </div>
                                 <!--  Second Row Ends  -->
@@ -375,13 +375,14 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/students/emma.jpg" alt="emma"/>
+                                            <img class="img-circle" src="assets/images/parents/andy.jpg" alt="Andy Bolton"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Emma ​​​​​​​Watson</div>
-                                        <div class="col-xs-2 table-column">2C</div>
-                                        <div class="col-xs-2 table-column">21-Dec-2006</div>
-                                        <div class="col-xs-2 table-column">88 A, Westminister, London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">Andy Bolton</div>
+                                        <div class="col-xs-2 table-column"><span class="active">Active</span></div>
+                                        <div class="col-xs-2 table-column">Nancy Bolton, 2C</div>
+                                        <div class="col-xs-2 table-column">343430025</div>
+                                        <div class="col-xs-2 table-column">abolton@gmail.com</div>
+                                        <div class="col-xs-2 table-column">10, Downing Street, London</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -396,14 +397,16 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
+                                                </div>
                                                 <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/students/harry.jpg" alt="harry"/>
+                                                    <img class="media-object img-circle" src="assets/images/parents/andy.jpg" alt="andy"/>
                                                 </a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading">Tanvi Rao</h4>
-                                                <p>2C</p>
+                                                <h4 class="media-heading">Andy Bolton</h4>
+                                                <p>
+                                                    Harry Bolton
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -426,18 +429,19 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/students/willam.jpg" alt="willam"/>
+                                            <img class="img-circle" src="assets/images/parents/cathleen.jpg" alt="cathleen"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Willam Emmut</div>
-                                        <div class="col-xs-2 table-column">4A</div>
-                                        <div class="col-xs-2 table-column">21-Feb-2005</div>
-                                        <div class="col-xs-2 table-column">81,Governors Park, London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">Cathleen Haggard</div>
+                                        <div class="col-xs-2 table-column"><span class="draft">Draft</span></div>
+                                        <div class="col-xs-2 table-column">Andrew Haggard, 3A</div>
+                                        <div class="col-xs-2 table-column">343431123</div>
+                                        <div class="col-xs-2 table-column">chaggard@gmail.com</div>
+                                        <div class="col-xs-2 table-column">55, Vener Street, ​​​​​​​London</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
                                     <!--  Mobile View Starts  -->
-                                    <div class="mobile-view-content visible-xs">
+                                    <div class="mobile-view-content visible-xs">                                    
                                         <div class="media">
                                             <div class="media-left">
                                                 <div class="custom-check">
@@ -447,16 +451,18 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
+                                                </div>
                                                 <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/students/nancy.jpg" alt="nancy"/>
+                                                    <img class="media-object img-circle" src="assets/images/parents/cathleen.jpg" alt="cathleen"/>
                                                 </a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading">Nancy Emmut</h4>
-                                                <p>2C</p>
+                                                <h4 class="media-heading">Cathleen Haggard</h4>
+                                                <p>
+                                                    Andrew Haggard
+                                                </p>
                                             </div>
-                                        </div>
+                                        </div>                                       
                                     </div>
                                     <!--  Mobile View Starts  -->
 
@@ -477,13 +483,14 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/students/tanvi.jpg" alt="eric"/>
+                                            <img class="img-circle" src="assets/images/parents/linda.jpg" alt="linda"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Tanvi Rao</div>
-                                        <div class="col-xs-2 table-column">2C</div>
-                                        <div class="col-xs-2 table-column">21-May-2006</div>
-                                        <div class="col-xs-2 table-column">10, Downing Street, London</div>
-                                        <div class="col-xs-2 table-column">Sharadha Rao</div>
+                                        <div class="col-xs-2 table-column">Linda Melon</div>
+                                        <div class="col-xs-2 table-column"><span class="invited">Invited</span></div>
+                                        <div class="col-xs-2 table-column">Andy Melon, 4A</div>
+                                        <div class="col-xs-2 table-column">343431923</div>
+                                        <div class="col-xs-2 table-column">lmenon@gmail.com</div>
+                                        <div class="col-xs-2 table-column">33, Maxmillian Road, ​​​​​​​London</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -498,168 +505,23 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
+                                                </div>
                                                 <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/students/andrew.jpg" alt="andrew"/>
+                                                    <img class="media-object img-circle" src="assets/images/parents/cathleen.jpg" alt="cathleen"/>
                                                 </a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading">Andrew Hoggard</h4>
-                                                <p>3B</p>
+                                                <h4 class="media-heading">Cathleen Haggard</h4>
+                                                <p>
+                                                    Andrew Haggard
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--  Mobile View Starts  -->
+                                    <!--  Mobile View Ends  -->
 
                                 </div>
                                 <!--  Fifth Row Ends  -->
-
-                                <!--  Sixth Row Starts  -->
-                                <div class="custom-table-view table-body">
-
-                                    <!--  Desktop View Starts  -->
-                                    <div class="row mar0 hidden-xs">
-                                        <div class="col-xs-2 first-table-column">
-                                            <div class="custom-check">
-                                                <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
-                                                    <span>
-                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <img class="img-circle" src="assets/images/students/nancy.jpg" alt="eric"/>
-                                        </div>
-                                        <div class="col-xs-2 table-column">Nancy Bolton</div>
-                                        <div class="col-xs-2 table-column">2C</div>
-                                        <div class="col-xs-2 table-column">21-July-2006</div>
-                                        <div class="col-xs-2 table-column">55, Vener Street, London</div>
-                                        <div class="col-xs-2 table-column">Andy Bolton</div>
-                                    </div>
-                                    <!--  Desktop View Ends  -->
-
-                                    <!--  Mobile View Starts  -->
-                                    <div class="mobile-view-content visible-xs">
-                                        <div class="media">
-                                            <div class="media-left">
-                                                <div class="custom-check">
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
-                                                        <span>
-                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
-                                                        </span>
-                                                    </label>
-                                                </div> 
-                                                <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/students/andy.jpg" alt="andy"/>
-                                                </a>
-                                            </div>
-                                            <div class="media-body">
-                                                <h4 class="media-heading">Andy Melon</h4>
-                                                <p>2A</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--  Mobile View Starts  -->
-
-                                </div>
-                                <!--  Sixth Row Ends  -->
-
-                                <!--  Seventh Row Starts  -->
-                                <div class="custom-table-view table-body">
-
-                                    <!--  Desktop View Starts  -->
-                                    <div class="row mar0 hidden-xs">
-                                        <div class="col-xs-2 first-table-column">
-                                            <div class="custom-check">
-                                                <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
-                                                    <span>
-                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <img class="img-circle" src="assets/images/students/andrew.jpg" alt="eric"/>
-                                        </div>
-                                        <div class="col-xs-2 table-column">Andrew Haggard</div>
-                                        <div class="col-xs-2 table-column">3B</div>
-                                        <div class="col-xs-2 table-column">21-Aug-2005</div>
-                                        <div class="col-xs-2 table-column">33, Maxmillian Road, London</div>
-                                        <div class="col-xs-2 table-column">Cathleen Haggard</div>
-                                    </div>
-                                    <!--  Desktop View Ends  -->
-
-                                    <!--  Mobile View Starts  -->
-                                    <div class="mobile-view-content hidden">
-                                        <div class="custom-check">
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
-                                                <span>
-                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <a href="javascript:void(0)">
-                                            <p>
-                                                Road works starting from 15-Apr-2016
-                                            </p>
-                                            <small>
-                                                Scheduled
-                                            </small>
-                                        </a>
-                                    </div>
-                                    <!--  Mobile View Starts  -->
-
-                                </div>
-                                <!--  Seventh Row Ends  -->
-
-                                <!--  Eighth Row Starts  -->
-                                <div class="custom-table-view table-body">
-
-                                    <!--  Desktop View Starts  -->
-                                    <div class="row mar0 hidden-xs">
-                                        <div class="col-xs-2 first-table-column">
-                                            <div class="custom-check">
-                                                <label class="checkbox-inline">
-                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
-                                                    <span>
-                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <img class="img-circle" src="assets/images/students/andy.jpg" alt="eric"/>
-                                        </div>
-                                        <div class="col-xs-2 table-column">Andy Melon</div>
-                                        <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Dec-2006</div>
-                                        <div class="col-xs-2 table-column">22, Shakespeare Avenue, London</div>
-                                        <div class="col-xs-2 table-column">Linda Melon</div>
-                                    </div>
-                                    <!--  Desktop View Ends  -->
-
-                                    <!--  Mobile View Starts  -->
-                                    <div class="mobile-view-content hidden">
-                                        <div class="custom-check">
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
-                                                <span>
-                                                    <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <a href="javascript:void(0)">
-                                            <p>
-                                                Road works starting from 15-Apr-2016
-                                            </p>
-                                            <small>
-                                                Scheduled
-                                            </small>
-                                        </a>
-                                    </div>
-                                    <!--  Mobile View Starts  -->
-
-                                </div>
-                                <!--  Eighth Row Ends  -->
 
                                 <!--  Table Body Ends  -->
 
@@ -687,7 +549,7 @@
         <script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
         <!-- Custom JavaScript -->
         <script src="assets/js/common.js" type="text/javascript"></script>
-        <script src="assets/js/students.js" type="text/javascript"></script>
+        <script src="assets/js/parents.js" type="text/javascript"></script>
 
     </body>
 </html>
