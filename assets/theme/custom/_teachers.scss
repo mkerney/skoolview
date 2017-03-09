@@ -2,6 +2,54 @@
     .content-wrapper{
         &.teachers-wrapper{
             padding: 0;
+            .table-wrapper{
+                .table-header{
+                    .first-name-sorting{
+                        > a {
+                            i{
+                                font-size     : 30px;
+                                margin-bottom : 4px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+                .table-body{
+                    .mobile-view-content{
+                        min-height: 60px;
+                        .media{
+                            .media-left{
+                                min-width: 125px;
+                                > a{
+                                    > img{
+                                        width: 50px;
+                                        height: 50px;
+                                        margin: 0 0 0 10px;
+                                    }
+                                }
+                            }
+                            .media-body{
+                                width: 100%;
+                                .media-heading{
+                                    margin: 0;
+                                    position: relative;
+                                    img{
+                                        position: absolute;
+                                        right: 0;
+                                        top: 2px;
+                                    }
+                                }
+                                p{
+                                    margin: 0;
+                                    &:first-of-type{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

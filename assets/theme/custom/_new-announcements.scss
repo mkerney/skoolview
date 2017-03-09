@@ -1,6 +1,6 @@
 .new-announcement-wrapper{
     background-color: $light-gray-2;
-    h3{
+    > h3{
         margin     : 0;
         line-height: 80px;
         overflow   : hidden;
@@ -150,7 +150,7 @@
         }
     }
     /* custom student selection check box */
-    .custom-check-student{       
+/*    .custom-check-student{       
         label{
             &.checkbox-inline{
                 input[type="checkbox"]{
@@ -173,7 +173,7 @@
                 }
             }
         }
-    } 
+    } */
 
 
     /* custom staff selection check box */

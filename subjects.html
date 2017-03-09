@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="assets/images/favicon.png">
 
-        <title>Skoolview | Teachers</title>
+        <title>Skoolview | Subjects</title>
 
         <!-- Custom styles for this template -->
         <link href="assets/css/theme.css" rel="stylesheet" type="text/css"/>
@@ -33,7 +33,7 @@
                         <a href="javascript:void(0);" class="toggle-aside"><i class="fa fa-bars"></i></a>
                         <a class="navbar-brand" href="javascript:void(0);">
                             <img class="hidden-xs" src="assets/images/school.png" alt="school"/>
-                            <span class="visible-xs">Teachers</span>
+                            <span class="visible-xs">Subjects</span>
                             <span class="hidden-xs">Skoolview</span>
                         </a>
                     </div>
@@ -41,7 +41,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="javascript:void(0)">
-                                    <span class="hidden-xs">SIGN OUT <i class="fa fa-sign-out"></i></span>
+                                    <span class="hidden-xs">SIGN OUT</span>
                                     <img class="img-responsive img-search visible-xs" src="assets/images/magnifier.png" alt="img-search"/>
                                 </a>
                             </li>
@@ -77,7 +77,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="teachers.html" class="admin-tasks active">
+                                <a href="teachers.html" class="admin-tasks">
                                     Teachers
                                 </a>
                             </li>
@@ -87,7 +87,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="subjects.html" class="admin-tasks">
+                                <a href="subjects.html" class="admin-tasks active">
                                     Subjects
                                 </a>
                             </li>
@@ -124,35 +124,105 @@
                             <!--  Search Bar Starts  -->
                             <div class="search-something-wrapper hidden-xs">
                                 <input type="text" class="form-control " placeholder="Search for something" />
-                                <a id="newTeacherTrigger" href="new-teacher.html" class="btn btn-danger"><i class="fa fa-plus"></i>&nbsp;NEW TEACHER</a>
+                                <a id="newTeacherTrigger" href="new-subject.html" class="btn btn-danger"><i class="fa fa-plus"></i>&nbsp;NEW SUBJECT</a>
                             </div>
                             <!--  Search Bar Ends  -->
 
                             <!--  Select Status Starts:{{Hidden Xs}} -->
-                            <div class="hidden-xs">
+<!--                            <div class="hidden-xs">
+                                <div id="selectStatus" class="select-status-wrapper">
+                                    <form class="clearfix">
+                                        <ul class="list-inline select-status-list">
+                                            <li><span class="select-label">SELECT STATUS:</span></li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox"  name="checkbox" value=""/>
+                                                        <span>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                        </span>
+                                                        ALL 
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox"  name="checkbox" value=""/>
+                                                        <span>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                        </span>
+                                                        Announced
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox"  name="checkbox" value=""/>
+                                                        <span>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                        </span>
+                                                        Draft
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" name="checkbox" value=""/>
+                                                        <span>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                        </span>
+                                                        Scheduled
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-inline select-status-action pull-right">
+                                            <li>
+                                                <button type="reset" class="select-reset">
+                                                    <span>RESET</span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <a class="select-close" href="javascript:void(0);">
+                                                    <span>CLOSE</span>
+                                                    <img src="assets/images/close.png" alt="select-close"/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
                                 <div id="schedulingAnnouncement" class="scheduling-announcement-wrapper">
                                     <ul class="list-inline">
                                         <li>
-                                            <a class="delete-announcement" id="deleteTeacher" href="javascript:void(0);">
-                                                <img src="assets/images/bin.png" alt="teacher-del"/>
+                                            <a class="send-announcement" href="javascript:void(0);">
+                                                <img src="assets/images/announcement.png" alt="announcement-mic"/>
+                                                <span>SEND ANNOUNCEMENT</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="delete-announcement" href="javascript:void(0);">
+                                                <img src="assets/images/bin.png" alt="announcement-del"/>
                                                 <span>DELETE</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div>-->
                             <!--  Select Status Ends -->
 
                         </div>
 
                         <!--  Add Announcements Starts -->
-                        <a href="new-teacher.html" class="visible-xs custom-new-announcement">
+                        <a href="new-subject.html" class="visible-xs custom-new-announcement">
                             <img src="assets/images/add-announcement.png" alt="add-announcement"/>
                         </a>
                         <!--  Add Announcements Ends -->
 
                         <!--  Table Wrapper Starts -->
-                        <div class="table-wrapper">
+                        <div class="table-wrapper subjects-wrapper">
                             <div class="container-fluid pad0">
 
                                 <!--  Table Header Starts  -->
@@ -168,29 +238,8 @@
                                                 </label>                                                
                                             </div>
                                         </div>
-                                        <div class="col-xs-2 hidden-xs table-column first-name-sorting">
-                                            First Name
-                                            <a href="javascript:void(0);"><i class="fa fa-caret-up"></i></a>
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column date-checking">
-                                            Last Name
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column status-checking">
-                                            Subjects
-                                            <a class="data-checked" href="javascript:void(0)">
-                                                <i class="fa fa-filter"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column">
-                                            Classes
-                                            <a class="status-checked" href="javascript:void(0)">
-                                                <i class="fa fa-filter"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-xs-2 hidden-xs table-column">Timetable</div>
-                                        <div class="col-xs-2 visible-xs mobile-view-search">
-                                            <input type="text" class="form-control " placeholder="Search for something" />
-                                        </div>
+                                        <div class="col-xs-2 hidden-xs table-column">Subjects</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Classes <a class="class-sorting" href="javascript:void(0);"><i class="fa fa-filter"></i></a></div>
                                     </div>
                                 </div>
                                 <!--  Table Header Ends  -->
@@ -211,20 +260,14 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/teachers/eric.jpg" alt="eric"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Eric</div>
-                                        <div class="col-xs-2 table-column">Stan</div>
                                         <div class="col-xs-2 table-column">Music</div>
                                         <div class="col-xs-2 table-column">1, 2, 3A, 4</div>
-                                        <div class="col-xs-2 table-column">
-                                            <img class="img-responsive img-calendar" src="assets/images/calendar.png" alt="calendar"/>
-                                        </div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
                                     <!--  Mobile View Starts  -->
-                                    <div class="mobile-view-content visible-xs">
+                                    <div class="mobile-view-content visible-xs">                                
                                         <div class="media">
                                             <div class="media-left">
                                                 <div class="custom-check">
@@ -234,19 +277,20 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
-                                                <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/teachers/greta.jpg" alt="greta"/>
-                                                </a>
+                                                </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading clearfix">Greta Smith<img class="img-responsive img-calendar pull-right" src="assets/images/teachers/event.png" alt="calendar"/></h4>
-                                                <p>English</p>
-                                                <p>2A, 3B, 4A</p>
+                                                <h4 class="media-heading">
+                                                    Music
+                                                    <img class="img-responsive img-calendar " src="assets/images/teachers/event.png" alt="calendar"/>
+                                                </h4>
+                                                <p>
+                                                    1, 2, 3A, 4
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--  Mobile View Starts  -->
+                                    <!--  Mobile View Ends  -->
 
                                 </div>
                                 <!--  First Row Ends  -->
@@ -265,15 +309,9 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/teachers/greta.jpg" alt="eric"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Greta</div>
-                                        <div class="col-xs-2 table-column">Smith</div>
                                         <div class="col-xs-2 table-column">English</div>
-                                        <div class="col-xs-2 table-column">2A, 3B, 4A,...</div>
-                                        <div class="col-xs-2 table-column">
-                                            <img class="img-responsive img-calendar" src="assets/images/calendar.png" alt="calendar"/>
-                                        </div>
+                                        <div class="col-xs-2 table-column">2A, 3B, 4A</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -288,19 +326,20 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
-                                                <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/teachers/janie.jpg" alt="greta"/>
-                                                </a>
+                                                </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading clearfix">Janie Graf<img class="img-responsive img-calendar pull-right" src="assets/images/teachers/event.png" alt="calendar"/></h4>
-                                                <p>Art</p>
-                                                <p>3A, 4B</p>
+                                                <h4 class="media-heading">
+                                                    English 
+                                                    <img class="img-responsive img-calendar " src="assets/images/teachers/event.png" alt="calendar"/>
+                                                </h4>
+                                                <p>
+                                                    2A, 3B, 4A
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--  Mobile View Starts  -->
+                                    <!--  Mobile View Ends  -->
 
                                 </div>
                                 <!--  Second Row Ends  -->
@@ -319,15 +358,9 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/teachers/janie.jpg" alt="eric"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Janie</div>
-                                        <div class="col-xs-2 table-column">Graf</div>
-                                        <div class="col-xs-2 table-column">Art</div>
+                                        <div class="col-xs-2 table-column">History</div>
                                         <div class="col-xs-2 table-column">3A, 4B</div>
-                                        <div class="col-xs-2 table-column">
-                                            <img class="img-responsive img-calendar" src="assets/images/calendar.png" alt="calendar"/>
-                                        </div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -342,15 +375,16 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
-                                                <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/teachers/thomas.jpg" alt="janie"/>
-                                                </a>
+                                                </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading clearfix">Thomas Newton<img class="img-responsive img-calendar pull-right" src="assets/images/teachers/event.png" alt="calendar"/></h4>
-                                                <p>Maths</p>
-                                                <p>2, 3, 4</p>
+                                                <h4 class="media-heading">
+                                                    History 
+                                                    <img class="img-responsive img-calendar " src="assets/images/teachers/event.png" alt="calendar"/>
+                                                </h4>
+                                                <p>
+                                                    3A, 3B
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -373,15 +407,58 @@
                                                     </span>
                                                 </label>
                                             </div>
-                                            <img class="img-circle" src="assets/images/teachers/thomas.jpg" alt="eric"/>
                                         </div>
-                                        <div class="col-xs-2 table-column">Thomas</div>
-                                        <div class="col-xs-2 table-column">Newton</div>
-                                        <div class="col-xs-2 table-column">Maths</div>
+                                        <div class="col-xs-2 table-column">Geography</div>
                                         <div class="col-xs-2 table-column">2, 3, 4</div>
-                                        <div class="col-xs-2 table-column">
-                                            <img class="img-responsive img-calendar" src="assets/images/calendar.png" alt="calendar"/>
+                                    </div>
+                                    <!--  Desktop View Ends  -->
+
+                                    <!--  Mobile View Starts  -->
+                                    <div class="mobile-view-content visible-xs">                                    
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="custom-check">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
+                                                        <span>
+                                                            <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Geography
+                                                    <img class="img-responsive img-calendar" src="assets/images/teachers/event.png" alt="calendar"/>
+                                                </h4>
+                                                <p>
+                                                    2, 3, 4
+                                                </p>
+                                            </div>
+                                        </div>                                       
+                                    </div>
+                                    <!--  Mobile View Starts  -->
+
+                                </div>
+                                <!--  Fourth Row Ends  -->
+
+                                <!--  Fifth Row Starts  -->
+                                <div class="custom-table-view table-body">
+
+                                    <!--  Desktop View Starts  -->
+                                    <div class="row mar0 hidden-xs">
+                                        <div class="col-xs-2 first-table-column">
+                                            <div class="custom-check">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
+                                                    <span>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                    </span>
+                                                </label>
+                                            </div>
                                         </div>
+                                        <div class="col-xs-2 table-column">Arts</div>
+                                        <div class="col-xs-2 table-column">2, 3, 4</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -396,22 +473,131 @@
                                                             <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
                                                         </span>
                                                     </label>
-                                                </div> 
-                                                <a href="javascript:void(0);">
-                                                    <img class="media-object img-circle" src="assets/images/teachers/thomas.jpg" alt="janie"/>
-                                                </a>
+                                                </div>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading clearfix">Thomas Newton<img class="img-responsive img-calendar pull-right" src="assets/images/teachers/event.png" alt="calendar"/></h4>
-                                                <p>Maths</p>
-                                                <p>2, 3, 4</p>
+                                                <h4 class="media-heading">
+                                                    Arts 
+                                                    <img class="img-responsive img-calendar" src="assets/images/teachers/event.png" alt="calendar"/>
+                                                </h4>
+                                                <p>
+                                                    2, 3, 4
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--  Mobile View Starts  -->
+                                    <!--  Mobile View Ends  -->
 
                                 </div>
-                                <!--  Fourth Row Ends  -->
+                                <!--  Fifth Row Ends  -->
+
+                                <!--  sixth Row Starts  -->
+                                <div class="custom-table-view table-body">
+
+                                    <!--  Desktop View Starts  -->
+                                    <div class="row mar0 hidden-xs">
+                                        <div class="col-xs-2 first-table-column">
+                                            <div class="custom-check">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
+                                                    <span>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">Science</div>
+                                        <div class="col-xs-2 table-column">2, 3, 4</div>
+                                    </div>
+                                    <!--  Desktop View Ends  -->
+
+                                    <!--  Mobile View Starts  -->
+                                    
+                                    <!--  Mobile View Ends  -->
+
+                                </div>
+                                <!--  sixth Row Ends  -->
+
+                                <!--  seventh Row Starts  -->
+                                <div class="custom-table-view table-body">
+
+                                    <!--  Desktop View Starts  -->
+                                    <div class="row mar0 hidden-xs">
+                                        <div class="col-xs-2 first-table-column">
+                                            <div class="custom-check">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
+                                                    <span>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">Mathematics</div>
+                                        <div class="col-xs-2 table-column">2, 3, 4</div>
+                                    </div>
+                                    <!--  Desktop View Ends  -->
+
+                                    <!--  Mobile View Starts  -->
+                                    
+                                    <!--  Mobile View Ends  -->
+
+                                </div>
+                                <!--  seventh Row Ends  -->
+
+                                <!--  eighth Row Starts  -->
+                                <div class="custom-table-view table-body">
+
+                                    <!--  Desktop View Starts  -->
+                                    <div class="row mar0 hidden-xs">
+                                        <div class="col-xs-2 first-table-column">
+                                            <div class="custom-check">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
+                                                    <span>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">Physics</div>
+                                        <div class="col-xs-2 table-column">8, 9, 10</div>
+                                    </div>
+                                    <!--  Desktop View Ends  -->
+
+                                    <!--  Mobile View Starts  -->
+                                    
+                                    <!--  Mobile View Ends  -->
+
+                                </div>
+                                <!--  eighth Row Ends  -->
+
+                                <!--  Ninth Row Starts  -->
+                                <div class="custom-table-view table-body">
+
+                                    <!--  Desktop View Starts  -->
+                                    <div class="row mar0 hidden-xs">
+                                        <div class="col-xs-2 first-table-column">
+                                            <div class="custom-check">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" class="announcementCheck open-send-announcement" name="checkbox" value=""/>
+                                                    <span>
+                                                        <i><img src="assets/images/custom-check-mark.png" alt="custom-check"/></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">Biology</div>
+                                        <div class="col-xs-2 table-column">8, 9, 10</div>
+                                    </div>
+                                    <!--  Desktop View Ends  -->
+
+                                    <!--  Mobile View Starts  -->
+                                    
+                                    <!--  Mobile View Ends  -->
+
+                                </div>
+                                <!--  Ninth Row Ends  -->
 
                                 <!--  Table Body Ends  -->
 
@@ -429,18 +615,6 @@
         </div>
         <!--  Skoolview Wrapper Ends  -->
 
-        <!--   deleted row Modal  -->
-        <div id="teacherDeleted" class="modal-wrapper modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <p>ROW(S) DELETED. <a class="" data-dismiss="modal">CLOSE</a></p>
-                </div>
-
-            </div>
-        </div>
-
         <!-- Jquery core JavaScript -->
         <script src="assets/js/jquery.min.js" type="text/javascript"></script>
         <!-- Bootstrap core JavaScript -->
@@ -451,7 +625,7 @@
         <script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
         <!-- Custom JavaScript -->
         <script src="assets/js/common.js" type="text/javascript"></script>
-        <script src="assets/js/teachers.js" type="text/javascript"></script>
+        <script src="assets/js/subjects.js" type="text/javascript"></script>
 
     </body>
 </html>

@@ -18,12 +18,12 @@ $(document).ready(function () {
         if (this.checked === false) {
             $(".teachers-wrapper #announcementCheckbox")[0].checked = false;
         }
-//        console.log($('.table-body .hidden-xs .announcementCheck').length);
+        console.log($('.table-body .hidden-xs .announcementCheck').length);
         if ($('.teachers-wrapper .table-body .first-table-column .announcementCheck:checked').length === $('.table-body .hidden-xs .announcementCheck').length) {
             $(".teachers-wrapper #announcementCheckbox")[0].checked = true;
         }
         $('.teachers-wrapper #schedulingAnnouncement').slideDown();
-//        console.log($('.table-body .first-table-column .custom-check .checkbox-inline .announcementCheck:checked').length);
+        console.log($('.table-body .first-table-column .custom-check .checkbox-inline .announcementCheck:checked').length);
         if ($('.teachers-wrapper .table-body .first-table-column .custom-check .checkbox-inline .announcementCheck:checked').length === 0) {
             $('.teachers-wrapper #schedulingAnnouncement').slideUp();
         }
@@ -43,24 +43,9 @@ $(document).ready(function () {
     }
 
     /*--  On Click Row Redirecting to New Teacher Page  --*/
-//    $('.teachers-wrapper .table-body .row .table-column').on('click', function () {
-//        window.location.href = 'new-teacher.html';
-//    });
-
-    /*   Delete Operation of the checked teachers   */
-    $("#schedulingAnnouncement #deleteTeacher").on('click', function () {
-//        console.log($('.custom-check input.open-send-announcement'))
-        $('.custom-check input.open-send-announcement').each(function () {
-            if ($(this).is(":checked")) {
-//                alert();
-                $(this).closest('.table-body').remove();
-            }
-        });
-        $("#teacherDeleted").modal("toggle");
-        function explode() {
-            $('#teacherDeleted').modal('hide');
-        }
-        setTimeout(explode, 3000);
+    $('.teachers-wrapper .table-body .row .table-column').on('click', function () {
+        window.location.href = 'new-teacher.html';
     });
+
 });
 

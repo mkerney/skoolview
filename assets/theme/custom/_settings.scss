@@ -1,0 +1,41 @@
+.settings-wrapper{
+    > h3{
+        border-bottom: 1px solid $custom-uncheck-color;
+        padding-bottom: 8px;
+    }
+    .attendance-wrapper{
+        margin-bottom: 100px;
+        h5{
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+            color    : $light-gray-9;
+            margin   : 0;
+        }
+    }
+    .chat-room-wrapper{
+        margin-bottom: 100px;
+        h5{
+            font-size: 14px;
+        }
+    }
+    .attendance-settings, .chat-room-settings{
+        .custom-check-school{
+            display       : inline-block;
+            vertical-align: top;
+            img{
+                width: 30px;
+            }
+        }
+        .selection{
+            display    : inline-block;
+            > ul{
+                display: inline-block;
+                &:last-child{ 
+                    margin-bottom: 0;  
+                }
+            }
+        }
+    }
+}

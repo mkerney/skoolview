@@ -54,6 +54,7 @@
             &.btn-remove{
                 @include square(25px);
                 background-color: $maroon-2;
+                text-align: center;
             }
             &.btn-add{  
                 @include square(67px);

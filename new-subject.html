@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" href="assets/images/favicon.png">
 
-        <title>Skoolview | New Teacher</title>
+        <title>Skoolview | New Subject</title>
 
         <!-- Custom styles for this template -->
         <link href="assets/css/theme.css" rel="stylesheet" type="text/css"/>
@@ -31,10 +31,10 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a href="javascript:void(0);" class="toggle-aside hidden-xs"><i class="fa fa-bars"></i></a>
-                        <a href="teachers.html" class="back visible-xs-inline-block"><i class="fa fa-angle-left"></i></a>
+                        <a href="subjects.html" class="back visible-xs-inline-block"><i class="fa fa-angle-left"></i></a>
                         <a class="navbar-brand" href="#">
                             <img class="hidden-xs" src="assets/images/school.png" alt="school"/>
-                            <span class="visible-xs">New Teacher</span>
+                            <span class="visible-xs">New Subject</span>
                             <span class="hidden-xs">Skoolview</span>
                         </a>
                     </div>
@@ -42,7 +42,8 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li >
                                 <a href="javascript:void(0)">
-                                    <span class="hidden-xs">SIGN OUT <i class="fa fa-sign-out"></i></span>
+                                    <span class="hidden-xs">SIGN OUT</span>
+                                    <i class="fa fa-sign-out hidden-xs"></i>
                                 </a>
                             </li>
                         </ul>
@@ -77,7 +78,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="teachers.html" class="admin-tasks active">
+                                <a href="teachers.html" class="admin-tasks">
                                     Teachers
                                 </a>
                             </li>
@@ -87,7 +88,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="subjects.html" class="admin-tasks">
+                                <a href="subjects.html" class="admin-tasks active">
                                     Subjects
                                 </a>
                             </li>
@@ -117,88 +118,45 @@
                 <!--  Aside Wrapper Ends  -->
 
                 <!--  Dashboard Wrapper Starts  -->
-                <div class="dashboard-wrapper new-teacher-wrapper">
+                <div class="dashboard-wrapper new-parent-wrapper">
 
                     <!--  New Announcement Wrapper Starts  -->
                     <div class="new-announcement-wrapper media-height">
-                        <h3 class="text-center hidden-xs">New Teacher</h3>
+                        <h3 class="text-center hidden-xs">New Subject</h3>
                         <div class="container-fluid">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal new-subject-wrapper">
                                 <div class="row">
                                     <div class="col-sm-8">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-4 col-sm-5" for="firstName">First Name</label>
-                                                    <div class="col-md-8 col-sm-7">
-                                                        <input type="text" class="form-control" id="firstName" placeholder="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-4 col-sm-5" for="lastName">Last Name</label>
-                                                    <div class="col-md-8 col-sm-7">
-                                                        <input type="text" class="form-control" id="lastName" placeholder="">
-                                                    </div>
-                                                </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3" for="subjectName">Subject Name</label>
+                                            <div class="col-md-5 col-sm-7 school-class-content">
+                                                <input class="form-control" id="subjectName" type="text" placeholder="">
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-4 col-sm-5" for="subject">Subject</label>
-                                                    <div class="col-md-8 col-sm-7">
-                                                        <input type="text" class="form-control" id="subject" placeholder="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="control-label col-md-4 col-sm-5" for="mobile">Mobile</label>
-                                                    <div class="col-md-8 col-sm-7">
-                                                        <input type="text" class="form-control" id="mobile" placeholder="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <img class="img-responsive img-new" src="assets/images/teachers/new-teacher.jpg" alt="new-teacher"/>
-                                                <ul class="list-inline add-remove-icon-list">
-                                                    <li><a href="javascript:void(0);" class="btn-remove"><i class="fa fa-minus"></i></a></li>
-                                                    <li><a href="javascript:void(0);" class="btn-add"><i class="fa fa-plus"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-10">
-                                        <div class="form-group row recepient-wrapper">
-                                            <label class="control-label col-sm-2">Classes</label>
-                                            <div class="col-sm-10"> 
-                                                <p class="text-left">2, 4B, 4C</p>
-                                                <div class="recepients students">
-                                                    <div class="selection">
-                                                        <ul class="list-inline class-section">
+                                        <div class="form-group">
+                                            <label class="col-md-3 col-sm-3">Classes</label>
+                                            <div class="col-md-9 col-sm-9">
+                                                <div class="custom-subject-wrapper">
+                                                    <span>2, 4B, 4C</span>
+                                                    <div class="subject-class-selection">
+                                                        <ul class="list-unstyled class-section">
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox" class="checkbox-classes checbox-class" name="checkbox-1" value=""/>
-                                                                        <span>1</span>
+                                                                        <span>
+                                                                            1
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox"  class="checkbox-classes checkbox-section" checked=""  name="checkbox-1a" value=""/>
-                                                                        <span>2</span>
+                                                                        <input type="checkbox"  class="checkbox-classes checkbox-section"  name="checkbox-1a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -206,7 +164,9 @@
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox"  class="checkbox-classes checkbox-section" name="checkbox-1b" value=""/>
-                                                                        <span>3</span>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -214,155 +174,73 @@
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>4</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>5</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>6</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>7</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>8</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>9</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-1c" value=""/>
-                                                                        <span>10</span>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                        <ul class="list-inline class-section">
+                                                        <ul class="list-unstyled class-section">
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-2" value=""/>
-                                                                        <span>A</span>
+                                                                        <input checked type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-2" value=""/>
+                                                                        <span>
+                                                                            2
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section" checked=""  name="checkbox-2a" value=""/>
-                                                                        <span>A</span>
+                                                                        <input checked type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2b" value=""/>
-                                                                        <span>A</span>
+                                                                        <input checked type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
-                                                                        <span>A</span>
+                                                                        <input checked type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-2c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                        <ul class="list-inline class-section">
+                                                        <ul class="list-unstyled class-section">
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-3" value=""/>
-                                                                        <span>B</span>
+                                                                        <span>
+                                                                            3
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section" checked=""  name="checkbox-3a" value=""/>
-                                                                        <span>B</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -370,23 +248,9 @@
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3b" value=""/>
-                                                                        <span>B</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section" checked=""  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -394,121 +258,303 @@
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
-                                                                    </label>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="custom-check-student">
-                                                                    <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-3c" value=""/>
-                                                                        <span>B</span>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                        <ul class="list-inline class-section">
+                                                        <ul class="list-unstyled class-section">
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
                                                                         <input type="checkbox"  class="checkbox-classes checbox-class" name="checkbox-4" value=""/>
-                                                                        <span>C</span>
+                                                                        <span>
+                                                                            4
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section" checked=""  name="checkbox-4a" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4b" value=""/>
-                                                                        <span>C</span>
+                                                                        <input checked type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section" checked=""  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input checked type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="list-unstyled class-section">
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-5" value=""/>
+                                                                        <span>
+                                                                            5
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-5a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-5b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-5c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="list-unstyled class-section">
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-6" value=""/>
+                                                                        <span>
+                                                                            6
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-6a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-6b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div class="custom-check-student">
                                                                     <label class="checkbox-inline">
-                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-4c" value=""/>
-                                                                        <span>C</span>
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-6c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="list-unstyled class-section">
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-7" value=""/>
+                                                                        <span>
+                                                                            7
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-7a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-7b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-7c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="list-unstyled class-section">
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-8" value=""/>
+                                                                        <span>
+                                                                            8
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-8a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-8b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-8c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="list-unstyled class-section">
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox-9" value=""/>
+                                                                        <span>
+                                                                            9
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-9a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox9b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-9c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="list-unstyled class-section">
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checbox-class"  name="checkbox1-10" value=""/>
+                                                                        <span>
+                                                                            10
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox"  class="checkbox-classes checkbox-section" name="checkbox-10a" value=""/>
+                                                                        <span>
+                                                                            A
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-10b" value=""/>
+                                                                        <span>
+                                                                            B
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="custom-check-student">
+                                                                    <label class="checkbox-inline">
+                                                                        <input type="checkbox" class="checkbox-classes checkbox-section"  name="checkbox-10c" value=""/>
+                                                                        <span>
+                                                                            C
+                                                                        </span>
                                                                     </label>
                                                                 </div>
                                                             </li>
@@ -525,7 +571,7 @@
                                             <div class="col-sm-12">
                                                 <div class="pull-right">
                                                     <button type="reset" id="resetAnnouncement" class="btn btn-default text-uppercase">Cancel</button>
-                                                    <button type="button" id="saveAnnouncement" class="btn btn-default text-uppercase">Save</button>
+                                                    <button type="button" id="saveAnnouncement" class="btn btn-default text-uppercase" data-toggle="modal" data-target="#subjectSuccessModal">Save</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -545,6 +591,23 @@
         </div>
         <!--  Skoolview Wrapper Ends  -->
 
+        <!-- Modal -->
+        <div id="subjectSuccessModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <p>New Subject Created</p>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="subjects.html">OK</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <!-- Jquery core JavaScript -->
         <script src="assets/js/jquery.min.js" type="text/javascript"></script>
         <!-- Bootstrap core JavaScript -->
@@ -553,9 +616,13 @@
         <script src="assets/plugins/datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
         <!-- Bootstrap time picker core JavaScript -->
         <script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+        <!-- Select2 core JavaScript -->
+        <script src="assets/plugins/select2/js/select2.full.js" type="text/javascript"></script>
+
         <!-- Custom JavaScript -->
-        <script src="assets/js/common.js" type="text/javascript"></script>
-        <script src="assets/js/new-teacher.js" type="text/javascript"></script>
+<!--        <script src="assets/js/custom.js" type="text/javascript"></script>
+        <script src="assets/js/common.js" type="text/javascript"></script>-->
+        <script src="assets/js/new-subject.js" type="text/javascript"></script>
 
     </body>
 </html>

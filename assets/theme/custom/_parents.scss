@@ -13,5 +13,23 @@
             }
         } 
     }
+    &.teachers-wrapper{
+        .table-wrapper{
+            .table-body{
+                .mobile-view-content{
+                    .media{
+                        .media-body{
+                            vertical-align: middle;
+                            p{
+                                &:first-of-type{
+                                    font-size: 9px !important;
+                                    margin: 5px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-    

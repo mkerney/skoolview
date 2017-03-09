@@ -36,23 +36,26 @@
                 margin: 0 0 0 20px;
             }
             .active{
-                color: $dark-green; 
+                color: $dark-green;
+                font-weight: bold;
             }
             .invited{
                 color: $light-orange;
+                font-weight: bold;
             }
             .draft{
-                color: $light-blue2;  
+                color: $light-blue2;
+                font-weight: bold;
             }
             .more{
                 color: $accent-red1;
                 bottom: 5px;
                 display: inline-block;
-                line-height: 15px;
+                line-height: 10px;
                 position: absolute;  
-                right: 28px;
+                right: 45px;
                 text-decoration: none;
-                border-bottom: 2px solid $accent-red1;
+                border-bottom: 1px solid $accent-red1;
             }
             .mobile-view-content{
                 @include box-shadow(none);

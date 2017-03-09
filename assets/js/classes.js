@@ -42,10 +42,5 @@ $(document).ready(function () {
         });
     }
 
-//    /*--  On Click Row Redirecting to New Teacher Page  --*/
-//    $('.parents-wrapper .table-body .row .table-column').on('click', function () {
-//        window.location.href = 'new-student.html';
-//    });
-
 });
 
