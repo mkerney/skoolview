@@ -32,8 +32,54 @@
             display    : inline-block;
             > ul{
                 display: inline-block;
-                &:last-child{ 
+/*                &:last-child{ 
                     margin-bottom: 0;  
+                }*/
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width:767px){}
+@media (min-width: 768px) and (max-width:991px){}
+@media (min-width: 481px) and (max-width:767px){}
+@media (min-width: 320px) and (max-width:480px){
+    .settings-wrapper{
+        > h3{
+
+        }
+        .attendance-wrapper{
+
+            h5{
+
+            }
+            p{
+
+            }
+        }
+        .chat-room-wrapper{
+
+            h5{
+
+            }
+        }
+        .attendance-settings, .chat-room-settings{
+            .custom-check-school{
+                display: block;
+                img{
+
+                }
+            }
+            .selection{
+
+                > ul{
+                    display: block;
+                    &:last-child{ 
+
+                    }
+                    > li{ 
+                        display: inline-block;
+                    }
                 }
             }
         }

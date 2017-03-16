@@ -9094,24 +9094,28 @@ body {
 /* announcement revert modal */
 #myModal .modal-body p,
 #subjectSuccessModal .modal-body p,
-#classSuccessModal .modal-body p {
+#classSuccessModal .modal-body p,
+#teacherSuccessModal .modal-body p {
   margin: 0;
   line-height: 80px; }
 
 #myModal .modal-footer,
 #subjectSuccessModal .modal-footer,
-#classSuccessModal .modal-footer {
+#classSuccessModal .modal-footer,
+#teacherSuccessModal .modal-footer {
   padding: 8px;
   text-align: center; }
   #myModal .modal-footer a,
   #subjectSuccessModal .modal-footer a,
-  #classSuccessModal .modal-footer a {
+  #classSuccessModal .modal-footer a,
+  #teacherSuccessModal .modal-footer a {
     color: #308bf2;
     font-size: 18px;
     display: block; }
     #myModal .modal-footer a:hover,
     #subjectSuccessModal .modal-footer a:hover,
-    #classSuccessModal .modal-footer a:hover {
+    #classSuccessModal .modal-footer a:hover,
+    #teacherSuccessModal .modal-footer a:hover {
       color: #000000;
       text-decoration: none; }
 
@@ -9876,7 +9880,7 @@ body {
         .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul {
           max-height: 450px;
           overflow-y: auto; }
-          .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul:last-child {
+          > .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul:last-child {
             margin-bottom: 0; }
       .new-announcement-wrapper form .recepient-wrapper .recepients.staff .selection ul li {
         display: block; }
@@ -9894,7 +9898,7 @@ body {
           -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
           -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; }
     .new-announcement-wrapper form .announcement-submit-wrapper {
-      padding: 36px 0 10px 0;
+      padding: 36px 0 36px 0;
       /*            button[type="submit"]{
                             color           : $white;
                             border-color    : $save-bg-color;
@@ -9930,7 +9934,7 @@ body {
 
 @media (max-width: 991px) and (min-width: 768px) {
   .new-announcement-wrapper form {
-    max-width: 100%; }
+    max-width: 100% !important; }
     .new-announcement-wrapper form .control-label {
       padding-right: 0; }
   /* custom student selection check box */
@@ -9976,14 +9980,14 @@ body {
 @media (min-width: 200px) and (max-width: 767px) {
   .new-announcement-wrapper {
     padding: 15px 0; }
-    .new-announcement-wrapper h3 {
+    .new-announcement-wrapper > h3 {
       font-size: 18px;
       line-height: 21px;
       margin: 0;
       white-space: nowrap;
       text-overflow: ellipsis; }
     .new-announcement-wrapper form {
-      max-width: 100%; }
+      max-width: 100% !important; }
       .new-announcement-wrapper form .custom-date-time .pick-date {
         margin: 0 0 15px; }
       .new-announcement-wrapper form .announcement-submit-wrapper {
@@ -10009,7 +10013,7 @@ body {
           max-height: 570px; } }
 
 @media (min-width: 200px) and (max-width: 480px) {
-  .new-announcement-wrapper h3 {
+  .new-announcement-wrapper > h3 {
     font-size: 15px; } }
 
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -10136,18 +10140,22 @@ body {
     text-align: center; }
   .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper {
     padding: 15px;
+    display: block;
     background-color: #29d9c2; }
+    .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper:hover, .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper:active, .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper:focus {
+      text-decoration: none; }
     .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper h2 {
       color: #ffffff;
       margin: 5px 0 0;
-      font-size: 56px;
+      font-size: 60px;
       font-weight: bold;
       text-align: center;
-      font-family: "lato"; }
+      font-family: "fjallaone-regular"; }
       .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper h2 .help-block {
         color: #ffffff;
-        margin: 5px 0;
-        font-size: 16px; }
+        margin: 15px 0 0;
+        font-size: 16px;
+        font-family: arial; }
   .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper + .tiles-main-wrapper {
     margin: 8px -15px 0; }
 
@@ -10157,15 +10165,15 @@ body {
     .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper p {
       margin: 5px 0 15px; }
     .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper h2 {
-      font-size: 35px; } }
+      font-size: 28px; }
+      .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper h2 .help-block {
+        font-size: 14px; } }
 
 @media (min-width: 300px) and (max-width: 480px) {
   .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .col-xs-4 {
     width: 100%; }
   .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper {
     margin: 0 0 8px; }
-    .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper .tiles-wrapper h2 {
-      font-size: 21px; }
   .dashboard-wrapper .content-wrapper.dashboard-inner-wrapper .tiles-main-wrapper + .tiles-main-wrapper {
     margin: 0 -15px; } }
 
@@ -10205,18 +10213,41 @@ body {
   .main-content-wrapper .content-wrapper.teachers-wrapper {
     padding: 15px; } }
 
-.new-teacher-wrapper .new-announcement-wrapper form {
+.new-teacher-wrapper .new-announcement-wrapper form.new-teacher {
   max-width: 90%; }
-  .new-teacher-wrapper .new-announcement-wrapper form .recepient-wrapper p {
+  .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper p {
     margin-top: 11px;
     text-decoration: none; }
+  .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul {
+    display: inline-block; }
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul > li {
+      display: block; }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .new-teacher-wrapper .new-announcement-wrapper form {
+  .new-teacher-wrapper .new-announcement-wrapper form.new-teacher {
     max-width: 100%; }
-    .new-teacher-wrapper .new-announcement-wrapper form .form-group .control-label {
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .form-group .control-label {
       font-size: 13px;
-      padding-right: 0; } }
+      padding-right: 0; }
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper p {
+      margin-top: 11px;
+      text-decoration: none; }
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul {
+      display: block; }
+      .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul > li {
+        display: inline-block; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul {
+    display: block; }
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul > li {
+      display: inline-block; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul {
+    display: block; }
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul > li {
+      display: inline-block; } }
 
 .skoolview-wrapper .main-content-wrapper .dashboard-wrapper .content-wrapper.students-wrapper {
   padding: 0; }
@@ -10372,6 +10403,17 @@ body {
   .new-parent-wrapper .new-class-wrapper .row > label {
     position: relative; }
     .new-parent-wrapper .new-class-wrapper .row > label .btn-add {
+      display: none; }
+      .new-parent-wrapper .new-class-wrapper .row > label .btn-add i {
+        display: none; } }
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .new-parent-wrapper .new-class-wrapper .row > label {
+    display: block;
+    border-bottom: 1px solid #000000;
+    padding: 0 0 3px 0;
+    margin: 0 15px; }
+    .new-parent-wrapper .new-class-wrapper .row > label .btn-add {
       position: absolute;
       right: 0;
       top: -14px;
@@ -10389,14 +10431,8 @@ body {
       text-align: center;
       vertical-align: middle; }
       .new-parent-wrapper .new-class-wrapper .row > label .btn-add i {
-        color: #e8e8e8; } }
-
-@media (max-width: 480px) and (min-width: 320px) {
-  .new-parent-wrapper .new-class-wrapper .row > label {
-    display: block;
-    border-bottom: 1px solid #000000;
-    padding: 0 0 3px 0;
-    margin: 0 15px; }
+        color: #e8e8e8;
+        display: inline-block; }
   .new-parent-wrapper .new-class-wrapper .row .add-item-list > li {
     text-align: left; }
     .new-parent-wrapper .new-class-wrapper .row .add-item-list > li:nth-child(3) {
@@ -10496,9 +10532,18 @@ body {
 .settings-wrapper .attendance-settings .selection, .settings-wrapper .chat-room-settings .selection {
   display: inline-block; }
   .settings-wrapper .attendance-settings .selection > ul, .settings-wrapper .chat-room-settings .selection > ul {
-    display: inline-block; }
-    .settings-wrapper .attendance-settings .selection > ul:last-child, .settings-wrapper .chat-room-settings .selection > ul:last-child {
-      margin-bottom: 0; }
+    display: inline-block;
+    /*                &:last-child{ 
+                    margin-bottom: 0;  
+                }*/ }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .settings-wrapper .attendance-settings .custom-check-school, .settings-wrapper .chat-room-settings .custom-check-school {
+    display: block; }
+  .settings-wrapper .attendance-settings .selection > ul, .settings-wrapper .chat-room-settings .selection > ul {
+    display: block; }
+    .settings-wrapper .attendance-settings .selection > ul > li, .settings-wrapper .chat-room-settings .selection > ul > li {
+      display: inline-block; } }
 
 .new-parent-wrapper .img-new {
   max-width: 150px; }

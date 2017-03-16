@@ -34,19 +34,24 @@
             }
             .tiles-main-wrapper{
                 .tiles-wrapper{
-                    padding: 15px;
+                    padding         : 15px;
+                    display         : block; 
                     background-color: $save-bg-color;
+                    &:hover, &:active, &:focus{
+                        text-decoration: none;
+                    }
                     h2{
                         color      : $white;
                         margin     : 5px 0 0;
-                        font-size  : ($font-size-base * 4);
+                        font-size  : ($font-size-base * 5 - 10);
                         font-weight: bold;
                         text-align : center;
-                        font-family: $lato;
+                        font-family: $fjallaone-regular;
                         .help-block{
                             color      : $white;
-                            margin     : 5px 0;
+                            margin     : 15px 0 0;
                             font-size  : ($font-size-base + 2);
+                            font-family: arial;
                         }
                     }
                 }
@@ -69,7 +74,10 @@
                 .tiles-main-wrapper{
                     .tiles-wrapper{
                         h2{
-                            font-size: ($font-size-base * 2.5);
+                            font-size: ($font-size-base * 2);
+                            .help-block{
+                                font-size: ($font-size-base);
+                            }
                         }
                     }
                 }
@@ -86,10 +94,7 @@
                         width: 100%;
                     }
                     .tiles-wrapper{
-                        margin: 0 0 8px;
-                        h2{
-                            font-size: ($font-size-base * 1.5);
-                        }                       
+                        margin: 0 0 8px;                     
                     }
                     + .tiles-main-wrapper{
                         margin: 0 -15px;

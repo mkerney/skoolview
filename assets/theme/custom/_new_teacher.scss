@@ -1,11 +1,23 @@
 .new-teacher-wrapper{
     .new-announcement-wrapper{
         form{
-            max-width: 90%;
-            .recepient-wrapper{
-                p{
-                    margin-top: 11px;
-                    text-decoration: none;
+            &.new-teacher{
+                max-width: 90%;
+                .recepient-wrapper{
+                    p{
+                        margin-top: 11px;
+                        text-decoration: none;
+                    }
+                    .recepients{
+                        .selection{
+                            > ul{
+                                display: inline-block;
+                                > li {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -19,14 +31,78 @@
     .new-teacher-wrapper{
         .new-announcement-wrapper{
             form{
-                max-width: 100%;
-                .form-group{
-                    .control-label{
-                        font-size: 13px;
-                        padding-right: 0;
+                &.new-teacher{
+                    max-width: 100%;
+                    .form-group{
+                        .control-label{
+                            font-size: 13px;
+                            padding-right: 0;
+                        }
+                    }
+                    .recepient-wrapper{
+                        p{
+                            margin-top: 11px;
+                            text-decoration: none;
+                        }
+                        .recepients{
+                            .selection{
+                                > ul{
+                                    display: block;
+                                    > li {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
+@media(min-width: 320px) and (max-width: 767px){
+    .new-teacher-wrapper{
+        .new-announcement-wrapper{
+            form{
+                &.new-teacher{
+                    .recepient-wrapper{
+                        .recepients{
+                            .selection{
+                                > ul{
+                                    display: block;
+                                    > li {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .new-teacher-wrapper{
+        .new-announcement-wrapper{
+            form{
+                &.new-teacher{
+                    .recepient-wrapper{
+                        .recepients{
+                            .selection{
+                                > ul{
+                                    display: block;
+                                    > li {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 481px) and (max-width: 767px){}
+@media(min-width: 320px) and (max-width: 480px){}

@@ -1,51 +1,35 @@
 $(document).ready(function () {
-
-    /*--  Announcement Multiple check  --*/
-    $(".teachers-wrapper #schedulingAnnouncement").slideUp();
-    $(".teachers-wrapper #announcementCheckbox").change(function () {
-        $('.teachers-wrapper #schedulingAnnouncement').slideDown();
+    //Subject-wise Attendance ICON Multiple check JS
+    $("#checkboxSubjectwise").change(function () {
         var status = this.checked;
-        if (this.checked === false) {
-            $('.teachers-wrapper #schedulingAnnouncement').slideUp();
-        }
-        $('.teachers-wrapper .announcementCheck').each(function () {
+        $('.checkbox-subject').each(function () {
             this.checked = status;
         });
     });
-
-    /*--  Change Function  --*/
-    $('.teachers-wrapper .table-body .announcementCheck').change(function () {
-        if (this.checked === false) {
-            $(".teachers-wrapper #announcementCheckbox")[0].checked = false;
+    $('.checkbox-subject').change(function () {
+        if (this.checked == false) {
+            $("#checkboxSubjectwise")[0].checked = false;
         }
-        console.log($('.table-body .hidden-xs .announcementCheck').length);
-        if ($('.teachers-wrapper .table-body .first-table-column .announcementCheck:checked').length === $('.table-body .hidden-xs .announcementCheck').length) {
-            $(".teachers-wrapper #announcementCheckbox")[0].checked = true;
-        }
-        $('.teachers-wrapper #schedulingAnnouncement').slideDown();
-        console.log($('.table-body .first-table-column .custom-check .checkbox-inline .announcementCheck:checked').length);
-        if ($('.teachers-wrapper .table-body .first-table-column .custom-check .checkbox-inline .announcementCheck:checked').length === 0) {
-            $('.teachers-wrapper #schedulingAnnouncement').slideUp();
+        if ($('.checkbox-subject:checked').length == $('.checkbox-subject').length) {
+            $("#checkboxSubjectwise")[0].checked = true;
         }
     });
-
-    /*--  Send Status  --*/
-    $('.teachers-wrapper #selectStatus').hide();
-    $('.teachers-wrapper .table-header .table-column .status-checked').on('click', function (e) {
-        e.stopPropagation();
-        selectStatusWrapper();
-    });
-    function selectStatusWrapper() {
-        $('.teachers-wrapper #selectStatus').slideToggle();
-        $('.teachers-wrapper .select-status-wrapper .select-status-action .select-close').on('click', function () {
-            $('.teachers-wrapper #selectStatus').slideUp();
+    
+    
+    //Parent Chat Room ICON Multiple check JS
+    $("#checkboxParentChatRoom").change(function () {
+        var status = this.checked;
+        $('.checkbox-parent').each(function () {
+            this.checked = status;
         });
-    }
-
-    /*--  On Click Row Redirecting to New Teacher Page  --*/
-    $('.teachers-wrapper .table-body .row .table-column').on('click', function () {
-        window.location.href = 'new-teacher.html';
     });
-
+    $('.checkbox-parent').change(function () {
+        if (this.checked == false) {
+            $("#checkboxParentChatRoom")[0].checked = false;
+        }
+        if ($('.checkbox-parent:checked').length == $('.checkbox-parent').length) {
+            $("#checkboxParentChatRoom")[0].checked = true;
+        }
+    });
 });
 
