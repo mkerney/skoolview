@@ -9884,7 +9884,7 @@ body {
         .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul {
           max-height: 450px;
           overflow-y: auto; }
-          > .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul:last-child {
+          .new-announcement-wrapper form .recepient-wrapper .recepients .selection ul:last-child {
             margin-bottom: 0; }
       .new-announcement-wrapper form .recepient-wrapper .recepients.staff .selection ul li {
         display: block; }
@@ -10624,7 +10624,7 @@ body {
 .dashboard-wrapper.new-event-wrapper .new-announcement-wrapper .event-form .custom-date-time small {
   text-align: left;
   font-size: 12px;
-  padding-top: 15x; }
+  padding-top: 15px; }
 
 .dashboard-wrapper.new-event-wrapper .new-announcement-wrapper .event-form .event-link-wrapper {
   border-bottom: 1px solid #d1d1d1;
