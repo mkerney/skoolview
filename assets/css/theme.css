@@ -9095,27 +9095,31 @@ body {
 #myModal .modal-body p,
 #subjectSuccessModal .modal-body p,
 #classSuccessModal .modal-body p,
-#teacherSuccessModal .modal-body p {
+#teacherSuccessModal .modal-body p,
+#studentSuccessModal .modal-body p {
   margin: 0;
   line-height: 80px; }
 
 #myModal .modal-footer,
 #subjectSuccessModal .modal-footer,
 #classSuccessModal .modal-footer,
-#teacherSuccessModal .modal-footer {
+#teacherSuccessModal .modal-footer,
+#studentSuccessModal .modal-footer {
   padding: 8px;
   text-align: center; }
   #myModal .modal-footer a,
   #subjectSuccessModal .modal-footer a,
   #classSuccessModal .modal-footer a,
-  #teacherSuccessModal .modal-footer a {
+  #teacherSuccessModal .modal-footer a,
+  #studentSuccessModal .modal-footer a {
     color: #308bf2;
     font-size: 18px;
     display: block; }
     #myModal .modal-footer a:hover,
     #subjectSuccessModal .modal-footer a:hover,
     #classSuccessModal .modal-footer a:hover,
-    #teacherSuccessModal .modal-footer a:hover {
+    #teacherSuccessModal .modal-footer a:hover,
+    #studentSuccessModal .modal-footer a:hover {
       color: #000000;
       text-decoration: none; }
 
@@ -10197,9 +10201,10 @@ body {
         margin: 0;
         position: relative; }
         .main-content-wrapper .content-wrapper.teachers-wrapper .table-wrapper .table-body .mobile-view-content .media .media-body .media-heading img {
-          position: absolute;
+          top: 2px;
+          width: 15px;
           right: 0;
-          top: 2px; }
+          position: absolute; }
       .main-content-wrapper .content-wrapper.teachers-wrapper .table-wrapper .table-body .mobile-view-content .media .media-body p {
         margin: 0; }
         .main-content-wrapper .content-wrapper.teachers-wrapper .table-wrapper .table-body .mobile-view-content .media .media-body p:first-of-type {
@@ -10241,7 +10246,16 @@ body {
   .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul {
     display: block; }
     .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul > li {
-      display: inline-block; } }
+      display: inline-block; }
+  .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .img-new {
+    margin: 0;
+    display: inline-block; }
+    .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .img-new + .add-remove-icon-list {
+      display: inline-block;
+      vertical-align: middle; }
+      .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .img-new + .add-remove-icon-list li {
+        display: block;
+        margin: 10px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .new-teacher-wrapper .new-announcement-wrapper form.new-teacher .recepient-wrapper .recepients .selection > ul {
@@ -10250,7 +10264,7 @@ body {
       display: inline-block; } }
 
 .skoolview-wrapper .main-content-wrapper .dashboard-wrapper .content-wrapper.students-wrapper {
-  padding: 0; }
+  padding: 15px 0; }
   .skoolview-wrapper .main-content-wrapper .dashboard-wrapper .content-wrapper.students-wrapper .table-wrapper .table-header .date-checking {
     overflow: visible; }
     .skoolview-wrapper .main-content-wrapper .dashboard-wrapper .content-wrapper.students-wrapper .table-wrapper .table-header .date-checking .custom-class-wrapper {
@@ -10306,6 +10320,8 @@ body {
     font-size: 13px; }
   .new-student-wrapper .new-announcement-wrapper form .custom-date-time .pick-date span {
     right: 15px; }
+  .new-student-wrapper .new-announcement-wrapper form .add-item-list > li {
+    text-align: center; }
   .new-student-wrapper .new-announcement-wrapper form .announcement-submit-wrapper {
     padding: 0 0 10px; }
 
@@ -10563,7 +10579,8 @@ body {
     margin: 0 25px 0 0; }
   .new-parent-wrapper .add-item-list li a.btn-add + span {
     display: block;
-    margin: 0 0 0 40px; }
+    margin: 0 0 0 30px;
+    font-size: 12px; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .new-parent-wrapper .add-item-list li a.btn-avatar {

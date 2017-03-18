@@ -15,6 +15,11 @@
                     }
                 }
             }
+            .add-item-list{
+                > li {
+                    text-align: center;
+                }
+            }
             .announcement-submit-wrapper{
                 padding: 0 0 10px;
             }

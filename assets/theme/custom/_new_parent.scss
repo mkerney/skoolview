@@ -29,8 +29,9 @@
                 }
                 &.btn-add{
                     +  span{
-                        display: block;
-                        margin: 0 0 0 40px;
+                        display  : block;
+                        margin   : 0 0 0 30px;
+                        font-size: 12px;
                     }
                 }
             }

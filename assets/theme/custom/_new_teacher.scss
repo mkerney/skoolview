@@ -77,6 +77,18 @@
                             }
                         }
                     }
+                    .img-new{
+                        margin : 0;
+                        display: inline-block;
+                        + .add-remove-icon-list{
+                            display: inline-block;
+                            vertical-align: middle;
+                            li{
+                                display: block;
+                                margin: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }

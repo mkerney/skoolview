@@ -232,6 +232,7 @@
                                                         <a class="btn-add" href="javascript:void(0);">
                                                             <i class="fa fa-plus"></i>
                                                         </a>
+                                                        <span> Add New</span>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -255,7 +256,7 @@
                                             <div class="col-sm-12">
                                                 <div class="pull-right">
                                                     <button type="reset" id="resetAnnouncement" class="btn btn-default text-uppercase">Cancel</button>
-                                                    <button type="button" id="saveAnnouncement" class="btn btn-default text-uppercase">Save</button>
+                                                    <button type="button" id="saveAnnouncement" class="btn btn-default text-uppercase" data-toggle="modal" data-target="#studentSuccessModal">Save</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -274,6 +275,23 @@
 
         </div>
         <!--  Skoolview Wrapper Ends  -->
+
+        <!-- Modal -->
+        <div id="studentSuccessModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <p>New Student Created</p>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="students.html">OK</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <!-- Jquery core JavaScript -->
         <script src="assets/js/jquery.min.js" type="text/javascript"></script>
