@@ -18,10 +18,102 @@
             .add-item-list{
                 > li {
                     text-align: center;
+                    > .btn-add{
+                        + span{
+                            display: block;
+                            margin-left: 30px;
+                        }
+                    }
                 }
             }
             .announcement-submit-wrapper{
                 padding: 0 0 10px;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 320px) and (max-width: 480px){
+    .new-student-wrapper{
+        .img-new{
+
+        }
+        .new-announcement-wrapper{
+            form{
+
+                .control-label{
+
+                }
+                .custom-date-time{
+                    .pick-date{  
+                        span{
+
+                        }
+                    }
+                }
+                .parents-border{
+                    border-bottom: 1px solid $black;
+                    display: block;
+                    margin : 0 15px;
+                    padding: 0 0 3px;
+                }
+                .add-item-list{
+                    > li{
+                        text-align: left ;
+                        &:nth-child(1){
+                            border-bottom: 1px solid $black;
+                        }
+                        a{
+                            margin: 10px 0;
+                            &.btn-remove{
+                                float: right;
+                                margin: 20px 0;
+                            }
+                            &.btn-add{
+                                margin: 0 auto;
+                                height: 30px;
+                                width: 30px;
+                                line-height: 30px;
+                                font-size: 16px;
+                            }
+                        }
+                        p{
+                            display: inline-block;
+                            margin-left: 10px;
+                            span{
+                                display: inline-block;
+                            }
+                        }
+                        > span{
+                            font-weight: bold;
+                            margin-top: 8px;
+                        }
+                        &:nth-child(2){
+                            text-align: center;
+                            margin: 10px 0;
+                            .btn-add{
+                                + span{
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .img-new{
+                    display: inline-block;
+                    margin: 20px 0;
+                }
+                .add-remove-icon-list{
+                    display: inline-block;
+                    vertical-align: middle;
+                    > li{
+                        &:last-child{
+                            display: block;
+                            padding: 10px;
+                        }
+                    }
+                }
             }
         }
     }

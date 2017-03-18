@@ -299,14 +299,14 @@
                         background-color: $white;
                         @include box-shadow(rgba(0, 0, 0, 0.4) 0px 1px 2px);
                         .custom-check{
-                            top     : 14px;
+                            top     : 10px;
                             left    : 10px;
                             position: absolute;
                         }
                         a{
                             color           : $black;
                             display         : block;
-                            padding         : 13px 50px 13px 0px;
+                            padding         : 13px 65px 13px 10px;
                             position        : relative;
                             font-size       : 12px;
                             margin-left     : 30px;
@@ -324,7 +324,7 @@
                             }
                             small{
                                 top     : 15px;
-                                right   : 0;
+                                right   : 5px;
                                 color   : $cancel-border-color;
                                 position: absolute;
                             }

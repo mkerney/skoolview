@@ -67,6 +67,19 @@
         }
     }
 }
+@media(min-width: 481px) and (max-width: 767px){
+    .new-parent-wrapper{
+        .new-announcement-wrapper{
+            form{
+                .mobile-border{
+                    .btn-add{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(min-width: 300px) and (max-width: 480px){
     .new-parent-wrapper{
         .new-announcement-wrapper{
@@ -74,7 +87,7 @@
                 .announcement-submit-wrapper{
                     button{
                         float: left;
-                         width: 48%;
+                        width: 48%;
                         &#saveAndInvite{
                             float: none;
                             margin: 0 0 15px !important;
@@ -85,19 +98,85 @@
                         }
                     }
                 }
-            }
-        }
-        .add-item-list{
-            li{
-                &:last-child{
+
+                .mobile-border{
                     display: block;
-                    padding: 15px 0;
-                    a{
-                        margin: 0 auto;
-                        display: block;
-                        + span{
-                            margin: 0;
+                    border-bottom: 1px solid $black;
+                    padding: 0 0 3px 0;
+                    margin: 15px 15px 0;
+                    .btn-add{
+                        position: absolute;
+                        right: 0;
+                        top: -14px;
+                        display: inline-block !important;
+                        height: 30px;
+                        width: 30px;
+                        line-height: 30px;
+                        font-size: 16px;
+                        background-color: #29d9c2;
+                        @include border-radius(50%);
+                        text-align: center;
+                        vertical-align: middle;
+                        i{
+                            color: $light-gray-2;
+                            display: inline-block;
+                        }
+                    }
+                }
+                .add-item-list{
+                    > li{
+                        /*padding: 10px 0;*/
+                        text-align: left;
+                        &:nth-child(3){
+                            border-bottom: 1px solid $black;
+                        }
+                        &:nth-child(4){
+                            padding: 10px 0;
                             text-align: center;
+                            a{
+                                + span{
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        a{
+                            margin: 10px 0;
+                            &.btn-remove{
+                                float: right;
+                                margin: 10px 0;
+                            }
+                            &.btn-add{
+                                margin: 0 auto;
+                                height: 30px;
+                                width: 30px;
+                                line-height: 30px;
+                                font-size: 16px;
+                            }
+                        }
+                        p{
+                            display: inline-block;
+                            margin-left: 10px;
+                            span{
+                                display: inline-block;
+                            }
+                        }
+                        > span{
+                            font-weight: bold;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+                .img-new{
+                    display: inline-block;
+                    margin: 30px 0;
+                }
+                .add-remove-icon-list{
+                    display: inline-block;
+                    vertical-align: middle;
+                    > li{
+                        display: block;
+                        &:last-child{
+                            margin: 10px;
                         }
                     }
                 }
