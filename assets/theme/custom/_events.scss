@@ -1,0 +1,156 @@
+.dashboard-wrapper{
+    &.new-event-wrapper{
+        .new-announcement-wrapper{
+            > h3{
+                text-align: center;
+            }
+            .event-form{
+                .custom-date-time{
+                    p{
+                        margin   : 13px 0 0;
+                        font-size: 12px; 
+                    }
+                    small{
+                        text-align : left;
+                        font-size  : 12px; 
+                        padding-top: 15px; 
+                    }
+                }
+                .event-link-wrapper{
+                    border-bottom : 1px solid $event-border;
+                    padding-bottom: 10px;
+                }
+                .recepient-wrapper{
+                    p{
+                        margin: 10px 0;
+                    }
+                }
+                .event-preview-wrapper{
+                    margin: 0 auto;
+                    width: 282px;
+                    > p{
+                        margin     : 0 0 15px 0;
+                        font-size  : 14px;
+                        font-weight: bold;
+                    }
+                    .preview-body{
+                        position: relative;
+                        .preview-content{
+                            top             : 68px;
+                            left            : 25px;
+                            width           : 231px;
+                            padding         : 5px;
+                            position        : absolute;
+                            background-color: $white;
+                            font-family     : 'arial'; 
+                            @include box-shadow(0 0 4px 0px rgba(0, 0, 0, 0.3));
+                            > h4{
+                                color      : $black;
+                                margin     : 0;
+                                position   : relative; 
+                                font-size  : 12px;
+                                font-weight: bold;
+                                line-height: 20px;
+                                > span{
+                                    top      : 0px;
+                                    right    : 0;
+                                    color    : $custom-uncheck-color;
+                                    position : absolute;
+                                    font-size: 10px; 
+                                }
+                            }
+                            > p{
+                                color    : $black;
+                                margin   : 0;
+                                font-size: 12px;
+                            }
+                            .event-venue-details{
+                                margin     : 20px 0 0 0;
+                                > h5{
+                                    color      : $black;
+                                    margin     : 0;
+                                    font-size  : 12px;
+                                    line-height: 20px;
+                                    font-weight: bold;
+                                    > span{
+                                        font-weight: normal;
+                                    }
+                                }
+                            }
+                            > .more-details{
+                                color          : $black;
+                                display        : block; 
+                                font-size      : 12px;
+                                margin-top     : 20px;
+                                font-weight    : bold; 
+                                text-decoration: underline;
+                            }
+                            > .task-pins-wrapper{
+                                > ul{
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) and (min-width: 320px){
+    .dashboard-wrapper{
+        &.new-event-wrapper{
+            .new-announcement-wrapper{
+                > h3{
+
+                }
+                .event-form{
+                    .event-link-wrapper{
+                        border: 0;
+                    }
+                    .mobile-border{
+                        border-bottom: 1px solid $dropup-border-bottom;
+                        padding-bottom: 10px;
+                    }
+                    .event-preview-wrapper{
+                        > p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1199px){
+    .event-preview-wrapper{
+        margin: 20px auto !important;
+        .task-pins-wrapper{
+            > ul{
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+    .announcement-submit-wrapper {
+        text-align: center;
+    }
+}
+@media(max-width: 991px) and (min-width: 767px){
+    .dashboard-wrapper{
+        &.new-event-wrapper{
+            .new-announcement-wrapper{
+                > h3{
+
+                }
+                .event-form{
+
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px) and (min-width: 481px){}
+@media(max-width: 480px) and (min-width: 320px){}
