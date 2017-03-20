@@ -213,15 +213,17 @@ body {
         position  : relative;
         border-top: 4px solid transparent;
         &.media-height{
-            border-color    : $light-gray-7;
-            background-color: $light-gray-7;
+            /*border-color    : $light-gray-7;*/
+            /*background-color: $light-gray-7;*/
         }
         .dashboard-wrapper{
             @include transition(all 0.3s ease-in-out 0s);  
             margin     : 0 0 0 240px;
-            border-left: 8px solid $white;
+            &.custom-settings{
+                border-left: 8px solid $white;
+            }
             &.custom-background{
-                border-color: $light-gray-7;
+                /*border-color: $light-gray-7;*/
             }
             &.dashboard-wrapper-open-wrapper{
                 margin: 0;                
@@ -372,32 +374,32 @@ body {
 
 /*   modal-wrapper  */
 .modal-wrapper{
-        transform: translateY(50%);
-        -moz-transform: translateY(50%);
-        -webkit-transform: translateY(50%);
-        -o-transform: translateY(50%);
-        .modal-content{
-            border          : 0;
-            height          : 60px;
-            box-shadow      : none; 
-            text-align      : center;
-            border-radius   : 10px;
-            background-color: rgba(0, 0, 0, 0.85);
-            p{
-                color      : $white;
-                margin     : 0;
-                font-size  : 12px;
-                line-height: 60px;
-                a{
-                    color          : $white;
-                    font-weight    : bold;  
-                    text-decoration: underline;
-                }
+    transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    .modal-content{
+        border          : 0;
+        height          : 60px;
+        box-shadow      : none; 
+        text-align      : center;
+        border-radius   : 10px;
+        background-color: rgba(0, 0, 0, 0.85);
+        p{
+            color      : $white;
+            margin     : 0;
+            font-size  : 12px;
+            line-height: 60px;
+            a{
+                color          : $white;
+                font-weight    : bold;  
+                text-decoration: underline;
             }
         }
     }
-    
-    
+}
+
+
 /* custom File Upload */
 .custom-file-upload{
     cursor: pointer;
@@ -534,12 +536,29 @@ body {
     background-color: $save-bg-color;
 }
 
+@media(min-width: 768px) and (max-width: 1025px){ 
+    /* skoolview web */
+    .skoolview-wrapper{
+        .main-content-wrapper{
+            .dashboard-wrapper{
+                &.custom-settings{
+                    border-left: 0px;
+                }
+            }
+        }
+    }
+}
 @media(min-width: 300px) and (max-width: 767px){ 
     .skoolview-wrapper{
         .main-content-wrapper{
             border-top: 0px solid transparent;
             &.media-height{
                 background-color: $white;
+            }
+            .dashboard-wrapper{
+                &.custom-settings{
+                    border-left: 0px;
+                }
             }
         }
     }

@@ -113,11 +113,6 @@
                         border-bottom: 1px solid $dropup-border-bottom;
                         padding-bottom: 10px;
                     }
-                    .event-preview-wrapper{
-                        > p{
-                            text-align: left;
-                        }
-                    }
                 }
             }
         }
@@ -153,4 +148,18 @@
     }
 }
 @media(max-width: 767px) and (min-width: 481px){}
-@media(max-width: 480px) and (min-width: 320px){}
+@media(max-width: 480px) and (min-width: 320px){
+    .dashboard-wrapper{
+        &.new-event-wrapper{
+            .new-announcement-wrapper{
+                .event-form{
+                    .event-preview-wrapper{
+                        > p{
+                            text-align: left !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

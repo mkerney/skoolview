@@ -67,8 +67,10 @@
                     }
                 }
                 a{
-                    color: $light-blue;
-                    margin: 15px 0 37px;
+                    color        : $theme-color;
+                    margin       : 15px 0 37px;
+                    font-size    : 12px;
+                    line-height  : 10px; 
                     border-bottom: 1px solid $light-blue;
                     &:hover,&:focus{
                         color: $light-blue;

@@ -22,10 +22,12 @@
     }
     .add-item-list{
         margin: 0 0 15px;
-        li{
+        li{   
+            margin: 0 10px;
+            text-align: center;
             a{
                 &.btn-avatar{
-                    margin: 0 25px 0 0;
+                   
                 }
                 &.btn-add{
                     +  span{
