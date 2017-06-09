@@ -118,13 +118,16 @@
 
                 <!--  Dashboard Wrapper Starts  -->
                 <div class="dashboard-wrapper custom-background">
-                    <div class="content-wrapper students-wrapper">
+                    <div class="content-wrapper students-wrapper mark-attendance-wrapper">
                         <div class="search-wrapper container-fluid">
 
                             <!--  Search Bar Starts  -->
                             <div class="search-something-wrapper hidden-xs">
-                                <input type="text" class="form-control " placeholder="Search for something" />                                
-                                <a id="newTeacherTrigger" href="new-student.html" class="btn btn-danger"><i class="fa fa-plus"></i>&nbsp;NEW STUDENTS</a>
+                                <input type="text" class="form-control " placeholder="Search for something" />
+                                <a href="students.html" class="text-danger link">Close</a>
+                                <a href="javascript:void(0);" class="text-danger link mark-absent">MARK ALL AS ABSENT</a>
+                                <a href="javascript:void(0);" class="text-danger link mark-present">MARK ALL AS PRESENT</a>
+                                <!--<a id="newTeacherTrigger" href="new-student.html" class="btn btn-danger"><i class="fa fa-plus"></i>&nbsp;NEW STUDENTS</a>-->
                             </div>
                             <!--  Search Bar Ends  -->
 
@@ -244,12 +247,13 @@
                                             <a class="data-checked" href="javascript:void(0)"><i class="fa fa-filter"></i></a>
                                         </div>
                                         <div class="col-xs-2 hidden-xs table-column status-checking">
-                                            Date of Birth
+                                            Attendance
                                         </div>
                                         <div class="col-xs-2 hidden-xs table-column">
-                                            Address
+                                            Mar-2017
                                         </div>
-                                        <div class="col-xs-2 hidden-xs table-column">Parents</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Feb-2017</div>
+                                        <div class="col-xs-2 hidden-xs table-column">Jan-2017</div>
                                         <div class="col-xs-2 visible-xs mobile-view-search">
                                             <input type="text" class="form-control " placeholder="Search for something" />
                                         </div>
@@ -277,9 +281,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Harry Emmut</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-May-2005</div>
-                                        <div class="col-xs-2 table-column">221 B,  Baker Street, London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-1"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -328,9 +338,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Kane Emmut</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Jan-2006</div>
-                                        <div class="col-xs-2 table-column">33, Castle Avenue,​​​​​​​ London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-2"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -379,9 +395,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Emma ​​​​​​​Watson</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Dec-2006</div>
-                                        <div class="col-xs-2 table-column">88 A, Westminister, London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-3" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-3"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -430,9 +452,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Willam Emmut</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Feb-2005</div>
-                                        <div class="col-xs-2 table-column">81,Governors Park, London</div>
-                                        <div class="col-xs-2 table-column">Nancy Emmut</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-4"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -481,9 +509,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Tanvi Rao</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-May-2006</div>
-                                        <div class="col-xs-2 table-column">10, Downing Street, London</div>
-                                        <div class="col-xs-2 table-column">Sharadha Rao</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-5" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-5"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -532,9 +566,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Nancy Bolton</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-July-2006</div>
-                                        <div class="col-xs-2 table-column">55, Vener Street, London</div>
-                                        <div class="col-xs-2 table-column">Andy Bolton</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-6"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -583,9 +623,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Andrew Haggard</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Aug-2005</div>
-                                        <div class="col-xs-2 table-column">33, Maxmillian Road, London</div>
-                                        <div class="col-xs-2 table-column">Cathleen Haggard</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-7"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -631,9 +677,15 @@
                                         </div>
                                         <div class="col-xs-2 table-column">Andy Melon</div>
                                         <div class="col-xs-2 table-column">2A</div>
-                                        <div class="col-xs-2 table-column">21-Dec-2006</div>
-                                        <div class="col-xs-2 table-column">22, Shakespeare Avenue, London</div>
-                                        <div class="col-xs-2 table-column">Linda Melon</div>
+                                        <div class="col-xs-2 table-column">
+                                            <div class="switch">
+                                                <input id="cmn-toggle-8" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                <label for="cmn-toggle-8"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
+                                        <div class="col-xs-2 table-column">20/22</div>
                                     </div>
                                     <!--  Desktop View Ends  -->
 
@@ -688,6 +740,6 @@
         <!-- Custom JavaScript -->
         <script src="assets/js/common.js" type="text/javascript"></script>
         <script src="assets/js/students.js" type="text/javascript"></script>
-
+        <script src="assets/js/mark-attendance.js" type="text/javascript"></script>
     </body>
 </html>

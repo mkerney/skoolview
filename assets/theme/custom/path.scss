@@ -16,6 +16,7 @@ and open the template in the editor.
 @import "_mixins.scss";
 @import "_variable.scss";
 @import "_common.scss";  
+@import "_custom_toggle_switch.scss";
 @import "_common_student_teacher.scss";
 @import "_select_box.scss";
 @import "_table.scss";
@@ -35,6 +36,8 @@ and open the template in the editor.
 @import "_settings.scss";
 @import "_new_parent.scss";
 @import "_events.scss";
+@import "_mark_attendance.scss";
+@import "_student_info.scss";
 @import "../mobile-view/_nav-mobile.scss";
 @import "../mobile-view/_success-modal.scss";
 @import "../mobile-view/_parent-view.scss";
