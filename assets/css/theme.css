@@ -11090,7 +11090,7 @@ input.cmn-toggle-yes-no:checked + label:after {
   font-size: 25px;
   line-height: 35px;
   padding: 10px 0;
-  color: #757575;
+  color: #000;
   border-bottom: 1px solid #8A8A8A; }
 
 .students-info-wrapper .info-list li {
@@ -11102,9 +11102,25 @@ input.cmn-toggle-yes-no:checked + label:after {
     display: inline-block;
     vertical-align: top; }
 
-.students-info-wrapper .student-img {
-  min-width: 150px;
-  margin: 15px auto; }
+.students-info-wrapper .close-icon {
+  border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  position: absolute;
+  top: -60px;
+  right: 15px;
+  height: 45px;
+  font-size: 21px; }
+  .students-info-wrapper .close-icon img {
+    display: inline-block;
+    margin: 0 0 0 15px; }
+
+.students-info-wrapper .student-profile {
+  min-width: 250px; }
+  .students-info-wrapper .student-profile .student-img {
+    margin: 15px auto; }
 
 .students-info-wrapper .front-img {
   position: relative;
